@@ -20,6 +20,7 @@ try {
  await page.locator('#follow-marble').tap();
  assert.equal(await page.locator('#follow-marble').getAttribute('aria-pressed'),'true');
  assert.notDeepEqual(await page.locator('#viewport').screenshot(),before,'Follow must reposition the camera');
+ assert.ok((await page.locator('.marble-halo').boundingBox()).width>36,'Follow zoom must enlarge the marble beyond the minimum halo');
  await page.locator('#run').tap();
  await page.waitForFunction(()=>document.querySelector('.triad-current strong').textContent==='5 · INC(a)');
  await page.locator('#run').tap();
@@ -36,7 +37,13 @@ try {
  await page.waitForFunction(()=>document.querySelector('#status').textContent==='Ready');
  assert.equal(await page.locator('.instruction-triad').isVisible(),false);
  assert.equal(await page.locator('#machine-dashboard').isVisible(),false);
- await page.goto(`${base}/simulator/logic.html?gate=xor&mode=semantic`);
+ await page.goto(`${base}/simulator/?component=closed-loop`);
+ await page.waitForFunction(()=>document.querySelector('#status').textContent==='Ready');
+ assert.equal(await page.locator('#mode').inputValue(),'cpu');
+ await page.goto(`${base}/simulator/logic.html?gate=xor`);
+ await page.waitForFunction(()=>document.querySelector('#logic-status').textContent==='Ready');
+ assert.equal(await page.locator('#logic-mode').inputValue(),'cpu');
+ await page.locator('#logic-mode').selectOption('semantic');
  await page.waitForFunction(()=>document.querySelector('#logic-status').textContent==='Ready');
  await page.locator('#follow-marble').tap();
  await page.locator('#logic-step').tap();

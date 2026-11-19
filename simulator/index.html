@@ -12,7 +12,7 @@
   <div class="workspace">
     <aside>
       <label for="component">Component</label><select id="component"></select>
-      <label for="mode">Execution</label><select id="mode"><option value="gpu">Physical · GPU</option><option value="semantic">Semantic</option><option value="cpu">Physical · CPU</option></select>
+      <label for="mode">Execution</label><select id="mode"><option value="gpu">Physical · GPU</option><option value="semantic">Semantic</option><option value="cpu" selected>Physical · CPU</option></select>
       <p id="physics-availability" class="hint" hidden></p>
       <div class="fields"><div><label for="scale">Circuit scale</label><select id="scale"><option value="0.25">¼ size</option><option value="0.5">½ size</option><option value="1" selected>Reference size · 1×</option><option value="2">Double · 2×</option></select></div><div><label for="speed">Semantic speed</label><select id="speed"><option value="1">1×</option><option value="2">2×</option><option value="4">4×</option><option value="10">10×</option></select></div></div>
       <label for="playback">Semantic playback</label><select id="playback"><option value="follow">Follow marble · 10 passages/s</option><option value="fast">Fast · every frame</option><option value="realtime">Match virtual time</option></select>
@@ -24,7 +24,7 @@
     </aside>
     <section class="stage" aria-label="Simulation">
       <div class="simulation-actions" aria-label="Simulation controls"><button id="run" class="primary">Run</button><button id="follow-marble" type="button" aria-pressed="false" title="Track the marble with the camera">Follow marble</button><div class="buttons"><button id="step">Step</button><button id="reset">Reset</button></div></div>
-<div class="stage-top"><strong id="stage-title">Seven-instruction machine</strong><span id="mode-label">Physical · GPU</span></div>
+<div class="stage-top"><strong id="stage-title">Seven-instruction machine</strong><span id="mode-label">Physical · CPU</span></div>
       <div id="viewport"></div>
       <section id="machine-dashboard" class="machine-dashboard" aria-label="Live machine state" hidden><div id="instruction-strip" aria-label="Instruction program"></div><div id="register-strip" aria-label="Live registers"></div><p>Live bit values · may be intermediate during carry. Bits read most significant first.</p></section>
       <div class="stage-bottom"><span id="path-label">in → out · no stored state</span><span>Drag to orbit · pinch or scroll to zoom</span></div>

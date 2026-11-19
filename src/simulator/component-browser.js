@@ -5,9 +5,9 @@ const primitives = new Set(['straight-track', 'curve-track', 'ramp', 'ferry', 't
 export const browserItems = [
   ...componentCatalog.map(item => ({id:item.id, label:item.label, description:item.description,
     category:item.modes ? 'Research' : primitives.has(item.id) ? 'Simple parts' : 'Assemblies',
-    href:`/simulator/?component=${item.id}&mode=semantic`})),
-  ...logicGates.map(item => ({id:item.id, label:item.name, description:`${item.expression} · Closed circuit with fixed inputs`, category:'Gates', href:`/simulator/logic.html?gate=${item.id}&mode=semantic`})),
-  {id:'half-adder', label:'Half-adder', description:'XOR + AND · Sum and Carry from one marble', category:'Machines', href:'/simulator/logic.html?gate=half-adder&mode=semantic'},
+    href:`/simulator/?component=${item.id}&mode=${item.modes?'semantic':'cpu'}`})),
+  ...logicGates.map(item => ({id:item.id, label:item.name, description:`${item.expression} · Closed circuit with fixed inputs`, category:'Gates', href:`/simulator/logic.html?gate=${item.id}&mode=cpu`})),
+  {id:'half-adder', label:'Half-adder', description:'XOR + AND · Sum and Carry from one marble', category:'Machines', href:'/simulator/logic.html?gate=half-adder&mode=cpu'},
   {id:'instruction-reference', label:'Instruction machine views', description:'Seven instructions · reference, T-gate wiring and primitive circuit', category:'Machines', href:'/simulator/machine.html'},
 ];
 browserItems.find(item=>item.id==='seven-instruction-lattice').category='Machines';

@@ -8,7 +8,7 @@ A component simulator with three top-level assemblies:
 2. **Ferris wheel + T-gate closed circuit** — the wheel raises the marble; the retained seesaw alternates the two descending exits. Both return paths stay level.
 3. **Seven-instruction machine** — shared finite registers implement INC/JUMP using T-gates, Ferris wheels, level tracks, and receiving junctions. A wheel/ramp pair supplies energy for the long return.
 
-Every simulator page has the same horizontal component browser. Swipe on mobile, scroll or use the arrows on desktop, and filter by Simple parts, Gates, Assemblies, Machines, or Research. The selected card is highlighted; selecting another example opens its simulator in Semantic mode. The expandable **Component hierarchy** shows each assembly’s nested parts.
+Every simulator page has the same horizontal component browser. Swipe on mobile, scroll or use the arrows on desktop, and filter by Simple parts, Gates, Assemblies, Machines, or Research. The selected card is highlighted; selecting another example opens its simulator in Physical · CPU mode (Research concepts remain semantic-only). The expandable **Component hierarchy** shows each assembly’s nested parts.
 
 | Category | Available examples |
 | --- | --- |
@@ -27,15 +27,16 @@ Current verification and limitations are recorded in [COMPONENT-AUDIT.md](COMPON
 The site is deployed on Vercel from [pauloabelha/umc](https://github.com/pauloabelha/umc).
 The GitHub integration is connected: pushes to `main` deploy to production,
 and pull requests receive preview deployments.
-The hosted component simulator defaults to Semantic execution; Physical · CPU also
-runs entirely in the browser. CUDA/GPU execution requires the local service described
+The component and logic simulators default to Physical · CPU execution, which
+runs entirely in the browser. Explicit execution modes in links are preserved. CUDA/GPU execution requires the local service described
 below and is not hosted on Vercel.
 
 All three simulator pages adapt to phones and tablets: single-column layouts,
 44px touch controls, readable form inputs, and horizontally scrollable data tables.
 On phones, Run/Pause, Step, and Reset appear first, directly above the live
 simulation; component browsing and settings follow below. **Follow marble** beside
-Run toggles camera tracking while preserving the viewing angle and zoom. The
+Run zooms into the marble’s neighborhood and tracks it while preserving the viewing
+angle. You can adjust zoom while following; Unfollow leaves the camera in place. The
 seven-instruction simulation has a fixed Previous / Current / Next overlay next
 to the wireframe toggle; Next is the programmed successor, conditional on no overflow.
 Directly below the view, the machine panel highlights the instruction and shows

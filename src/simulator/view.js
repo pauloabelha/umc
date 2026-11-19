@@ -37,7 +37,7 @@ export function createView(host) {
   updateCellToggle();
   cellToggle.onclick=()=>{cells.visible=!cells.visible;updateCellToggle();render();};
   host.append(cellToggle);
-  let marble, following=false;
+  let marble, following=false, followDistance=0;
   const followButton=document.getElementById('follow-marble');
   function trackMarble() {
     if(!following||!marble)return;
@@ -48,6 +48,7 @@ export function createView(host) {
     following=!following;
     followButton.setAttribute('aria-pressed',String(following));
     followButton.textContent=following?'Unfollow marble':'Follow marble';
+    if(following&&marble)camera.position.sub(controls.target).setLength(followDistance).add(controls.target);
     trackMarble();render();
   };
   let driven=[];
@@ -103,7 +104,7 @@ export function createView(host) {
   const resize = new ResizeObserver(() => {
     const {width, height} = host.getBoundingClientRect();
     renderer.setSize(width, height); camera.aspect = width / height; camera.updateProjectionMatrix(); render();
-    if(fitWideScene) {
+    if(fitWideScene&&!following) {
       const next=Math.max(1,1.6/camera.aspect);
       camera.position.sub(controls.target).multiplyScalar(next/aspectFit).add(controls.target);
       aspectFit=next;controls.update();render();
@@ -181,6 +182,9 @@ export function createView(host) {
       controls.target.copy(center);
       fitWideScene=Boolean(description.cameraOffset);aspectFit=fitWideScene?Math.max(1,1.6/camera.aspect):1;
       camera.position.copy(center).add(new THREE.Vector3(...(description.cameraOffset??[-0.9,0.8,1.1])).multiplyScalar(size*aspectFit));
+      const radius=marble?.geometry.parameters.radius??.011;
+      followDistance=Math.max(radius*12,Math.min(camera.position.distanceTo(center)*.5,radius*32));
+      if(following)camera.position.sub(center).setLength(followDistance).add(center);
       controls.update(); trackMarble(); render();
     },
     highlight(component) {

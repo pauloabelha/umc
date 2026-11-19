@@ -9,7 +9,7 @@ import {createView} from './view.js';
 import {gpuClient} from '../backends/gpu.js';
 
 const localGPU = ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname);
-const defaultMode = localGPU ? 'gpu' : 'semantic';
+const defaultMode = 'cpu';
 const $ = id => document.getElementById(id);
 for (const item of catalog) $('component').add(new Option(item.label,item.id));
 const selectBrowser = mountComponentBrowser();
@@ -19,7 +19,7 @@ function readLocation() {
   const component=params.get('component');
   $('component').value=catalog.some(item=>item.id===component)?component:'seven-instruction-lattice';
   const entry=catalog.find(item=>item.id===$('component').value);
-  const defaults={mode:defaultMode,scale:'1',speed:'1',playback:'follow'};
+  const defaults={mode:entry?.modes?'semantic':defaultMode,scale:'1',speed:'1',playback:'follow'};
   for(const [id,fallback] of Object.entries(defaults)) {
     const requested=params.get(id);
     $(id).value=[...$(id).options].some(option=>option.value===requested)?requested:fallback;

@@ -64,6 +64,8 @@ try {
     await page.locator('[data-item="straight-track"]').tap();
     await page.waitForFunction(()=>document.querySelector('#status')?.textContent==='Ready');
     assert.equal(await page.locator('#component').inputValue(),'straight-track');
+    assert.equal(await page.locator('#mode').inputValue(),'cpu');
+    await page.locator('#mode').selectOption('semantic');
     await page.locator('#step').tap();
     await page.waitForFunction(()=>document.querySelector('#status')?.textContent==='Completed');
     assert.deepEqual(errors,[]);
