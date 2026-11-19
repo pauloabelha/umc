@@ -15,6 +15,8 @@ Current verification and limitations are recorded in [COMPONENT-AUDIT.md](COMPON
 **Live: [umc-rust.vercel.app](https://umc-rust.vercel.app)**
 
 The site is deployed on Vercel from [pauloabelha/umc](https://github.com/pauloabelha/umc).
+The GitHub integration is connected: pushes to `main` deploy to production,
+and pull requests receive preview deployments.
 The hosted component simulator defaults to Semantic execution; Physical · CPU also
 runs entirely in the browser. CUDA/GPU execution requires the local service described
 below and is not hosted on Vercel.
