@@ -36,7 +36,7 @@ All three simulator pages adapt to phones and tablets: single-column layouts,
 On phones, Run/Pause, Step, and Reset appear first, directly above the live
 simulation; component browsing and settings follow below. **Follow marble** beside
 Run zooms into the marble’s neighborhood and tracks it while preserving the viewing
-angle. You can adjust zoom while following; Unfollow leaves the camera in place. The
+angle. You can adjust zoom while following; Unfollow restores the normal full-circuit view. The
 seven-instruction simulation has a fixed Previous / Current / Next overlay next
 to the wireframe toggle; Next is the programmed successor, conditional on no overflow.
 Directly below the view, the machine panel highlights the instruction and shows

@@ -21,6 +21,9 @@ try {
  assert.equal(await page.locator('#follow-marble').getAttribute('aria-pressed'),'true');
  assert.notDeepEqual(await page.locator('#viewport').screenshot(),before,'Follow must reposition the camera');
  assert.ok((await page.locator('.marble-halo').boundingBox()).width>36,'Follow zoom must enlarge the marble beyond the minimum halo');
+ await page.locator('#follow-marble').tap();
+ assert.deepEqual(await page.locator('#viewport').screenshot(),before,'Unfollow must restore the full-circuit camera');
+ await page.locator('#follow-marble').tap();
  await page.locator('#run').tap();
  await page.waitForFunction(()=>document.querySelector('.triad-current strong').textContent==='5 · INC(a)');
  await page.locator('#run').tap();
