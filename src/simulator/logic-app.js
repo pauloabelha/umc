@@ -1,3 +1,4 @@
+import {mountComponentBrowser} from './component-browser.js';
 import './style.css';
 import {logicGates} from '../logic/gates.js';
 import {makeLogicExperiment} from '../logic/circuit.js';
@@ -8,6 +9,7 @@ import {renderComposition} from './composition-view.js';
 
 const $=id=>document.getElementById(id),view=createView($('viewport'));
 for(const g of [...logicGates,{id:'half-adder',name:'Half-adder · XOR + AND'}])$('logic-gate').add(new Option(g.name,g.id));
+const selectBrowser=mountComponentBrowser();
 const params=new URLSearchParams(location.search);
 for(const [id,key] of [['logic-gate','gate'],['logic-mode','mode'],['input-a','a'],['input-b','b'],['logic-scale','scale']]) {
  const value=params.get(key);if([...$(id).options].some(o=>o.value===value))$(id).value=value;
@@ -53,6 +55,7 @@ async function reset() {
    try{await previous?.dispose();}catch(error){console.warn('Previous logic session cleanup:',error.message);}
    const gate=$('logic-gate').value,a=Number($('input-a').value),b=Number($('input-b').value),scale=Number($('logic-scale').value);
    experiment=makeLogicExperiment({gate,a,b,scale});
+   selectBrowser(gate);
    const spec=logicGates.find(g=>g.id===gate),half=experiment.half;
    $('input-b-field').hidden=spec?.inputs===1;$('carry-readout').hidden=!half;$('adder-sequence').hidden=!half;
    $('output-label').textContent=half?'Sum':'Output Y';$('logic-title').textContent=experiment.entry.label;

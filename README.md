@@ -1,12 +1,22 @@
 # Universal Marble Computer
 
+**[Open the live simulator →](https://umc-rust.vercel.app/simulator/)** · [Logic gates and half-adder](https://umc-rust.vercel.app/simulator/logic.html) · [Instruction machine](https://umc-rust.vercel.app/simulator/machine.html)
+
 A component simulator with three top-level assemblies:
 
 1. **Ferris wheel + ramp closed circuit** — the wheel raises the marble; the ramp returns it to the original height.
 2. **Ferris wheel + T-gate closed circuit** — the wheel raises the marble; the retained seesaw alternates the two descending exits. Both return paths stay level.
 3. **Seven-instruction machine** — shared finite registers implement INC/JUMP using T-gates, Ferris wheels, level tracks, and receiving junctions. A wheel/ramp pair supplies energy for the long return.
 
-The gallery and selector contain only these assemblies. Primitives and intermediate assemblies are inspected through the expandable **Component hierarchy**. Older research examples remain in source for reference, not as extra gallery choices.
+Every simulator page has the same horizontal component browser. Swipe on mobile, scroll or use the arrows on desktop, and filter by Simple parts, Gates, Assemblies, Machines, or Research. The selected card is highlighted; selecting another example opens its simulator in Semantic mode. The expandable **Component hierarchy** shows each assembly’s nested parts.
+
+| Category | Available examples |
+| --- | --- |
+| Simple parts | Straight track, 90° curve, ramp, Ferris elevator, T-gate |
+| Gates | Buffer, NOT, AND, OR, NAND, NOR, XOR, XNOR — each in a closed circuit |
+| Assemblies | Two connected tracks, Ferris/ramp loop, Ferris/T-gate loop, four-bit INC register |
+| Machines | Seven-instruction physical assembly, instruction machine views, XOR + AND half-adder |
+| Research | Shared-register routing proposal, five-address routing demo, two-bit counter — semantic-only concepts, not physically qualified |
 
 Current verification and limitations are recorded in [COMPONENT-AUDIT.md](COMPONENT-AUDIT.md). CPU success is not GPU qualification. Geometry and materials are estimates, not measured stock VTech parts.
 
@@ -102,7 +112,7 @@ Each bit has a T-gate and a Ferris inlet. Right carries to the next bit; left co
 
 ## Logic gates and half-adder
 
-Open **http://127.0.0.1:5173/simulator/logic.html** for closed-circuit Buffer, NOT, AND, OR, NAND, NOR, XOR, XNOR, and the XOR + AND half-adder. Set A/B before running; measured outputs come from the marble’s output-track crossings. These examples use fixed input track switches, so repeated laps preserve the same inputs. See [construction, scope, and verification](LOGIC-CIRCUITS.md). Every input combination passes three physical laps on CPU and GPU at reference scale.
+Open the **[hosted logic simulator](https://umc-rust.vercel.app/simulator/logic.html)** (locally: `http://127.0.0.1:5173/simulator/logic.html`) for closed-circuit Buffer, NOT, AND, OR, NAND, NOR, XOR, XNOR, and the XOR + AND half-adder. Set A/B before running; measured outputs come from the marble’s output-track crossings. These examples use fixed input track switches, so repeated laps preserve the same inputs. See [construction, scope, and verification](LOGIC-CIRCUITS.md). Every input combination passes three physical laps on CPU and GPU at reference scale.
 
 ## Checks
 

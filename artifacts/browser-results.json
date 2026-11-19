@@ -1,7 +1,7 @@
 {
   "passed": true,
   "checks": [
-    "three choices, recursive hierarchy, complete semantic ramp lap",
+    "shared browser, recursive hierarchy, complete semantic ramp lap",
     "both physical-topology branches, retained semantic memory and reset",
     "seven-instruction assembly, stepping, URL settings",
     "CPU loop in browser, live lap readout, pause",

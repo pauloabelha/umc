@@ -1,7 +1,8 @@
+import {mountComponentBrowser} from './component-browser.js';
 import {renderComposition} from './composition-view.js';
 import {registerValue} from '../machine/increment-register.js';
 import './style.css';
-import {catalog, makeExperiment, experimentScene} from './catalog.js';
+import {componentCatalog as catalog, makeExperiment, experimentScene} from './catalog.js';
 import {createSession} from './session.js';
 import {createView} from './view.js';
 import {gpuClient} from '../backends/gpu.js';
@@ -10,22 +11,7 @@ const localGPU = ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname)
 const defaultMode = localGPU ? 'gpu' : 'semantic';
 const $ = id => document.getElementById(id);
 for (const item of catalog) $('component').add(new Option(item.label,item.id));
-for (const item of catalog) {
-  const card = document.createElement('a');
-  card.href = `/simulator/?component=${item.id}&mode=${defaultMode}`;
-  card.className = 'component-card'; card.dataset.component = item.id;
-  card.innerHTML = `<span class="card-kind">${item.kind}</span><span class="track-sketch" aria-hidden="true">${'<i></i>'.repeat(Math.min(item.count,4))}<b></b></span><strong>${item.label}</strong><span class="card-description">${item.description}</span><span class="card-meta">${item.count} piece${item.count > 1 ? 's' : ''} · ${item.modes?'semantic · layout preview':'semantic / physical'}</span>`;
-  card.onclick = event => {
-    if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
-    event.preventDefault();
-    if(!busy&&!running){
-      $('component').value=item.id;
-      $('mode').value=defaultMode;
-      void reset({historyMode:'push'}).then(()=>document.querySelector('.workspace').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'}));
-    }
-  };
-  $('gallery').append(card);
-}
+const selectBrowser = mountComponentBrowser();
 function readLocation() {
   const params=new URLSearchParams(location.search);
   const component=params.get('component');
@@ -65,7 +51,6 @@ function controls() {
   $('step').disabled = busy || running || finished || unavailable;
   $('reset').disabled = busy;
   $('inspect-time').disabled = busy || running || Number($('inspect-time').max) === 0;
-  for (const card of document.querySelectorAll('.component-card')) card.setAttribute('aria-disabled',String(busy||running));
 }
 function fail(error) {
   running = false;
@@ -177,7 +162,7 @@ async function reset({historyMode='replace'}={}) {
     $('target').textContent = `${experiment.expectedDuration.toFixed(3)} s`;
     $('stage-title').textContent = `${experiment.entry.label} · Level ${experiment.circuit.level}`;
     $('path-label').textContent = experiment.pathLabel ?? (experiment.circuit.instances.map(i=>i.id).join(' → ') + (experiment.entry.closed ? ' → elevator' : ' → out'));
-    for (const card of document.querySelectorAll('.component-card')) card.setAttribute('aria-pressed', String(card.dataset.component === experiment.entry.id));
+    selectBrowser(experiment.entry.id);
     $('mode-label').textContent = $('mode').selectedOptions[0].text;
     $('error').hidden = true;
     syncLocation(historyMode);

@@ -358,3 +358,30 @@ a.component-card[aria-disabled="true"] { opacity: .6; cursor: default; }
   .readout { padding: 16px; gap: 16px; }
   .verbose-toggle { min-height: 44px; }
 }
+
+/* Shared component shelf: only the row scrolls, never the whole page. */
+#component-browser { margin-bottom: 28px; min-width: 0; }
+.browser-heading { display:flex; flex-wrap:wrap; align-items:baseline; gap:8px 20px; }
+.browser-heading h2 { font-size:20px; margin:0; }
+.browser-heading span { font-size:13px; color:#566976; }
+.browser-filters { display:flex; flex-wrap:wrap; gap:8px; margin:14px 0; }
+.browser-filters button { min-height:44px; }
+.browser-filters button[aria-pressed="true"] { background:#126d7a; color:white; border-color:#126d7a; }
+.browser-navigation { display:grid; grid-template-columns:44px minmax(0,1fr) 44px; gap:8px; align-items:center; }
+.browser-navigation > button { padding:0; width:44px; height:44px; }
+.component-row { display:flex; gap:12px; overflow-x:auto; padding:6px 4px 14px; scroll-snap-type:x proximity; overscroll-behavior-x:contain; position:relative; }
+.browser-card { flex:0 0 230px; display:flex; flex-direction:column; gap:10px; padding:18px; border:2px solid #d4dfe5; border-radius:12px; color:inherit; background:#ffffffbf; text-decoration:none; scroll-snap-align:start; }
+.browser-card[hidden] { display:none; }
+.browser-card:hover { border-color:#147c89; }
+.browser-card[aria-current="page"] { background:#e0f3f0; border-color:#147c89; }
+.browser-card span { font-size:12px; color:#147c89; }
+.browser-card strong { font-size:18px; }
+.browser-card small { font-size:13px; line-height:1.5; color:#566976; }
+.component-row:focus-visible { outline:3px solid #e9a723; }
+@media(max-width:720px) {
+ .browser-navigation { grid-template-columns:minmax(0,1fr); }
+ .browser-navigation > button { display:none; }
+ .browser-card { flex-basis:min(230px,82vw); }
+ .browser-filters { gap:6px; }
+ .browser-filters button { padding:10px 12px; }
+}

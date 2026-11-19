@@ -18,7 +18,7 @@ machine trace are in `artifacts/physical-gpu-final.json`.
 
 ## Additional logic examples
 
-The main three-item gallery is unchanged. A separate [logic examples page](simulator/logic.html) contains closed-circuit Buffer, NOT, AND, OR, NAND, NOR, XOR, XNOR, and a composed half-adder. Its fixed input switches, observed output rails, and backend-specific verification are described in [LOGIC-CIRCUITS.md](LOGIC-CIRCUITS.md). These are additional custom routing examples, not replacements for T-gate memory or new INC/JUMP opcodes. All 32 input cases now pass three CPU and GPU laps at reference scale. Passive centering guides align the marble before each Ferris pickup; the failed XOR case additionally passes an eight-lap GPU regression. See `artifacts/logic-validation.json` for exact coverage and source fingerprints.
+The three qualified main assemblies remain unchanged. A shared horizontal browser now exposes primitives, gates, assemblies, machines, and explicitly labeled research concepts on every page. The [logic examples page](simulator/logic.html) contains closed-circuit Buffer, NOT, AND, OR, NAND, NOR, XOR, XNOR, and a composed half-adder. Its fixed input switches, observed output rails, and backend-specific verification are described in [LOGIC-CIRCUITS.md](LOGIC-CIRCUITS.md). These are additional custom routing examples, not replacements for T-gate memory or new INC/JUMP opcodes. All 32 input cases now pass three CPU and GPU laps at reference scale. Passive centering guides align the marble before each Ferris pickup; the failed XOR case additionally passes an eight-lap GPU regression. See `artifacts/logic-validation.json` for exact coverage and source fingerprints.
 
 ## Rules enforced
 
@@ -71,7 +71,7 @@ GPU; there is no fallback to CPU or semantic movement.
 - Repeated physical T-gate checks pass all 128 passages: CPU/GPU × four scales ×
   two initial states × eight passages without resetting memory. Evidence:
   `artifacts/t-gate-physics.json`.
-- Browser checks cover the three-item selector, hierarchy, semantic branch memory,
+- Browser checks cover the shared component browser and expanded selector, hierarchy, semantic branch memory,
   physical CPU looping, settings, run/pause/reset, machine stepping, and visible
   GPU failure without fallback. A separate live-CUDA browser check requires a
   completed T-gate-loop lap and pause (`npm run test:browser:gpu`); it passes.

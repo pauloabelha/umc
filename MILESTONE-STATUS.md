@@ -12,8 +12,9 @@ stopped at the expected a-register overflow. The same primitive topology matches
 the instruction reference semantically. The two closed circuits complete repeated
 CPU and GPU laps at all offered scales (¼, ½, 1, 2).
 
-The three requested assemblies are the only gallery/selector choices. Intermediate
-components remain inspectable in the hierarchy. Browser tests exercise the current
+The three requested assemblies remain the main physical assemblies. A shared,
+mobile-friendly horizontal browser also exposes simple parts, gates, machines,
+and labeled research concepts. Intermediate components remain inspectable in the hierarchy. Browser tests exercise the current
 UI, machine stepping, controls, actual CPU/GPU laps, and GPU-offline behavior without fallback.
 
 The contact-solver correction passed the complete GPU run, repeated loop tests,

@@ -1,7 +1,9 @@
+import {mountComponentBrowser} from './component-browser.js';
 import {LatticeMachineExecution} from '../machine/lattice-execution.js';
 import './style.css';
 import {IncJumpMachine} from '../machine/inc-jump.js';
 import {GateMachine} from '../machine/gate-machine.js';
+mountComponentBrowser()('instruction-reference');
 const $=id=>document.getElementById(id);
 let machine=new IncJumpMachine(),timer=null;
 const instructionText=i=>i.op==='INC'?`INC(${i.register})`:`JUMP(${i.target})`;
