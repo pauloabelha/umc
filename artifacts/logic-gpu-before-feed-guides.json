@@ -1,0 +1,1267 @@
+{
+  "passed": false,
+  "results": [
+    {
+      "mode": "gpu",
+      "gate": "buffer",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 48.35,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.633333333333333,
+          "outputs": {
+            "buffer": {
+              "value": 0,
+              "rail": "buffer-rail-0",
+              "inputs": [
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 33.53333333333333,
+          "outputs": {
+            "buffer": {
+              "value": 0,
+              "rail": "buffer-rail-0",
+              "inputs": [
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 48.35,
+          "outputs": {
+            "buffer": {
+              "value": 0,
+              "rail": "buffer-rail-0",
+              "inputs": [
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "buffer",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 45.5,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 15.716666666666667,
+          "outputs": {
+            "buffer": {
+              "value": 1,
+              "rail": "buffer-rail-1",
+              "inputs": [
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 30.433333333333334,
+          "outputs": {
+            "buffer": {
+              "value": 1,
+              "rail": "buffer-rail-1",
+              "inputs": [
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 45.5,
+          "outputs": {
+            "buffer": {
+              "value": 1,
+              "rail": "buffer-rail-1",
+              "inputs": [
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "not",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 45.46666666666667,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 15.35,
+          "outputs": {
+            "not": {
+              "value": 1,
+              "rail": "not-rail-0",
+              "inputs": [
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 30.3,
+          "outputs": {
+            "not": {
+              "value": 1,
+              "rail": "not-rail-0",
+              "inputs": [
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 45.46666666666667,
+          "outputs": {
+            "not": {
+              "value": 1,
+              "rail": "not-rail-0",
+              "inputs": [
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "not",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 45.416666666666664,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 15.45,
+          "outputs": {
+            "not": {
+              "value": 0,
+              "rail": "not-rail-1",
+              "inputs": [
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 30.7,
+          "outputs": {
+            "not": {
+              "value": 0,
+              "rail": "not-rail-1",
+              "inputs": [
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 45.416666666666664,
+          "outputs": {
+            "not": {
+              "value": 0,
+              "rail": "not-rail-1",
+              "inputs": [
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "and",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 51.666666666666664,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 17.566666666666666,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 34.516666666666666,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 51.666666666666664,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "and",
+      "scale": 1,
+      "a": 0,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 51.266666666666666,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 17.383333333333333,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 34.43333333333333,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 51.266666666666666,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "and",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 54.5,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.483333333333334,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.36666666666667,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.5,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "and",
+      "scale": 1,
+      "a": 1,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 54.18333333333333,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.25,
+          "outputs": {
+            "and": {
+              "value": 1,
+              "rail": "and-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.18333333333333,
+          "outputs": {
+            "and": {
+              "value": 1,
+              "rail": "and-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.18333333333333,
+          "outputs": {
+            "and": {
+              "value": 1,
+              "rail": "and-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "or",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 51.11666666666667,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 17.466666666666665,
+          "outputs": {
+            "or": {
+              "value": 0,
+              "rail": "or-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 34.4,
+          "outputs": {
+            "or": {
+              "value": 0,
+              "rail": "or-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 51.11666666666667,
+          "outputs": {
+            "or": {
+              "value": 0,
+              "rail": "or-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "or",
+      "scale": 1,
+      "a": 0,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 51.4,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 17.35,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 34.21666666666667,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 51.4,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "or",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 54.18333333333333,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.4,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.13333333333333,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.18333333333333,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "or",
+      "scale": 1,
+      "a": 1,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 54.85,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.2,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.266666666666666,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.85,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "nand",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 52.199999999999996,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 17.333333333333332,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 35.45,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 52.199999999999996,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "nand",
+      "scale": 1,
+      "a": 0,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 51.28333333333333,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 17.45,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 34.516666666666666,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 51.28333333333333,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "nand",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 54.416666666666664,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.383333333333333,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.53333333333333,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.416666666666664,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "nand",
+      "scale": 1,
+      "a": 1,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 54.18333333333333,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.433333333333334,
+          "outputs": {
+            "nand": {
+              "value": 0,
+              "rail": "nand-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.25,
+          "outputs": {
+            "nand": {
+              "value": 0,
+              "rail": "nand-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.18333333333333,
+          "outputs": {
+            "nand": {
+              "value": 0,
+              "rail": "nand-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "nor",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 72.41666666666667,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 17.35,
+          "outputs": {
+            "nor": {
+              "value": 1,
+              "rail": "nor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 34.3,
+          "outputs": {
+            "nor": {
+              "value": 1,
+              "rail": "nor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 72.41666666666667,
+          "outputs": {
+            "nor": {
+              "value": 1,
+              "rail": "nor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "nor",
+      "scale": 1,
+      "a": 0,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 51.4,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 17.3,
+          "outputs": {
+            "nor": {
+              "value": 0,
+              "rail": "nor-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 34.43333333333333,
+          "outputs": {
+            "nor": {
+              "value": 0,
+              "rail": "nor-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 51.4,
+          "outputs": {
+            "nor": {
+              "value": 0,
+              "rail": "nor-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "nor",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 54.4,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.266666666666666,
+          "outputs": {
+            "nor": {
+              "value": 0,
+              "rail": "nor-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.13333333333333,
+          "outputs": {
+            "nor": {
+              "value": 0,
+              "rail": "nor-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.4,
+          "outputs": {
+            "nor": {
+              "value": 0,
+              "rail": "nor-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "nor",
+      "scale": 1,
+      "a": 1,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 54.3,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.483333333333334,
+          "outputs": {
+            "nor": {
+              "value": 0,
+              "rail": "nor-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.733333333333334,
+          "outputs": {
+            "nor": {
+              "value": 0,
+              "rail": "nor-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.3,
+          "outputs": {
+            "nor": {
+              "value": 0,
+              "rail": "nor-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "xor",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": false,
+      "error": "Marble stalled in return-power-wheel",
+      "current": {
+        "id": "marble",
+        "position": [
+          0.39798659086227417,
+          0.010959933511912823,
+          0.01549634337425232
+        ],
+        "rotation": [
+          -0.34162330627441406,
+          -0.05359775200486183,
+          0.5230957269668579,
+          -0.778968334197998
+        ],
+        "velocity": [
+          -0.007584197912365198,
+          0.0007105699623934925,
+          0.003713468322530389
+        ],
+        "time": 52.03333333333333,
+        "mechanisms": [],
+        "component": "return-power-wheel",
+        "laps": 0
+      }
+    },
+    {
+      "mode": "gpu",
+      "gate": "xor",
+      "scale": 1,
+      "a": 0,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 53.083333333333336,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 17.366666666666667,
+          "outputs": {
+            "xor": {
+              "value": 1,
+              "rail": "xor-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 34.18333333333333,
+          "outputs": {
+            "xor": {
+              "value": 1,
+              "rail": "xor-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 53.083333333333336,
+          "outputs": {
+            "xor": {
+              "value": 1,
+              "rail": "xor-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "xor",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 54.449999999999996,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.466666666666665,
+          "outputs": {
+            "xor": {
+              "value": 1,
+              "rail": "xor-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.35,
+          "outputs": {
+            "xor": {
+              "value": 1,
+              "rail": "xor-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.449999999999996,
+          "outputs": {
+            "xor": {
+              "value": 1,
+              "rail": "xor-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "xor",
+      "scale": 1,
+      "a": 1,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 54.266666666666666,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.316666666666666,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.333333333333336,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.266666666666666,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

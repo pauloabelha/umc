@@ -102,7 +102,7 @@ Each bit has a T-gate and a Ferris inlet. Right carries to the next bit; left co
 
 ## Logic gates and half-adder
 
-Open **http://127.0.0.1:5173/simulator/logic.html** for closed-circuit Buffer, NOT, AND, OR, NAND, NOR, XOR, XNOR, and the XOR + AND half-adder. Set A/B before running; measured outputs come from the marble’s output-track crossings. These examples use fixed input track switches, so repeated laps preserve the same inputs. See [construction, scope, and verification](LOGIC-CIRCUITS.md).
+Open **http://127.0.0.1:5173/simulator/logic.html** for closed-circuit Buffer, NOT, AND, OR, NAND, NOR, XOR, XNOR, and the XOR + AND half-adder. Set A/B before running; measured outputs come from the marble’s output-track crossings. These examples use fixed input track switches, so repeated laps preserve the same inputs. See [construction, scope, and verification](LOGIC-CIRCUITS.md). Every input combination passes three physical laps on CPU and GPU at reference scale.
 
 ## Checks
 

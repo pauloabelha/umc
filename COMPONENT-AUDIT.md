@@ -18,7 +18,7 @@ machine trace are in `artifacts/physical-gpu-final.json`.
 
 ## Additional logic examples
 
-The main three-item gallery is unchanged. A separate [logic examples page](simulator/logic.html) contains closed-circuit Buffer, NOT, AND, OR, NAND, NOR, XOR, XNOR, and a composed half-adder. Its fixed input switches, observed output rails, and backend-specific verification are described in [LOGIC-CIRCUITS.md](LOGIC-CIRCUITS.md). These are additional custom routing examples, not replacements for T-gate memory or new INC/JUMP opcodes.
+The main three-item gallery is unchanged. A separate [logic examples page](simulator/logic.html) contains closed-circuit Buffer, NOT, AND, OR, NAND, NOR, XOR, XNOR, and a composed half-adder. Its fixed input switches, observed output rails, and backend-specific verification are described in [LOGIC-CIRCUITS.md](LOGIC-CIRCUITS.md). These are additional custom routing examples, not replacements for T-gate memory or new INC/JUMP opcodes. All 32 input cases now pass three CPU and GPU laps at reference scale. Passive centering guides align the marble before each Ferris pickup; the failed XOR case additionally passes an eight-lap GPU regression. See `artifacts/logic-validation.json` for exact coverage and source fingerprints.
 
 ## Rules enforced
 
@@ -62,7 +62,7 @@ GPU; there is no fallback to CPU or semantic movement.
 
 ## Verification
 
-- All 83 Node tests pass, covering primitives, composition, port connections, state, re-entry,
+- All 94 Node tests pass, covering primitives, composition, port connections, state, re-entry,
   exhaustive finite INC cases, and reference-equivalent instruction execution.
 - `npm run test:physical` checks physical lap targets and complete instruction
   traces through overflow, writing `artifacts/physical-assemblies.json`.

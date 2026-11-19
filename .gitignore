@@ -8,3 +8,4 @@ artifacts/*
 .vercel/
 .env*
 .vercel
+!artifacts/README.md

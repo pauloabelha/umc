@@ -8,7 +8,7 @@ import {curveTrack} from '../components/curve-track.js';
 import {mergeTrack} from '../components/merge-track.js';
 import {add,yawVector} from '../geometry/transforms.js';
 import {physicalObserver} from '../simulator/physical-observer.js';
-import {inputSwitch,offsetTrack} from './routing.js';
+import {inputSwitch,offsetTrack,feedGuide} from './routing.js';
 import {logicGates,inputBit} from './gates.js';
 
 export function makeLogicExperiment({gate='and',a=0,b=0,scale=1}={}) {
@@ -23,6 +23,7 @@ export function makeLogicExperiment({gate='and',a=0,b=0,scale=1}={}) {
     const j=place(id,component,add(port(i,output),yawVector(component.ports.in.position,yaw).map(v=>-v)),yaw);connect(i,output,j);return j;
   };
   const boost=(previous,prefix)=>{
+    if(previous)previous=attach(previous,'out',`${prefix}-feed`,feedGuide());
     const wheel=previous?attach(previous,'out',`${prefix}-wheel`,ferry()):place(`${prefix}-wheel`,ferry(),[0,0,0]);
     return {wheel,end:attach(wheel,'out',`${prefix}-ramp`,ramp({length:.18,drop:.06}))};
   };
@@ -70,21 +71,22 @@ export function makeLogicExperiment({gate='and',a=0,b=0,scale=1}={}) {
   last=attach(last,'out','return-bend-1',curveTrack({radius}));
   last=attach(last,'out','return-side-1',straightTrack({length:depth-2*radius,smoothEnds:true}),-Math.PI/2);
   last=attach(last,'out','return-bend-2',curveTrack({radius}),-Math.PI/2);
-  last=attach(last,'out','return-back',straightTrack({length:endX+.36,smoothEnds:true}),-Math.PI);
+  last=attach(last,'out','return-back',straightTrack({length:endX+.54,smoothEnds:true}),-Math.PI);
   last=attach(last,'out','return-bend-3',curveTrack({radius}),-Math.PI);
   last=attach(last,'out','return-side-2',straightTrack({length:depth-2*radius,smoothEnds:true}),-3*Math.PI/2);
   last=attach(last,'out','return-bend-4',curveTrack({radius}),-3*Math.PI/2);
   last=attach(last,'out','return-chicane-1',offsetTrack({offset:-.06,length:.18}));
   last=attach(last,'out','return-chicane-2',offsetTrack({offset:.06,length:.18}));
+  last=attach(last,'out','input-feed',feedGuide());
   connect(last,'out',start.wheel);
   const included=new Set(modules.flatMap(m=>m.instances));
   const composition=new Composition(half?'Half-adder closed circuit':`${definition.name} closed circuit`,[
     ...modules,Composition.fromInstances('Ferris supply and closed return',instances.filter(i=>!included.has(i))),
   ]);
   const circuit=new Circuit(instances,{scale,connections,composition});
-  const observer=physicalObserver(circuit,start.wheel.id,{closed:true,lapComponent:'return-chicane-2'});
+  const observer=physicalObserver(circuit,start.wheel.id,{closed:true,lapComponent:'input-feed'});
   const entry={id:gate,label:composition.name,closed:true};
   return {entry,circuit,instance:start.wheel,marble:{id:'marble',position:[.02,.012,0],radius:.011,mass:.005},
-    lapComponent:'return-chicane-2',observe:observer,outputRails,labels,inputs:{a,b},half,
+    lapComponent:'input-feed',observe:observer,outputRails,labels,inputs:{a,b},half,
     expectedDuration:instances.length,end:[0,0,0]};
 }

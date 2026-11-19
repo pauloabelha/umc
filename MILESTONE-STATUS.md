@@ -18,7 +18,7 @@ UI, machine stepping, controls, actual CPU/GPU laps, and GPU-offline behavior wi
 
 The contact-solver correction passed the complete GPU run, repeated loop tests,
 and all 128 repeated T-gate passages across both backends, both initial states,
-and four scales. All 83 Node tests, four GPU schema tests, browser checks, and
+and four scales. All 94 Node tests, four GPU schema tests, browser checks, and
 the production build pass. See [COMPONENT-AUDIT.md](COMPONENT-AUDIT.md) for traces
 and precise qualification limits. The machine run covers the default four-bit
 assembly at reference scale. Estimated geometry and idealized low-loss materials

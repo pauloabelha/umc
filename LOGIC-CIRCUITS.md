@@ -34,7 +34,10 @@ return brings the marble back to the input. There is no production lap limit.
 
 - Input switches and branch/collector tracks stay level.
 - Ferris wheels supply upward transfer; ramps convert the height into travel.
-- A level return chicane bends the approach before the Ferris pickup.
+- A level return chicane bends the return approach. Passive centering tracks
+  narrow to a 24 mm clear throat before each wheel, aligning the 22 mm marble
+  with the pickup pocket. A direct fixture test checks off-axis entries from
+  both sides, level exit height, and absence of added energy.
 - No software velocity changes, teleports, or automatic switch resets occur.
 - Component hierarchies use primitive Level 0, input/output groups at Level 1,
   logic modules at Level 2, and closed circuits at Level 3.
@@ -74,6 +77,7 @@ connections, elevation rules, stable inputs, and the half-adder identity
 
 ```sh
 node --test tests/logic.test.js
+node scripts/test-logic-feed.js
 npm run test:logic:physics
 npm run test:logic:browser
 UMC_TEST_GPU=1 npm run test:logic:browser
@@ -84,5 +88,29 @@ laps, finite marble positions, launch speed, and stalls. It records complete lap
 traces. Use `--mode=cpu` or `--mode=gpu`, `--gate=and`, `--scales=0.5,1,2`,
 `--laps=3`, and `--report=artifacts/example.json` to select a qualification run.
 Current reports are under `artifacts/logic-*.json`; only reports marked passed
-qualify the configurations they explicitly list. The return-regression report
+qualify the configurations they explicitly list. The feed-regression report
 preserves focused repeated-lap coverage of the previously unstable pickup.
+Earlier failed layouts are retained under explicitly historical report names.
+
+
+## Qualified results — 2026-11-19
+
+- All 32 input cases (eight gates plus half-adder) pass **three consecutive laps
+  on both CPU and GPU at reference scale**, without resetting the marble or inputs
+  between laps. Reports: `artifacts/logic-cpu.json`, `artifacts/logic-gpu.json`.
+- The formerly failing XOR 00 route passes eight GPU laps with the centering
+  guides: `artifacts/logic-feed-regression.json`.
+- All six direct feed fixtures pass: both backends with left-offset, centered,
+  and right-offset entry. See `artifacts/logic-feed.json`.
+- CPU scale checks cover every NOT/AND/half-adder input at ½ and 2×; GPU scale
+  samples use A=1 (and B=1 for binary circuits) for those three types. These are one-lap scale
+  checks, not an exhaustive GPU scale sweep.
+- All 94 Node tests, 34 logic browser evaluations, the original simulator browser
+  regression, and the production build pass. Browser checks include actual CPU
+  and GPU laps, reset, locked inputs while running, visible GPU failure without
+  fallback, manual recovery to Semantic, wireframe control, and mobile layout.
+
+`artifacts/logic-validation.json` records the exact coverage and source hashes.
+Earlier `before-*` reports and the earlier return-only experiments are historical;
+they do not qualify the final feed-guide geometry. The finite lap counts above
+are the tested extent, not proof of unlimited-cycle reliability or stock-part fit.

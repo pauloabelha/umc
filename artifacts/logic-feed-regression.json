@@ -1,0 +1,129 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "mode": "gpu",
+      "gate": "xor",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 8,
+      "time": 154.36666666666667,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 21.016666666666666,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 40.733333333333334,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 59.81666666666666,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 4,
+          "time": 78.26666666666667,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 5,
+          "time": 97.71666666666667,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 6,
+          "time": 116.38333333333333,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 7,
+          "time": 135.6,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 8,
+          "time": 154.36666666666667,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
