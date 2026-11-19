@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>UMC · INC / JUMP machine</title><link rel="icon" href="data:,"></head>
+<body>
+<header><a href="/simulator/" class="brand">● UMC</a><span class="subtitle">Seven-instruction machine</span><span class="badge">Instruction semantics</span></header>
+<main>
+<p><a href="/simulator/logic.html">Explore closed-circuit logic gates and the half-adder →</a></p>
+<section class="intro"><div><p class="eyebrow">INC + JUMP</p><h1>One program. Two shared registers.</h1><p>Each cycle increments a twice and b once. Instructions 1 and 5 use the same register a.</p></div></section>
+<p class="note" id="machine-boundary"></p>
+<p><a href="/simulator/?component=inc-register&mode=semantic">Inspect the INC register assembly: step through carry from 7 to 8 →</a></p>
+
+<p><a href="/simulator/?component=seven-instruction-lattice&mode=semantic">View the seven-instruction component assembly →</a></p>
+<section class="readout" aria-label="Machine state">
+<div><span>Register a</span><strong id="register-a">0</strong></div><div><span>Register b</span><strong id="register-b">0</strong></div>
+<div><span>Instruction pointer · active instruction</span><strong id="pc">1</strong></div><div><span>Virtual time</span><strong id="machine-time">0 s</strong></div>
+</section>
+<div class="machine-controls">
+<label for="machine-backend">Model</label><select id="machine-backend"><option value="reference">Instruction reference</option><option value="gates">T-gate wiring · semantic</option><option value="lattice">Primitive component circuit · semantic</option></select>
+<label for="machine-width">Bits per register</label><select id="machine-width"><option value="4">4</option><option value="8">8</option><option value="16">16</option></select>
+<button id="machine-run" class="primary">Run</button><button id="machine-step">Step instruction</button><button id="machine-microstep">Step gate / route</button><button id="machine-reset">Reset</button>
+<label for="machine-speed">Execution speed</label><select id="machine-speed"><option value="1">1×</option><option value="4">4×</option><option value="10">10×</option></select>
+<label for="machine-playback">Playback</label><select id="machine-playback"><option value="100">10 passages/s</option><option value="16">60 passages/s</option><option value="1000">1 passage/s</option></select>
+<span id="machine-status" role="status">Ready</span>
+</div>
+<section class="tracking" aria-label="Instructions"><h2>Program</h2><p>Highlighted = active instruction. During carry it remains active until the return route completes.</p>
+<table><thead><tr><th>Address</th><th>Instruction</th><th>State</th><th>Executions</th></tr></thead><tbody id="machine-program"></tbody></table></section>
+<section class="tracking" id="gate-details" hidden><h2>Register bits and return state</h2><p>One shared a bank, one b bank. The return gate alternates destinations 2 and 6 for this fixed program. Register values during carry are intermediate.</p><p>Marble location: <strong id="gate-location"></strong></p><table><thead><tr><th>Gate</th><th>Stored bit</th><th>State</th></tr></thead><tbody id="gate-states"></tbody></table><details open><summary>Gate / route trace · latest 30</summary><pre id="gate-trace"></pre></details></section>
+<section class="tracking"><h2>Computation log</h2><p>Latest 100 instructions. Every row records the pointer and both register values before and after execution.</p>
+<button id="machine-download">Download full log</button>
+<table><thead><tr><th>Step / time</th><th>Executed</th><th>Next</th><th>a before → after</th><th>b before → after</th></tr></thead><tbody id="machine-log"></tbody></table></section>
+</main><script type="module" src="/src/simulator/machine-app.js"></script>
+</body></html>

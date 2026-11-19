@@ -1,0 +1,243 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "gate": "buffer",
+      "a": 0,
+      "b": 0,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "buffer",
+      "a": 1,
+      "b": 0,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "not",
+      "a": 0,
+      "b": 0,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "not",
+      "a": 1,
+      "b": 0,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "and",
+      "a": 0,
+      "b": 0,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "and",
+      "a": 0,
+      "b": 1,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "and",
+      "a": 1,
+      "b": 0,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "and",
+      "a": 1,
+      "b": 1,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "or",
+      "a": 0,
+      "b": 0,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "or",
+      "a": 0,
+      "b": 1,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "or",
+      "a": 1,
+      "b": 0,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "or",
+      "a": 1,
+      "b": 1,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "nand",
+      "a": 0,
+      "b": 0,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "nand",
+      "a": 0,
+      "b": 1,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "nand",
+      "a": 1,
+      "b": 0,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "nand",
+      "a": 1,
+      "b": 1,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "nor",
+      "a": 0,
+      "b": 0,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "nor",
+      "a": 0,
+      "b": 1,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "nor",
+      "a": 1,
+      "b": 0,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "nor",
+      "a": 1,
+      "b": 1,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "xor",
+      "a": 0,
+      "b": 0,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "xor",
+      "a": 0,
+      "b": 1,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "xor",
+      "a": 1,
+      "b": 0,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "xor",
+      "a": 1,
+      "b": 1,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "xnor",
+      "a": 0,
+      "b": 0,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "xnor",
+      "a": 0,
+      "b": 1,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "xnor",
+      "a": 1,
+      "b": 0,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "xnor",
+      "a": 1,
+      "b": 1,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "half-adder",
+      "a": 0,
+      "b": 0,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "half-adder",
+      "a": 0,
+      "b": 1,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "half-adder",
+      "a": 1,
+      "b": 0,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "half-adder",
+      "a": 1,
+      "b": 1,
+      "mode": "semantic",
+      "passed": true
+    },
+    {
+      "gate": "and",
+      "a": 1,
+      "b": 1,
+      "mode": "cpu",
+      "passed": true
+    },
+    {
+      "gate": "and",
+      "a": 1,
+      "b": 1,
+      "mode": "gpu",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,1238 @@
+--- PDF PAGE 1 ---
+Educator Guide
+Version 2.8 - Covers challenges 1 to 30
+
+--- PDF PAGE 2 ---
+ii
+Welcome Educators!
+We are excited that you’re using Turing Tumble in your classroom! This kit 
+is easy to use. There are no batteries to charge, no apps to install or update, 
+and no cords needed…just show the students how to follow the puzzle book, 
+and your class will be ready to go. You can use it as part of math stations, 
+unit studies, learning engineering concepts, independent study, introducing 
+computer science principles, free choice time, or in a library learning center.
+ 
+ 
+ 
+This educator guide is a companion to Turing Tumble. Everything is black and 
+white to make it easy for you to print or copy. This version of the guide covers 
+the first 30 challenges in the book. 
+What’s in this guide?
+Inside are two types of resources:
+1.	 Lesson curricula: As students progress through the puzzles, there are 
+certain times where you can take a break for a lesson. The lessons anchor 
+the concepts learned through Turing Tumble to real life applications. You’ll 
+find materials for each of these lessons spread out among the puzzles.
+2.	 Help with individual puzzles: We show the puzzle, the solution, an 
+explanation of the solution, common pitfalls, and the underlying concept 
+that the puzzle is intended to teach.
+As you walk around a classroom, you can glance at this guide to quickly learn 
+how to coach a student trying to solve a puzzle and help them understand the 
+underlying concepts. 
+
+--- PDF PAGE 3 ---
+iii
+What is Turing Tumble?
+Turing Tumble is a game where players build mechanical computers powered 
+by marbles to solve logic puzzles. While they play, they learn key computer 
+science concepts and build skills essential to coding. It also helps students 
+learn how computers work at a basic level: how simple switches, connected 
+together in clever ways, can do incredibly smart things. It can be used as a 
+standalone tool to teach how computers work, as a precursor or supplement 
+to coding lessons, or as a helpful manipulative to reinforce programming and 
+mathematical concepts.
+What does Turing Tumble teach?
+Turing Tumble teaches a number of concepts and skills that are fundamental 
+to computers, programming, and digital electronics. It builds skills in 
+computational thinking, logic, algorithm design, critical thinking, debugging/
+troubleshooting, fine motor, spatial reasoning, and persistence. It also teaches 
+concepts including logic gates, truth tables, conditionals, binary, binary 
+operations, and digital circuit design.
+Is this guide useful to you? 
+Please tell us what you think! We’re always looking for ways to make our 
+games better and improve our educator resources. If you find something that 
+works well, that you think others could use, please reach out to us! Send us 
+an email at hello@upperstory.com, or head to our Turing Tumble Community 
+page (community.turingtumble.com) to share your ideas and ask questions.
+
+--- PDF PAGE 4 ---
+iv
+Contents
+Basics for Classroom Use................................................................................................ 1
+How it Works.....................................................................................................................8
+How to Use this Guide.....................................................................................................11
+Computer Logic Lesson #1: How is Turing Tumble a Computer?.........................10
+Computer Logic Lesson #2: Ramps............................................................................14
+Challenge #1: Gravity.................................................................................................................16
+Challenge #2: Re-entry............................................................................................................18
+Challenge #3: Ignition..............................................................................................................20
+Challenge #4: Fusion............................................................................................................... 22
+Computer Logic Lesson #3: Crossovers....................................................................24
+Challenge #5: Entropy.............................................................................................................26
+Challenge #6: Total Internal Reflection............................................................................28
+Challenge #7: Path of Least Resistance...........................................................................30
+Computer Logic Lesson #4: Bits.................................................................................32
+Challenge #8: Depolarization...............................................................................................34
+Challenge #9: Dimers...............................................................................................................36
+Challenge #10: Double Bond.................................................................................................38
+Challenge #11: Selectivity.......................................................................................................40
+Computer Logic Lesson #5: Interceptors.................................................................42
+Challenge #12: Duality - Part 1..............................................................................................44
+Challenge #13: Duality - Part 2.............................................................................................46
+Computer Logic Lesson #6: Conditional Statements............................................48
+Challenge #14: Duality - Part 3............................................................................................ 52
+Challenge #15: Inversion.........................................................................................................54
+Challenge #16: Termination...................................................................................................56
+Challenge #17: Fixed Ratio.....................................................................................................58
+Computer Logic Lesson #7: Logic Gates...................................................................60
+Challenge #18: Entanglement..............................................................................................62
+Computer Logic Lesson #8: Truth Tables................................................................64
+Challenge #19: Entanglement..............................................................................................68
+Challenge #20: Symbiosis.....................................................................................................70
+
+--- PDF PAGE 5 ---
+v
+Computer Logic Lesson #9: Registers......................................................................72
+Challenge #21: Quantum Number....................................................................................... 76
+Challenge #22: Depletion.......................................................................................................80
+Challenge #23: Tetrad.............................................................................................................84
+Challenge #24: Ennead...........................................................................................................86
+Challenge #25: Regular Expression...................................................................................88
+Challenge #26: Nucleus..........................................................................................................90
+Challenge #27: Reflection......................................................................................................92
+Computer Logic Lesson #10: Gears and Gear Bits..................................................94
+Challenge #28: Latch.............................................................................................................100
+Challenge #29: One-Shot Switch...................................................................................... 102
+Challenge #30: Overflow......................................................................................................104
+Resources.......................................................................................................................106
+
+--- PDF PAGE 6 ---
+vi
+<< This page intentionally left blank >>
+
+--- PDF PAGE 7 ---
+1
+Turing Tumble Educator’s Guide 2.8
+Basics for Classroom Use
+Recommended Age
+We recommend Turing Tumble for ages 8 and up.  The puzzle book is laid out 
+so that a student can independently get started and progress at his/her own 
+pace. We find that kids 8-12 are able to get through the first 20-30 puzzles. 
+University students and adults get addicted by puzzle 27, and they are 
+amazed by what a mechanical computer can do by puzzle 35. Younger kids 
+enjoy the first ten and building their own computers.
+Single Player or Partners
+We recommend only one to two students per board. With this game, true 
+understanding happens when students are physically working through the 
+puzzle. You will see your students add pieces and then drag their finger down 
+the board to test their prediction of where the marbles will fall. When you see 
+this happening, you will know they are getting it, but this kind of hands-on 
+learning can’t happen very well in a group of three or more. 
+Puzzle Timing
+In an hour-long class introducing the game, setting up, playing, and cleaning 
+up, most students will have time to solve 4-5 puzzles.
+Independent Learning and Intentional Scaffolding
+Students must keep track of their own progress – it is crucial that they 
+understand each puzzle and don’t try to skip ahead, even if the first puzzles 
+are too easy for them. Each puzzle introduces a new concept, rule, or trick and 
+they’ll find themselves quickly lost if they don’t complete each of the puzzles in 
+turn. We often see students try the first three puzzles, flip to the last puzzle, and 
+think they’ve solved it immediately because they don’t yet know all the rules.
+5-15 minutes each to solve
+10-15 minutes each to solve
+10-20 minutes each to solve
+The remaining puzzles vary greatly from person to person
+Puzzles 1-10:
+Puzzles 11-20:
+Puzzles 21-30:
+
+--- PDF PAGE 8 ---
+Turing Tumble Educator’s Guide 2.8
+2
+Classroom Videos
+Getting Started with Turing Tumble video: 
+https://bit.ly/getting-started-with-turing-tumble
+Students describe how to get started with Turing Tumble, 
+some helpful hints for setting up the game, how to play, and 
+troubleshooting.
+How Turing Tumble is a Computer: 
+https://bit.ly/like-a-computer
+This video explains how Turing Tumble is a mechanical 
+computer and the differences between mechanical computers 
+and their electronic counterparts that most people are familiar 
+with. It shows the inside of an electronic computer and zooms 
+in on the microscopic switches inside the processor that can 
+only be seen with an electron tunneling microscope. Turing 
+Tumble has mechanical switches that players can connect 
+together in clever ways to do smart things. If Turing Tumble 
+were big enough, it could do anything your desktop computer, 
+laptop or cell phone can do.
+Looking inside a computer processor: 
+https://bit.ly/computer-processor
+This video zooms into a computer processor all the way until 
+you can see the individual switches (called “transistors”) inside 
+and the tiny copper wires connecting them together. As it 
+zooms further and further in, you’ll notice the images change 
+from color to black and white. That’s when the creators of the 
+video had to switch from taking pictures with light to taking 
+pictures with electrons, because they’re so much smaller. 
+Promotional Educator Video: 
+https://bit.ly/turing-tumble-edu-video
+This video can be used to promote Turing Tumble within your 
+school, district, and community. 
+
+
+--- PDF PAGE 9 ---
+3
+Turing Tumble Educator’s Guide 2.8
+Practice Guide
+Don’t forget about the Turing Tumble Practice Guide! You can download it 
+for free at upperstory.com/turingtumble/edu/resources. Besides offering all 
+the puzzles in an easy-to-print/copy black and white form, it also contains 
+30 extra “practice puzzles” placed in between the regular ones. The practice 
+puzzles lower the learning curve by easing players into new concepts more 
+gradually.
+Turing Tumble on a Screen
+Online Turing Tumble simulators are great for demonstrating how to use 
+Turing Tumble to a class. You can project a simulator on a screen, build 
+machines on it quickly, and run it right there on screen for your class to watch. 
+Currently we recommend using the following simulators.
+Simulator 1 by Rich Twilton:
+https://bit.ly/tumble-together-simulator
+This simulator looks very similar to the actual game 
+and has the first 30 challenges loaded in the menu for 
+immediate play. It also allows students to share their work 
+remotely as they solve challenges via shared rooms.
+
+Simulator 2 by Jesse Crossen: 
+https://bit.ly/tt-sim
+This simulator looks very similar in appearance to the actual game. It animates 
+marbles falling through it with physics that look just like the real Turing 
+Tumble. You can even make the board larger if you want to make more 
+complicated machines.
+
+Simulator 3 by Lode Vandevenne: 
+https://bit.ly/js-tumble
+This simulator is easy to learn. You’ll be creating little machines in minutes.
+
+
+
+
+--- PDF PAGE 10 ---
+Turing Tumble Educator’s Guide 2.8
+4
+Tips and Tricks
+•	 The legs on the stand can be assembled two ways, but only one way holds 
+the board. If the stand doesn’t hold the board, pull the stand apart, flip one 
+part around and try it in the new configuration. 
+•	 Put the stand and the board INSIDE the box top to keep all the parts and 
+marbles corralled.
+•	 Wait to load the marbles until AFTER game pieces have been added to 
+the board. The process of solving the challenge can cause the board to jostle 
+or the bottom lever to be triggered which can result in the marbles getting 
+released too soon and bouncing all over. 
+•	 Do not load all of the marbles! Load only what the challenge calls for 
+(typically about 8 on each side).
+•	 Trace the path of the marble with a finger to find out where the pieces 
+should go. If the finger path runs into one of the white pegs on the board, add 
+another piece. 
+•	 Marbles should never free-fall. If they do, place the parts on the board to 
+guide them all the way down.
+•	 Use the “emergency stop” by holding up the levers at the bottom of the 
+board to catch the marbles from triggering more.
+•	 The black tray that holds the legs may be placed under the box to preserve 
+space.
+•	 Clean-up Tips:
+•	 Make sure each piece is returned to its spot. 
+•	 Insert the book on top of the game pieces with the binding in the wedge.
+•	 Place the legs in the tray and set this on top of the pieces and book. 
+•	 Place the white board on the very top. 
+
+--- PDF PAGE 11 ---
+5
+Turing Tumble Educator’s Guide 2.8
+How it Works
+The game board releases one marble at a time from the top:
+Each marble falls down the board and when it reaches the bottom, it pushes 
+down one of two black flippers at the bottom that release another marble. 
+Press here to start the 
+machine...
+...and a marble is 
+released from the top.
+If it pushes down the left 
+flipper, a blue marble is 
+released.
+If it pushes down the right 
+flipper, a red marble is 
+released.
+
+--- PDF PAGE 12 ---
+Turing Tumble Educator’s Guide 2.8
+6
+Players add logic by putting six different types of parts onto the board:
+The ramp directs marbles to the right or to the left, 
+depending on how you place it on the board. They are 
+reversible pieces, but once you've put them on the board, 
+the counterweights turn them to their original position after 
+a marble goes through them. The ramps are like electrical 
+wires in a computer and the marbles are like electricity.
+
+The crossover acts like two wires crossing over each other 
+without touching each other, sort of like how overpasses 
+allow cars to drive over other roads.
+
+The bit adds logic. It stores information by pointing to 
+the right or to the left. These two states (left or right) can 
+represent the statements False or True, or 0 or 1 like is 
+often used in computer science. A marble passing through 
+a bit changes its direction and therefore changes the 
+information it stores. The bit becomes more and more 
+important as the puzzles progress.
+When the computer’s objective is complete, the interceptor 
+can be used to stop the computer from releasing any more 
+marbles.
+Like the bit, the gear bit stores information by pointing 
+right or left, but when a gear bit is flipped, it can also flip 
+other gear bits connected to it by gears. 
+The gears and gear bits are mind-bending, but they add 
+a whole new level of functionality to the board. They 
+also make the computer “Turing-complete,” which means 
+that if the board was big enough, it could do anything an 
+electronic computer could do!
+Every kit comes with a small bag of black washers. These 
+should be added behind the gear bits when only two gear 
+bits are connected together to increase friction. However, 
+if more than two gear bits are connected, the washers 
+shouldn’t be used. 
+RAMP
+CROSSOVER
+BIT
+INTERCEPTOR
+GEARS AND GEAR BITS
+
+--- PDF PAGE 13 ---
+7
+Turing Tumble Educator’s Guide 2.8
+Turing Tumble comes with a book of 60 puzzles. They start out easy and 
+become steadily more challenging. As you move through the puzzle book, 
+new types of parts are unlocked. For example, you start by just using the 
+ramp pieces, but after four puzzles, the crossover is unlocked. Each puzzle 
+leads the player to discover new concepts that can be applied to more com­
+plicated puzzles later on. 
+There is also a story woven into the puzzles to give them context and to 
+hopefully make them more interesting for some students. Each puzzle 
+brings Alia the space engineer closer to rescue from a seemingly deserted 
+planet.
+
+--- PDF PAGE 14 ---
+Turing Tumble Educator’s Guide 2.8
+8
+How to Use this Guide
+Each challenge is listed with the page number for quick reference. The puzzle 
+page is shown at the top with the solution next to it. Some players’ questions 
+can be answered with a quick glance at the solution. 
+Computer logic lessons 
+In this guide, “Computer Logic Lessons” are positioned before students begin 
+using a new part or before they learn a new concept. It is organized this way 
+so that educators can anticipate what will be learned. However, you may find 
+it easier to teach the lesson after the students have had some practice with 
+the parts.
+Puzzle-specific educator resources
+Each challenge has its own teaching and learning concepts listed below the 
+visuals of the challenge and solution. An educator can flip to any challenge 
+and find guidance for helping students with the specific skills and hang-ups 
+that might be encountered. 
+You’ll quickly notice that there is repetition in the educator resources for each 
+puzzle. For example, challenges five, six, and seven all teach students how 
+to use the crossover. Therefore, in the educator resources for each challenge, 
+you’ll see many of the same points discussed. This allows you, as a teacher, to 
+consult only the educator resources for the relevant puzzle, without having to 
+look back at the educator resources for previous puzzles to understand it. 
+•	 What players learn about computer logic
+In this section, you’ll find quick bullets about the connection between the 
+puzzle and what’s going on inside a computer. The Computer Logic Lessons 
+give a more thorough description of the connection.
+•	 What players learn about the game
+This section shows what players learn about the game through this puzzle. It 
+could be a functional aspect of the game (like how the board or parts work), 
+something to notice about the puzzle book or the challenges themselves, or a 
+
+--- PDF PAGE 15 ---
+9
+Turing Tumble Educator’s Guide 2.8
+trick the player is learning that will need to be reused later on. 
+•	 Possible hang-ups
+In this section, hints and tricks are included to help students complete the 
+challenges. These are not exhaustive, but highlight the logic steps we’ve 
+seen players struggle with.  
+As you use this Educator Guide, we would appreciate your input so that we 
+can improve this guide and add content for future use. 
+
+--- PDF PAGE 16 ---
+Turing Tumble Educator’s Guide 2.8
+Computer Logic Lesson #1: How is Turing Tumble a Computer?
+Computer Logic Lesson #1: How is Turing Tumble a 
+Computer?
+If you’re like most people, you’re probably wondering how on earth this 
+marble contraption could possibly be a computer. It has no screen, no 
+keyboard, and no electronics. How is it anything like a computer?
+To start, let’s look at what’s inside a regular desktop computer.
+There are all sorts of things in there like circuit boards, fans, lights, and 
+motors, but those aren’t the smart parts of a computer. In fact, they’re 
+only there to support the computer’s processor – a little rectangular chip 
+under a big fan that cools it down. 
+   
+10
+
+--- PDF PAGE 17 ---
+Turing Tumble Educator’s Guide 2.8
+Computer Logic Lesson #1: How is Turing Tumble a Computer?
+The computer processor (or central processing unit - CPU) is where all the 
+“smarts” in a computer happen. It’s the part that runs programs and does 
+math and logic. The processor does a lot of hard work when the computer 
+is running and it generates a lot of heat in the process. The fan on top of it 
+is there to cool it down so that it doesn’t overheat.
+This is what this computer’s processor looks like when it’s taken out:
+         
+The goopy stuff on top of the processor is thermal paste. It makes it 
+easier for heat to transfer out of the chip. If we clean off the thermal 
+paste, it looks like this on top and bottom:
+         
+On the bottom of the processor, you can see over a thousand little pins 
+sticking out. The pins connect the inside of the processor to things on the 
+outside. Some pins are inputs – they send information into the processor 
+or simply provide it power. Other pins are outputs – the processor uses 
+the outputs to send information to the rest of the computer. For example, 
+the computer’s keyboard would provide input to a processor while a 
+screen would show information coming from the output of a processor.
+What’s inside a computer processor?
+Switches. Lots and lots of switches. Billions of switches. The switches 
+are so small that you can’t even see them with your eye. In fact, they’re 
+so small that you couldn’t even see them through a microscope because 
+the wavelength of visible light itself is too big. These days, the switches 
+11
+
+--- PDF PAGE 18 ---
+Turing Tumble Educator’s Guide 2.8
+in a computer processor are about a thousand times smaller than the 
+thickness of a human hair.
+The following video zooms into a computer processor all the way until 
+you can see the individual switches (called “transistors”) inside and the 
+tiny copper wires connecting them together. As it zooms further and 
+further in, you’ll notice the images change from color to black and white. 
+That’s when the creators of the video had to switch from taking pictures 
+with light to taking pictures with electrons, because they’re so much 
+smaller. You can see the video here:
+https://bit.ly/computer-processor
+How do switches do anything smart?
+When you hear “switch” you probably think about the switch on your 
+wall that turns the light on and off, and it seems impossible to think that 
+switches like that could do anything other than turn stuff on and off.
+And you’d be right about your light switch. It can’t do anything smart. 
+Switches in computers, however, are not limited to "on" or "off" like light 
+switches; their state (on or off) also effects the way other switches in their 
+neighborhood behave. In other words, computer switches can do smart 
+stuff because they are able to flip other switches. In order for switches to 
+be able to do smart things, the key is that they must be able to be flipped 
+by the same type of energy that they control. A light switch can’t flip 
+other switches because it takes mechanical energy to flip it, but it controls 
+electrical energy. You can’t connect the output of one light switch to the 
+input of another.
+In Turing Tumble, the switches (that is, the blue and purple parts we call 
+“bits” and “gear bits”) are flipped by mechanical energy, and they also 
+control mechanical energy: They’re flipped by a marble rolling over them, 
+and they control whether a marble rolls off their left or right side.
+Computer Logic Lesson #1: How is Turing Tumble a Computer?
+12
+
+--- PDF PAGE 19 ---
+Turing Tumble Educator’s Guide 2.8
+Computer Logic Lesson #1: How is Turing Tumble a Computer?
+Switches in a computer (transistors) are flipped by electrical energy and 
+also control electrical energy. The image above is of a relatively large, 
+individual transistor that’s about the size of the nail on your pinky finger. 
+This is how it works: pin 1 controls the flow of electricity from pin 2 to pin 
+3. If electricity is being pushed into pin 1, electricity can flow from pin 2 to 
+pin 3. Otherwise, it can’t.
+Since the switches in computer processors and in Turing Tumble are 
+flipped by the same type of energy as they control, it’s possible for one 
+switch to cause another switch to flip. As you work through the puzzles 
+in Turing Tumble, you’ll discover how this one, simple property makes it 
+possible to build machines of limitless capability!
+How Turing Tumble is a Computer Video:
+https://bit.ly/like-a-computer
+13
+
+--- PDF PAGE 20 ---
+Turing Tumble Educator’s Guide 2.8
+Computer Logic Lesson #2: Ramps
+In these first challenges, the only part used is the “ramp.” It looks like this:
+The purpose of the ramp is to make marbles always go in a certain direction. 
+If you put it on the board pointing to the left, the marbles will go left. If 
+you put it on the board pointing to the right, the marbles will go to the right. 
+What do electronic ramps look like in an electronic computer? 
+In an electronic computer, like a laptop, desktop, or smart phone, wires 
+are used for the same purpose as ramps. Wires direct electricity where 
+it should go, sort of like a pipe for electrons. Sometimes wires direct 
+electricity to a switch or another electrical component, or sometimes they 
+just lead to more wires that branch off. 
+There are even tiny wires in microchips like this one:
+      
+Photo of a Motorola 68040 processor taken by 
+Konstantin Lanzet. Shared under CC BY-SA 3.0 license 
+at https://en.wikipedia.org/wiki/Motorola_68040.
+    
+Photo of a decapped Motorola 68040 processor taken 
+by Gregg M. Erickson. Shared under CC BY 3.0 license at 
+https://en.wikipedia.org/wiki/Motorola_68040.
+The picture on the left shows a microchip like you might see inside your 
+computer. Microchips are just tiny electrical circuits, covered in plastic or 
+ceramic to keep them safe. On the right is the same microchip, but without 
+Computer Logic Lesson #2: Ramps
+14
+
+--- PDF PAGE 21 ---
+Turing Tumble Educator’s Guide 2.8
+Computer Logic Lesson #2: Ramps
+the protective coating.
+If you zoom in far enough, you can see the tiny copper wires connecting 
+different parts of the electrical circuit.
+This scanning electron microscope image of 
+a decapped chip was used with permission 
+from DELTA Microelectronics (https://asic.
+madebydelta.com)
+In Turing Tumble, ramps are like wires and the marbles are like electricity. 
+When you place ramps on the board, you are making the paths the 
+marbles can travel, just like how wires make the paths through which 
+electricity can travel.
+15
+
+--- PDF PAGE 22 ---
+Turing Tumble Educator’s Guide 2.8
+16
+Challenge #1: Gravity
+(page 15 in puzzle book)
+23
+x 8
+x 8
+x 4
+PRESS
+TO
+START
+x 8
+x 8
+PRESS
+TO
+START
+What players learn about computer logic:
+•	 The only part used in this challenge is the ramp. Ramps are just like wires 
+in an electrical circuit and the marbles are like electricity. When players 
+place ramps on the board, they are setting up paths that marbles can travel 
+through, just like how wires set up paths that electricity can follow.
+What players learn about the game: 
+•	 Familiarity with the layout of the puzzles: required output, starting setup 
+and available parts.
+•	 The levers on the bottom are connected to the marble release on top.
+•	 Practice putting the ramps on the board. Players will discover that the 
+ramps are reversible and can go on the board in either direction, depending 
+on where they want to route the marbles. 
+Explanation: The four ramps complete the path from 
+the top of the board to the bottom of the board. 
+Remember that it’s against the rules to allow marbles 
+to fall freely for any distance! When a marble rolls off 
+a part, it must immediately land on the next part.
+Objective: Make all of the blue marbles (and only the 
+blue marbles) reach the end.
+Required output:
+Challenge 1: Gravity
+Challenge 1 Solution
+Starting setup
+Available parts
+
+--- PDF PAGE 23 ---
+17
+Turing Tumble Educator’s Guide 2.8
+Possible hang-ups:
+•	 Player’s machines cannot let marbles drop freely for any distance. Marbles 
+might be bouncing unpredictably because there aren’t parts leading all the 
+way down or the ramps are facing the wrong direction. 
+•	 Starting the machine: Once the machine is in motion, players cannot touch 
+it or otherwise interfere with its operation. Press the start button down 
+once to start the machine. Once a marble reaches the bottom, it will push a 
+lever to trigger the next marble. 
+•	 Putting the ramps on the board: the ramps are reversible! Note which 
+direction they face before putting them on the board. 
+
+--- PDF PAGE 24 ---
+Turing Tumble Educator’s Guide 2.8
+18
+Challenge #2: Re-entry
+(page 16 in puzzle book)
+23
+x 8
+x 8
+x 5
+PRESS
+TO
+START
+23
+x 8
+x 8
+PRESS
+TO
+START
+x 8
+x 8
+PRESS
+TO
+START
+What players learn about computer logic:
+•	 The only part used in this challenge is the ramp. Ramps are just like wires 
+in an electrical circuit and the marbles are like electricity. When players 
+place ramps on the board, they are setting up paths that marbles can travel 
+through, just like how wires set up paths that electricity can follow.
+What players learn about the game: 
+•	 Familiarity with the layout of the puzzles: required output, starting setup 
+and available parts.
+•	 The levers on the bottom are connected to the marble release on top.
+•	 Practice putting the ramps on the board. They will discover that the ramps 
+are reversible and can go on the board in either direction, depending on 
+where players want to route the marbles. 
+Explanation: The starting setup leads the marbles over 
+onto the right side. That’s a problem! If the marbles 
+hit the right lever, they’d release red marbles, but 
+you’re only supposed to let the blue marbles get to the 
+bottom.
+To solve this puzzle, you have to use the 5 ramps to 
+lead marbles back over to the left lever.
+Objective: Make all of the blue marbles (and only the 
+blue marbles) reach the end.
+Required output:
+Challenge 2: Re-entry
+Challenge 2 Solution
+Starting setup
+Available parts
+
+--- PDF PAGE 25 ---
+19
+Turing Tumble Educator’s Guide 2.8
+Possible hang-ups:
+•	 Players might initially place ramps so that the marble triggers the right 
+lever. This will be a good time to be sure they’ve looked at the back of 
+the board to see how the lever on the bottom is connected to the marble 
+release on top. Encourage them to place the ramps so that the marbles are 
+guided back over to the blue side.
+
+--- PDF PAGE 26 ---
+Turing Tumble Educator’s Guide 2.8
+20
+Challenge #3: Ignition
+(page 17 in puzzle book)
+x 8
+x 8
+x 6
+PRESS
+TO
+START
+x 8
+x 8
+PRESS
+TO
+START
+What players learn about computer logic:
+•	 The only part used in this challenge is the ramp. Ramps are just like wires 
+in an electrical circuit and the marbles are like electricity. When players 
+place ramps on the board, they are setting up paths that marbles can travel 
+through, just like how wires set up paths that electricity can follow. 
+What players learn about the game: 
+•	 Players don’t need to press the right lever to get red marbles to the bottom. A blue 
+marble can trigger the marble release on the red side, allowing a red marble to fall. 
+Possible hang-ups:
+•	 It can be tricky for players to figure out how to release one blue marble and 
+all the rest red. Remind them that the blue will release when they press the 
+start button, and they can determine what color marble comes next based 
+on how they direct the marbles with the ramps. 
+Explanation: The ramps bring the paths of the red and 
+blue marbles into one path that leads to the right lever. 
+After the first blue marble, all the rest are red.
+Objective: Release one blue marble and then all of the 
+red marbles.
+Required output:
+Challenge 3: Ignition
+Challenge 3 Solution
+Starting setup
+Available parts
+
+--- PDF PAGE 27 ---
+21
+Turing Tumble Educator’s Guide 2.8
+<< This page intentionally left blank >>
+
+--- PDF PAGE 28 ---
+Turing Tumble Educator’s Guide 2.8
+22
+Challenge #4: Fusion
+(page 18 in puzzle book)
+x 8
+x 8
+x 13
+PRESS
+TO
+START
+x 8
+x 8
+PRESS
+TO
+START
+What players learn about computer logic:
+•	 The only part used in this challenge is the ramp. Ramps are just like wires 
+in an electrical circuit and the marbles are like electricity. When players 
+place ramps on the board, they are setting up paths that marbles can travel 
+through, just like how wires set up paths that electricity can follow. 
+What players learn about the game: 
+•	 The start button can be placed on either lever. In this challenge, it needs to 
+go on the right side so that a red marble is released first. 
+•	 As noted in the talk bubble, players can sometimes solve challenges 
+with fewer parts than are listed in the “Available parts” section. You can 
+challenge students who are finding the introductory puzzles easy to create 
+the most elegant and simple solution. 
+Explanation: The paths need to come together, but 
+they start far apart! Use the ramps to bring the paths 
+together and lead all of the marbles to the left side.
+Objective: Release one red marble and then all of the 
+blue marbles.
+Required output:
+Challenge 4: Fusion
+Challenge 4 Solution
+Starting setup
+Available parts
+
+--- PDF PAGE 29 ---
+23
+Turing Tumble Educator’s Guide 2.8
+Possible hang-ups:
+•	 It can be tricky for players to figure out how to release one red marble and 
+all the rest blue. Remind them that the red will release when they press the 
+start button, and they can determine what color marble comes next based 
+on how they direct the marbles with the ramps. 
+•	 There are many ways a player can lay out the ramps to solve this 
+challenge. The example on the top is just one solution.
+
+--- PDF PAGE 30 ---
+Turing Tumble Educator’s Guide 2.8
+Computer Logic Lesson #3: Crossovers
+In puzzle 5, the “crossover” part is introduced. It looks like this:
+The purpose of the crossover is to let the paths of the marbles cross over 
+each other. A marble coming in the left side exits on the right. A marble 
+coming in the right side exits on the left.
+What do crossovers look like in an electronic computer? 
+The crossover acts like two wires crossing over each other, but not 
+touching each other, sort of like how overpasses allow cars to drive over 
+other roads. Electricity can move along each of the wires, but the crossing 
+paths don’t interfere with each other. It would be impossible to create 
+complicated circuits without wires that cross. Because the crossover 
+allows the paths of the marbles to cross over each other without 
+interfering with the path of the next marble, they are performing one 
+small component of what happens in a circuit board.
+Computer Logic Lesson #3: Crossovers
+24
+
+--- PDF PAGE 31 ---
+Turing Tumble Educator’s Guide 2.8
+Computer Logic Lesson #3: Crossovers
+Circuit boards are used in electronic computers to keep all the wire 
+connections sturdy, safe, and fixed in place. A circuit board is made of 
+a hard, flat material. On the surface is a thin layer of copper, etched 
+into a carefully designed pattern of wires that connect the electronic 
+components on the board. A circuit board is comprised of many more 
+elements than just crossing wires. Circuit boards house transistors, CPUs, 
+and much more. Below is an example of a circuit board. You can see the 
+copper wires in between all the electronic parts:
+If the wires on a circuit board are all on a flat surface, how do they cross 
+over each other without touching? Most circuit boards actually have 
+multiple layers of copper wires sandwiched between insulators. Little 
+holes, called “vias,” connect wires in the various layers of copper. In the 
+picture above, you can see lots of little vias connecting the various layers 
+of the circuit board, allowing the copper wires to cross over and under 
+each other without touching. Even on a one layer circuit board, wires can 
+cross using "jumper wires." A jumper wire is a wire that is soldered on top 
+of a circuit board to hop over other wires on the circuit board.
+In computer chips, there are also multiple layers of tiny wires that cross 
+over and under each other.
+25
+
+--- PDF PAGE 32 ---
+Turing Tumble Educator’s Guide 2.8
+26
+Challenge #5: Entropy
+(page 21 in puzzle book)
+x 8
+x 8
+x 9
+PRESS
+TO
+START
+x 8
+x 8
+PRESS
+TO
+START
+What players learn about computer logic:
+•	 The crossover is a mechanical version of two wires crossing over each other 
+(but not touching). In electrical circuits wires are used to connect parts 
+throughout the circuit board. Wires weave around, over, and under each 
+other to route electricity where it needs to go.
+•	 Circuit boards are usually made of several layers of wires. Wires can cross 
+each other if they are on separate layers. Even on a one-layer circuit 
+board, wires can cross using “jumper wires.” A jumper wire is a wire that 
+is soldered on top of a circuit board to hop over other wires on the circuit 
+board. 
+What players learn about the game: 
+•	 Practice putting the new crossover pieces on the board. 
+•	 How the crossovers work: a marble that goes in on the left side will cross 
+over and exit out the right. A marble that goes in on the right side will cross 
+Explanation: This time, you have to create your own 
+path for the red marbles to get over to the left lever! 
+You must use the crossover where your path crosses 
+the path of the blue marbles.
+Objective: Make the pattern blue, red, blue, red, 
+blue, red...
+Required output:
+Challenge 5: Entropy
+Challenge 5 Solution
+Starting setup
+Available parts
+
+--- PDF PAGE 33 ---
+27
+Turing Tumble Educator’s Guide 2.8
+over and exit out the left. 
+•	 Solidifies their understanding of the levers at the bottom and marble 
+releases at the top. 
+Possible hang-ups:
+•	 In this puzzle, the start button goes back on the left lever. 
+•	 When putting the crossover pieces on the board, the smile on the crossover 
+fits a bit snugly into the open smile on the board. It needs to be pushed all 
+the way onto the board. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+•	 Since this is a mechanical computer, it makes a difference if the parts are 
+placed correctly. Players will start to notice if they didn’t slide the parts all 
+the way onto the board because the marbles will be a little less predictable. 
+
+--- PDF PAGE 34 ---
+Turing Tumble Educator’s Guide 2.8
+28
+Challenge #6: Total Internal Reflection
+(page 22 in puzzle book)
+x 8
+x 8
+x 2
+x 5
+PRESS
+TO
+START
+x 8
+x 8
+PRESS
+TO
+START
+What players learn about computer logic:
+•	 The crossover is a mechanical version of two wires crossing over each other 
+(but not touching). In electrical circuits wires are used to connect parts 
+throughout the circuit board. Wires weave around, over, and under each 
+other to route electricity where it needs to go.
+•	 Circuit boards are usually made of several layers of wires. Wires can 
+cross each other if they are on separate layers. Even on a one layer circuit 
+board, wires can cross using “jumper wires.” A jumper wire is a wire that 
+is soldered on top of a circuit board to hop over other wires on the circuit 
+board. 
+What players learn about the game: 
+•	 This challenge requires the same output as challenge five, but it is a more 
+simple and elegant solution. 
+•	 Practice putting the crossover pieces on the board. 
+Explanation: The paths for the red and blue marbles 
+cross over each other five times. Crossovers must be 
+placed at each point where they cross.
+In the last two puzzles, the paths crossed each other 
+one and three times. One, three, and five are all odd 
+numbers. What would happen if the paths crossed 
+over each other an even number of times?
+Objective: Make the pattern blue, red, blue, red, 
+blue, red...
+Required output:
+Challenge 6: Total Internal Reflection
+Challenge 6 Solution
+Starting setup
+Available parts
+
+--- PDF PAGE 35 ---
+29
+Turing Tumble Educator’s Guide 2.8
+•	 Solidifies their understanding of the levers at the bottom and marble 
+releases at the top. 
+Possible hang-ups:
+•	 When putting the crossover pieces on the board, the smile on the crossover 
+fits a bit snugly into the open smile on the board. It needs to be pushed all 
+the way onto the board. 
+•	 Since this is a mechanical computer, it makes a difference if the parts are 
+placed correctly. Players will start to notice if they didn’t slide the parts all 
+the way onto the board because the marbles will be a little less predictable.
+
+--- PDF PAGE 36 ---
+Turing Tumble Educator’s Guide 2.8
+30
+Challenge #7: Path of Least Resistance
+(page 23 in puzzle book)
+x 8
+x 8
+x 6
+PRESS
+TO
+START
+x 8
+x 8
+PRESS
+TO
+START
+What players learn about computer logic:
+•	 The crossover is a mechanical version of two wires crossing over each other 
+(but not touching). In electrical circuits wires are used to connect parts 
+throughout the circuit board. Wires weave around, over, and under each 
+other to route electricity where it needs to go.
+•	 Circuit boards are usually made of several layers of wires. Wires can 
+cross each other if they are on separate layers. Even on a one layer circuit 
+board, wires can cross using “jumper wires.” A jumper wire is a wire that 
+is soldered on top of a circuit board to hop over other wires on the circuit 
+board. 
+What players learn about the game: 
+•	 Players don’t have to make the marbles go through every part on the 
+board. Once in a while, the challenges have parts in the starting setup that 
+do not need to be used.  
+Explanation: This one is a little trickier than the last 
+challenge. At the top, you must make a choice on 
+whether to go to the left or to the right. You must go to 
+the left this time.
+Objective: Create a path for the blue marbles to reach 
+the output with only 6 ramps.
+Required output:
+Challenge 7: Path of Least Resistance
+Challenge 7 Solution
+Starting setup
+Available parts
+
+--- PDF PAGE 37 ---
+31
+Turing Tumble Educator’s Guide 2.8
+Possible hang-ups:
+•	 This challenge has parts on the starting setup that are not meant to be 
+used. Encourage the players to think of the route that takes advantage of 
+as many of the crossovers on the board as possible.
+
+--- PDF PAGE 38 ---
+Turing Tumble Educator’s Guide 2.8
+Computer Logic Lesson #4: Bits
+In puzzle 8, the “bit” part is introduced. It looks like this:
+These bits are mechanical versions of the electronic switches inside 
+computer chips. Electronic switches allow you to choose which way 
+electricity will go based on how you set them. These mechanical switches 
+allow you to choose which way the marble will roll off based on which 
+direction they are pointed. 
+You often get to choose which direction the bits point when you start your 
+machine: Should it point left or right? If you point the bit to the left, the 
+next marble will fall to the right. If you point the bit to the right, the next 
+marble will fall to the left. 
+You’ll notice that bits in Turing Tumble are a little trickier than electronic 
+bits because a marble passing through them changes the direction of the 
+bit for the next marble that falls. They don't have a counterweight (like 
+the ramps do) to put them back in their original position.
+What do bits look like in an electronic computer? 
+The most basic type of electronic switch in a computer is called a 
+“transistor.” Transistors are usually extremely tiny, but the one in the 
+picture below is encased inside a relatively big, plastic package to make it 
+easy to handle (it’s still only about the size of a pinky fingernail):
+Computer Logic Lesson #4: Bits
+32
+
+--- PDF PAGE 39 ---
+Turing Tumble Educator’s Guide 2.8
+Computer Logic Lesson #4: Bits
+See how there are three wires coming out? One of the wires is a control 
+wire. By changing the force of electricity applied to that wire (i.e., the 
+“voltage”), it controls how much electricity can flow in through the second 
+wire and out through the third wire.
+That’s cool, but how can a switch like that store information? It turns out 
+that if you take four of those transistors and connect them together in 
+a certain way, you can create a little circuit that remembers if it’s been 
+switched on or off, even when you stop pushing electricity into the control 
+wire. That circuit is called a “flip-flop.” It’s one of the most important 
+building blocks of a computer. Billions and billions of flip-flops are used to 
+store information in computer memory.
+What do bits look like in a programming language? 
+When bits are used to store information, they are like variables in 
+a programming language. Of course, one bit doesn’t store much 
+information, just a 1 or 0. But when you combine multiple bits into one 
+variable, they can represent numbers, letters, or...anything else.
+Bits also function as the most fundamental programming command of all: 
+the ‘if’ statement. You could think of a single bit like this:
+If (bit.direction = right) Then
+	 marble.send_left()
+Else
+	 marble.send_right()
+33
+
+--- PDF PAGE 40 ---
+Turing Tumble Educator’s Guide 2.8
+34
+Challenge #8: Depolarization
+(page 26 in puzzle book)
+x 8
+x 8
+x 14
+PRESS
+TO
+START
+x 8
+x 8
+PRESS
+TO
+START
+What players learn about computer logic:
+•	 Bits are mechanical versions of the electrical switches inside computers. In 
+computers, the electrical switches determine the path for electricity to flow. 
+In Turing Tumble, the direction of a bit determines which way a marble 
+will fall. If a bit is pointed to the left, the marble will fall to the right. If a bit 
+is pointed to the right, the marble will fall to the left. However, the bits in 
+Turing Tumble are a little more tricky than computer chip switches because 
+they change direction every time a marble runs over them.
+What players learn about the game: 
+•	 The starting position of the bit is very important. If a bit is pointed left, the 
+marble will fall right. If the bit is pointed right, the marble will fall to the left. 
+In this challenge, players must choose the starting position of the bit.
+•	 When a marble goes through the bit, the bit stays pointed in the new 
+direction. This is in contrast to the ramps which have a counterweight that 
+Explanation: A bit is used to alternate the color of the 
+marbles released.
+Objective: Make the pattern blue, red, blue, red, 
+blue, red...
+Required output:
+Challenge 8: Depolarization
+Challenge 8 Solution
+Starting setup
+Available parts
+
+--- PDF PAGE 41 ---
+35
+Turing Tumble Educator’s Guide 2.8
+turns them back to their original position.  
+Possible hang-ups:
+•	 The symbol of the bit in the “Starting setup” shows it pointing up, but with 
+two curved arrows over it pointing to the left and right. That indicates that 
+the player must choose the starting direction the bit points. 
+•	 Encourage players to run their finger down the parts and watch how the 
+counterweight of the ramps work in contrast to the bit turning and staying 
+pointed in the new direction.
+
+--- PDF PAGE 42 ---
+Turing Tumble Educator’s Guide 2.8
+36
+Challenge #9: Dimers
+(page 27 in puzzle book)
+x 10
+x 10
+x 18
+PRESS
+TO
+START
+x 10
+x 10
+PRESS
+TO
+START
+What players learn about computer logic:
+•	 Bits are mechanical versions of the electrical switches inside computers. In 
+computers, the electrical switches determine the path for electricity to flow. 
+In Turing Tumble, the direction of a bit determines which way a marble 
+will fall. If a bit is pointed to the left, the marble will fall to the right. If a bit 
+is pointed to the right, the marble will fall to the left. However, the bits in 
+Turing Tumble are a little more tricky than computer chip switches because 
+they change direction every time a marble runs over them. 
+What players learn about the game: 
+•	 The starting position of the bit is very important. In this challenge, the 
+starting position of the bit is chosen for the player: it must point to the right. 
+Since the bit is pointed right, the marble will fall to the left. 
+•	 When a marble goes through the bit, the bit stays pointed in the new 
+direction. This is in contrast to the ramps which have a counterweight that 
+Explanation: The bit makes every other blue marble 
+release a red marble, but every red marble releases a 
+blue marble.
+Do you see how the bit splits the path of the blue 
+marbles to go in two directions? This is very important 
+in the coming puzzles!
+Objective: Make the pattern blue, blue, red, blue, 
+blue, red...
+Required output:
+Challenge 9: Dimers
+Challenge 9 Solution
+Starting setup
+Available parts
+
+--- PDF PAGE 43 ---
+37
+Turing Tumble Educator’s Guide 2.8
+turns them back to their original position.
+•	 The starting setup also indicates how many marbles should start on top. 
+This is the first challenge that uses ten of each instead of eight. 
+•	 The bit and crossover, working together, allow for a more complicated 
+pattern because you are able to route the marbles three different directions 
+as they fall from the top. 
+Possible hang-ups:
+•	 The symbol of the bit in the “Starting setup” shows it pointing to the 
+right. Players do NOT get to choose the starting position of the bit in this 
+challenge. It must be pointed right to start.
+•	 This is the first time players are using the bit and crossover together. It 
+might take a moment to think about the path the marble will go when 
+the bit is pointed right (starting position) versus when it is pointing left. 
+Encourage players to use their fingers to trace the path the marbles will 
+take.
+
+--- PDF PAGE 44 ---
+Turing Tumble Educator’s Guide 2.8
+38
+Challenge #10: Double Bond
+(page 28 in puzzle book)
+x 8
+x 8
+x 22
+PRESS
+TO
+START
+x 8
+x 8
+PRESS
+TO
+START
+What players learn about computer logic:
+•	 Bits are mechanical versions of the electrical switches inside computers. In 
+computers, the electrical switches determine the path for electricity to flow. 
+In Turing Tumble, the direction of a bit determines which way a marble 
+will fall. If a bit is pointed to the left, the marble will fall to the right. If a bit 
+is pointed to the right, the marble will fall to the left. However, the bits in 
+Turing Tumble are a little more tricky than computer chip switches because 
+they change direction every time a marble runs over them. 
+What players learn about the game: 
+•	 The starting position of the bit is very important. In this challenge, the 
+starting positions of the bits are chosen for the player. 
+•	 When a marble goes through the bit, the bit stays pointed in the new 
+direction. This is in contrast to the ramps which have a counterweight that 
+turns them back to their original position. 
+Explanation: This time, there are bits in the path of 
+both the red and blue marbles. The bits cause only 
+every other marble to cross to the other side of the 
+board.
+Objective: Make the pattern blue, blue, red, red, blue, 
+blue, red, red…
+Required output:
+Challenge 10: Double Bond
+Challenge 10 Solution
+Starting setup
+Available parts
+
+--- PDF PAGE 45 ---
+39
+Turing Tumble Educator’s Guide 2.8
+•	 The starting setup also indicates how many marbles should start on top. 
+This challenge has players go back to using eight of each. 
+•	 Two bits allow for a more complicated pattern because players are able to 
+route the marbles four different directions as they fall from the top. 
+Possible hang-ups:
+•	 The symbols of the bit in the “Starting setup” shows one pointing right and 
+one pointing left. Players do NOT get to choose the starting position of the 
+bit in this challenge. 
+•	 While there are four paths for marbles at the top, players only need two 
+paths once they get to the bottom: one path to trigger the left (blue) lever 
+and one path to trigger the right (red) lever.
+
+--- PDF PAGE 46 ---
+Turing Tumble Educator’s Guide 2.8
+40
+Challenge #11: Selectivity
+(page 29 in puzzle book)
+23
+x 0
+x 2
+x 15
+PRESS
+TO
+START
+1
+2
+3
+4
+5
+23
+x 0
+x 2
+PRESS
+TO
+START
+1
+2
+3
+4
+5
+x 0
+x 2
+PRESS
+TO
+START
+1
+2
+3
+4
+5
+What players learn about computer logic:
+•	 Bits are mechanical versions of the electrical switches inside computers. In 
+computers, the electrical switches determine the path for electricity to flow. 
+In Turing Tumble, the direction of a bit determines which way a marble 
+will fall. If a bit is pointed to the left, the marble will fall to the right. If a bit 
+is pointed to the right, the marble will fall to the left. However, the bits in 
+Turing Tumble are a little more tricky than computer chip switches because 
+they change direction every time a marble runs over them.
+What players learn about the game: 
+•	 The starting setup also indicates how many marbles should start on top. 
+This challenge has players only using two blue marbles. 
+•	 The starting position of the bit is very important. If a bit is pointed left, the 
+marble will fall right. If the bit is pointed right, the marble will fall to the left. 
+In this challenge, players choose the starting position of the top bit. The 
+Explanation: The top bit splits the path of the blue 
+marbles. One path leads to bit 2 and the other path 
+leads to bit 5.
+Objective: Flip bits 2 and 5 to the right.
+Challenge 11: Selectivity
+Challenge 11 Solution
+Starting setup
+Available parts
+
+--- PDF PAGE 47 ---
+41
+Turing Tumble Educator’s Guide 2.8
+starting position of bits 1 through 5 is left. 
+•	 Players don’t have to make the marbles go through every part on the 
+board. 
+Possible hang-ups:
+•	 The starting setup also indicates how many marbles should start on top. 
+This challenge has players only using two blue marbles. 
+•	 This challenge has parts in the starting setup that marbles will never go 
+through.

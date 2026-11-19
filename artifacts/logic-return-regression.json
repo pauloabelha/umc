@@ -1,0 +1,129 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "mode": "gpu",
+      "gate": "or",
+      "scale": 1,
+      "a": 1,
+      "b": 1,
+      "passed": true,
+      "laps": 8,
+      "time": 144.21666666666667,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.133333333333333,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.233333333333334,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.35,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 4,
+          "time": 72.26666666666667,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 5,
+          "time": 90.5,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 6,
+          "time": 108.46666666666667,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 7,
+          "time": 126.3,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 8,
+          "time": 144.21666666666667,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

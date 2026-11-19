@@ -1,0 +1,33 @@
+{
+  "name": "universal-marble-computer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "demo": "node examples/straight-track.js",
+    "test:gpu-schema": "python3 -m unittest discover -s gpu -p \"test_*.py\"",
+    "test:browser": "node scripts/test-browser.js && node scripts/test-machine-browser.js",
+    "dev": "node scripts/dev.js",
+    "dev:cpu": "vite --host 127.0.0.1 --port 5173 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+    "test:components": "node scripts/test-components.js",
+    "test:physical": "node scripts/test-physical-assemblies.js",
+    "test:browser:gpu": "node scripts/test-gpu-browser.js",
+    "test:logic:physics": "node scripts/test-logic-physics.js",
+    "test:logic:browser": "node scripts/test-logic-browser.js",
+    "test:mobile": "node scripts/test-mobile.js"
+  },
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "0.20.0",
+    "three": "0.185.1"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "vite": "6.4.6"
+  }
+}

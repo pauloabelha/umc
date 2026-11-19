@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "component": "toggle-loop",
+      "mode": "cpu",
+      "scale": 0.25,
+      "bits": 4,
+      "passed": true,
+      "time": 17.90833333333333,
+      "laps": 5,
+      "instructions": 0,
+      "checks": []
+    },
+    {
+      "component": "toggle-loop",
+      "mode": "cpu",
+      "scale": 0.5,
+      "bits": 4,
+      "passed": true,
+      "time": 25.32620787949818,
+      "laps": 5,
+      "instructions": 0,
+      "checks": []
+    },
+    {
+      "component": "toggle-loop",
+      "mode": "cpu",
+      "scale": 1,
+      "bits": 4,
+      "passed": true,
+      "time": 35.81666666666666,
+      "laps": 5,
+      "instructions": 0,
+      "checks": []
+    },
+    {
+      "component": "toggle-loop",
+      "mode": "cpu",
+      "scale": 2,
+      "bits": 4,
+      "passed": true,
+      "time": 50.65241575899636,
+      "laps": 5,
+      "instructions": 0,
+      "checks": []
+    }
+  ]
+}

@@ -1,0 +1,893 @@
+[
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.00025,
+      "angle": 0.4,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.00025,
+      "angle": 0.4,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.00025,
+      "angle": 0.4,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 2
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.00025,
+      "angle": 0.6,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 4
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.00025,
+      "angle": 0.6,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 4
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.00025,
+      "angle": 0.6,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 4
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.00025,
+      "angle": 0.8,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.00025,
+      "angle": 0.8,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.00025,
+      "angle": 0.8,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.0005,
+      "angle": 0.4,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.0005,
+      "angle": 0.4,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.0005,
+      "angle": 0.4,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.0005,
+      "angle": 0.6,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 4
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.0005,
+      "angle": 0.6,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 4
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.0005,
+      "angle": 0.6,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 4
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.0005,
+      "angle": 0.8,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.0005,
+      "angle": 0.8,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.0005,
+      "angle": 0.8,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.001,
+      "angle": 0.4,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.001,
+      "angle": 0.4,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.001,
+      "angle": 0.4,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.001,
+      "angle": 0.6,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.001,
+      "angle": 0.6,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.001,
+      "angle": 0.6,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.001,
+      "angle": 0.8,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.001,
+      "angle": 0.8,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.012,
+      "mass": 0.001,
+      "angle": 0.8,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.00025,
+      "angle": 0.4,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 4
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.00025,
+      "angle": 0.4,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 4
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.00025,
+      "angle": 0.4,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 4
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.00025,
+      "angle": 0.6,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.00025,
+      "angle": 0.6,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.00025,
+      "angle": 0.6,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.00025,
+      "angle": 0.8,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.00025,
+      "angle": 0.8,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.00025,
+      "angle": 0.8,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.0005,
+      "angle": 0.4,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 4
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.0005,
+      "angle": 0.4,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 4
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.0005,
+      "angle": 0.4,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.0005,
+      "angle": 0.6,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.0005,
+      "angle": 0.6,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.0005,
+      "angle": 0.6,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.0005,
+      "angle": 0.8,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.0005,
+      "angle": 0.8,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.0005,
+      "angle": 0.8,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.001,
+      "angle": 0.4,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 4
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.001,
+      "angle": 0.4,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.001,
+      "angle": 0.4,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.001,
+      "angle": 0.6,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.001,
+      "angle": 0.6,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.001,
+      "angle": 0.6,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.001,
+      "angle": 0.8,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.001,
+      "angle": 0.8,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.02,
+      "mass": 0.001,
+      "angle": 0.8,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.00025,
+      "angle": 0.4,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.00025,
+      "angle": 0.4,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 4
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.00025,
+      "angle": 0.4,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.00025,
+      "angle": 0.6,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.00025,
+      "angle": 0.6,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.00025,
+      "angle": 0.6,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.00025,
+      "angle": 0.8,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.00025,
+      "angle": 0.8,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.00025,
+      "angle": 0.8,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.0005,
+      "angle": 0.4,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.0005,
+      "angle": 0.4,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 2
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.0005,
+      "angle": 0.4,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.0005,
+      "angle": 0.6,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.0005,
+      "angle": 0.6,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.0005,
+      "angle": 0.6,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.0005,
+      "angle": 0.8,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.0005,
+      "angle": 0.8,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.0005,
+      "angle": 0.8,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.001,
+      "angle": 0.4,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.001,
+      "angle": 0.4,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.001,
+      "angle": 0.4,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.001,
+      "angle": 0.6,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.001,
+      "angle": 0.6,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.001,
+      "angle": 0.6,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.001,
+      "angle": 0.8,
+      "wingAngle": 0.1,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.001,
+      "angle": 0.8,
+      "wingAngle": 0.2,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  },
+  {
+    "options": {
+      "height": 0.03,
+      "mass": 0.001,
+      "angle": 0.8,
+      "wingAngle": 0.3,
+      "drop": 0.055,
+      "count": 4
+    },
+    "passed": 0
+  }
+]

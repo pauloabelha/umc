@@ -1,0 +1,120 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "component": "closed-loop",
+      "mode": "gpu",
+      "scale": 1,
+      "bits": 2,
+      "passed": true,
+      "time": 26.05,
+      "laps": 5,
+      "instructions": 0,
+      "checks": []
+    },
+    {
+      "component": "toggle-loop",
+      "mode": "gpu",
+      "scale": 1,
+      "bits": 2,
+      "passed": true,
+      "time": 36.28333333333333,
+      "laps": 5,
+      "instructions": 0,
+      "checks": []
+    },
+    {
+      "component": "seven-instruction-lattice",
+      "mode": "gpu",
+      "scale": 1,
+      "bits": 2,
+      "passed": true,
+      "time": 91.625,
+      "laps": 0,
+      "instructions": 9,
+      "checks": [
+        {
+          "instruction": 1,
+          "time": 12.6375,
+          "pc": 2,
+          "registers": {
+            "a": "1",
+            "b": "0"
+          }
+        },
+        {
+          "instruction": 2,
+          "time": 18.2875,
+          "pc": 5,
+          "registers": {
+            "a": "1",
+            "b": "0"
+          }
+        },
+        {
+          "instruction": 3,
+          "time": 34.5625,
+          "pc": 6,
+          "registers": {
+            "a": "2",
+            "b": "0"
+          }
+        },
+        {
+          "instruction": 4,
+          "time": 41.72083333333333,
+          "pc": 3,
+          "registers": {
+            "a": "2",
+            "b": "0"
+          }
+        },
+        {
+          "instruction": 5,
+          "time": 54.449999999999996,
+          "pc": 4,
+          "registers": {
+            "a": "2",
+            "b": "1"
+          }
+        },
+        {
+          "instruction": 6,
+          "time": 55.9625,
+          "pc": 7,
+          "registers": {
+            "a": "2",
+            "b": "1"
+          }
+        },
+        {
+          "instruction": 7,
+          "time": 63.079166666666666,
+          "pc": 1,
+          "registers": {
+            "a": "2",
+            "b": "1"
+          }
+        },
+        {
+          "instruction": 8,
+          "time": 75.5875,
+          "pc": 2,
+          "registers": {
+            "a": "3",
+            "b": "1"
+          }
+        },
+        {
+          "instruction": 9,
+          "time": 81.00833333333333,
+          "pc": 5,
+          "registers": {
+            "a": "3",
+            "b": "1"
+          }
+        }
+      ]
+    }
+  ]
+}

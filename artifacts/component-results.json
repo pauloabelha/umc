@@ -1,0 +1,264 @@
+{
+  "checkedAt": "2026-11-19T02:11:38.732Z",
+  "passed": false,
+  "fullyPhysical": false,
+  "results": [
+    {
+      "component": "seven-instruction-lattice",
+      "mode": "semantic",
+      "passed": true,
+      "time": 4179,
+      "laps": 0
+    },
+    {
+      "component": "shared-register",
+      "mode": "semantic",
+      "passed": true,
+      "time": 12,
+      "laps": 0
+    },
+    {
+      "component": "inc-register",
+      "mode": "semantic",
+      "passed": true,
+      "time": 7,
+      "laps": 0
+    },
+    {
+      "component": "jump-machine",
+      "mode": "semantic",
+      "passed": true,
+      "time": 25,
+      "laps": 3
+    },
+    {
+      "component": "two-bit-counter",
+      "mode": "semantic",
+      "passed": true,
+      "time": 34,
+      "laps": 3
+    },
+    {
+      "component": "t-gate",
+      "mode": "semantic",
+      "passed": true,
+      "time": 1,
+      "laps": 0
+    },
+    {
+      "component": "toggle-loop",
+      "mode": "semantic",
+      "passed": true,
+      "time": 29,
+      "laps": 3
+    },
+    {
+      "component": "straight-track",
+      "mode": "semantic",
+      "passed": true,
+      "time": 1,
+      "laps": 0
+    },
+    {
+      "component": "curve-track",
+      "mode": "semantic",
+      "passed": true,
+      "time": 1,
+      "laps": 0
+    },
+    {
+      "component": "ferry",
+      "mode": "semantic",
+      "passed": true,
+      "time": 5,
+      "laps": 0
+    },
+    {
+      "component": "ramp",
+      "mode": "semantic",
+      "passed": true,
+      "time": 1,
+      "laps": 0
+    },
+    {
+      "component": "two-tracks",
+      "mode": "semantic",
+      "passed": true,
+      "time": 2,
+      "laps": 0
+    },
+    {
+      "component": "closed-loop",
+      "mode": "semantic",
+      "passed": true,
+      "time": 44,
+      "laps": 3
+    },
+    {
+      "component": "seven-instruction-lattice",
+      "mode": "cpu",
+      "skipped": true,
+      "reason": "Semantic prototype; physical mechanism not implemented"
+    },
+    {
+      "component": "shared-register",
+      "mode": "cpu",
+      "skipped": true,
+      "reason": "Semantic prototype; physical mechanism not implemented"
+    },
+    {
+      "component": "inc-register",
+      "mode": "cpu",
+      "skipped": true,
+      "reason": "Semantic prototype; physical mechanism not implemented"
+    },
+    {
+      "component": "jump-machine",
+      "mode": "cpu",
+      "skipped": true,
+      "reason": "Semantic prototype; physical mechanism not implemented"
+    },
+    {
+      "component": "two-bit-counter",
+      "mode": "cpu",
+      "skipped": true,
+      "reason": "Semantic prototype; physical mechanism not implemented"
+    },
+    {
+      "component": "t-gate",
+      "mode": "cpu",
+      "skipped": true,
+      "reason": "Semantic prototype; physical mechanism not implemented"
+    },
+    {
+      "component": "toggle-loop",
+      "mode": "cpu",
+      "skipped": true,
+      "reason": "Semantic prototype; physical mechanism not implemented"
+    },
+    {
+      "component": "straight-track",
+      "mode": "cpu",
+      "passed": true,
+      "time": 0.7833333333333333,
+      "laps": 0
+    },
+    {
+      "component": "curve-track",
+      "mode": "cpu",
+      "passed": true,
+      "time": 1.1333333333333333,
+      "laps": 0
+    },
+    {
+      "component": "ferry",
+      "mode": "cpu",
+      "passed": true,
+      "time": 4.41875,
+      "laps": 0
+    },
+    {
+      "component": "ramp",
+      "mode": "cpu",
+      "passed": true,
+      "time": 0.8833333333333333,
+      "laps": 0
+    },
+    {
+      "component": "two-tracks",
+      "mode": "cpu",
+      "passed": true,
+      "time": 1.1541666666666666,
+      "laps": 0
+    },
+    {
+      "component": "closed-loop",
+      "mode": "cpu",
+      "passed": false,
+      "error": "cpu/closed-loop: expected 3 laps, got 1 at 90s"
+    },
+    {
+      "component": "seven-instruction-lattice",
+      "mode": "gpu",
+      "skipped": true,
+      "reason": "Semantic prototype; physical mechanism not implemented"
+    },
+    {
+      "component": "shared-register",
+      "mode": "gpu",
+      "skipped": true,
+      "reason": "Semantic prototype; physical mechanism not implemented"
+    },
+    {
+      "component": "inc-register",
+      "mode": "gpu",
+      "skipped": true,
+      "reason": "Semantic prototype; physical mechanism not implemented"
+    },
+    {
+      "component": "jump-machine",
+      "mode": "gpu",
+      "skipped": true,
+      "reason": "Semantic prototype; physical mechanism not implemented"
+    },
+    {
+      "component": "two-bit-counter",
+      "mode": "gpu",
+      "skipped": true,
+      "reason": "Semantic prototype; physical mechanism not implemented"
+    },
+    {
+      "component": "t-gate",
+      "mode": "gpu",
+      "skipped": true,
+      "reason": "Semantic prototype; physical mechanism not implemented"
+    },
+    {
+      "component": "toggle-loop",
+      "mode": "gpu",
+      "skipped": true,
+      "reason": "Semantic prototype; physical mechanism not implemented"
+    },
+    {
+      "component": "straight-track",
+      "mode": "gpu",
+      "passed": true,
+      "time": 0.8125,
+      "laps": 0
+    },
+    {
+      "component": "curve-track",
+      "mode": "gpu",
+      "passed": true,
+      "time": 1.0208333333333333,
+      "laps": 0
+    },
+    {
+      "component": "ferry",
+      "mode": "gpu",
+      "passed": true,
+      "time": 4.525,
+      "laps": 0
+    },
+    {
+      "component": "ramp",
+      "mode": "gpu",
+      "passed": true,
+      "time": 0.7916666666666666,
+      "laps": 0
+    },
+    {
+      "component": "two-tracks",
+      "mode": "gpu",
+      "passed": true,
+      "time": 1.175,
+      "laps": 0
+    },
+    {
+      "component": "closed-loop",
+      "mode": "gpu",
+      "passed": false,
+      "error": "gpu/closed-loop: expected 3 laps, got 2 at 90s"
+    }
+  ]
+}

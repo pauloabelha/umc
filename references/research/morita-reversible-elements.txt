@@ -1,0 +1,2334 @@
+--- PDF PAGE 1 ---
+T. Neary and M. Cook (Eds.):
+Machines, Computations and Universality (MCU 2013)
+EPTCS 128, 2013, pp. 3–14, doi:10.4204/EPTCS.128.3
+c⃝K. Morita
+This work is licensed under the
+Creative Commons Attribution License.
+Reversible Logic Elements with Memory and
+Their Universality
+Kenichi Morita∗
+Hiroshima University, Higashi-Hiroshima, 739-8527, Japan
+km@hiroshima-u.ac.jp
+Reversible computing is a paradigm of computation that reﬂects physical reversibility, one of the fun-
+damental microscopic laws of Nature. In this survey, we discuss topics on reversible logic elements
+with memory (RLEM), which can be used to build reversible computing systems, and their univer-
+sality. An RLEM is called universal, if any reversible sequential machine (RSM) can be realized as a
+circuit composed only of it. Since a ﬁnite-state control and a tape cell of a reversible Turing machine
+(RTM) are formalized as RSMs, any RTM can be constructed from a universal RLEM. Here, we
+investigate 2-state RLEMs, and show that inﬁnitely many kinds of non-degenerate RLEMs are “all”
+universal besides only four exceptions. Non-universality of these exceptional RLEMs is also argued.
+1
+Introduction
+A reversible computing system is a one such that every computational conﬁguration of it has at most one
+predecessor, i.e., a “backward deterministic” system. Though the deﬁnition is thus simple, it is known
+that it has a close relation to physical reversibility. Since physical reversibility is one of the fundamental
+microscopic laws of Nature, it is important how this property is utilized to construct an efﬁcient reversible
+computers. So far, many kinds of reversible computing models have been proposed and investigated. We
+should note that there are several levels of models ranging from a microscopic one to a macroscopic one.
+In the bottom (i.e., the most microscopic) level, there is a physically reversible model, e.g., the billiard
+ball model (BBM) of computing [3]. In the next level, there exist various kinds of reversible logic
+elements such as Fredkin gate [3], Toffoli gate [17, 18], and reversible logic elements with memory [6].
+In the still higher level, there are reversible logic circuits composed of reversible logic elements, which
+can be used as building modules for reversible computers. In the top level, there are models of reversible
+computers such as reversible Turing machines [1], reversible cellular automata [16], and others.
+Here, we focus on the topics of a reversible logic element. It is a primitive for composing reversible
+logic circuits whose function is described by a one-to-one mapping. There are two types of such ele-
+ments: one without memory, which is usually called a reversible logic gate, and one with memory. The
+conventional design theory of logic circuits has been developed using logic gates as primitives (but in the
+study of asynchronous circuits, logic elements with memory are sometimes used [2, 4]). On the other
+hand, in the case of reversible computing, logic elements with memory are also useful. The main reason
+is that if we use an appropriate reversible logic element with memory, we can construct several kinds of
+reversible computing models, e.g., reversible Turing machines, very simply [6, 9].
+In this paper, we give a survey on reversible logic elements with memory (RLEM) based mainly
+on the studies of the author and his colleagues. In particular, we focus on the topics of universality of
+RLEMs. An RLEM is called universal, if any reversible sequential machine (RSM) can be realized by
+it. Since a reversible Turing machine (RTM), which is a universal computing model [1], is composed of
+∗Currently, Professor Emeritus of Hiroshima University
+
+--- PDF PAGE 2 ---
+4
+Reversible Logic Elements with Memory
+RSMs, we can construct any RTM using a universal RLEM. Here, we investigate 2-state RLEMs, i.e.,
+RLEMs with 1-bit memory. There are inﬁnitely many 2-state RLEMs if we do not restrict the numbers
+of input/output symbols. We shall see that “all” the non-degenerate 2-state RLEMs except only four
+2-symbol RLEMs are universal. We also discuss non-universality of these 2-symbol RLEMs.
+2
+Reversible logic element with memory (RLEM)
+We ﬁrst give a deﬁnition of sequential machine (SM), since a reversible logic element with memory
+(RLEM) is a special type of an SM. An SM considered here is a kind of a ﬁnite automaton with an
+output port as well as an input port, which is often called an SM of Mealy type.
+Deﬁnition 1 A sequential machine (SM) is a system deﬁned by M = (Q,Σ,Γ,δ), where Q is a ﬁnite set
+of internal states, Σ and Γ are ﬁnite sets of input and output symbols, and δ : Q×Σ →Q×Γ is a move
+function. If δ is injective, M is called a reversible sequential machine (RSM). Note that if M is reversible,
+then |Σ| ≤|Γ| must hold. A reversible logic elements with memory (RLEM) is an RSM M = (Q,Σ,Γ,δ)
+such that |Σ| = |Γ|. In particular, it is called a |Q|-state |Σ|-symbol RLEM.
+Hereafter, we mainly discuss 2-state RLEMs. There are inﬁnitely many kinds of RLEMs if we do
+not limit the number of symbols. Among them, a rotary element (RE) [6] is a typical RLEM with four
+symbols. Its behavior can be very easily understood, since it has the following interpretation on its
+operation. An RE is depicted by a box that contains a rotatable bar inside (Fig. 1). Two states of an RE
+are distinguished by the direction of the bar, and thus they are called state H and state V. There are four
+input lines and four output lines corresponding to the sets of input symbols {n,e,s,w} and output symbols
+{n′,e′,s′,w′}. The rotatable bar is used to control the move direction of an input signal (or a particle).
+When no particle exists, nothing happens on the RE. If a particle comes from the direction parallel to the
+rotatable bar, then it goes out from the output line of the opposite side without affecting the direction of
+the bar (Fig. 2 (a)). If a particle comes from the direction orthogonal to the bar, then it makes a right turn,
+and rotates the bar by 90 degrees counterclockwise (Fig. 2 (b)). It is reversible in the following sense:
+from the next state and the output, the previous state and the input are uniquely determined. Actually,
+an RE is deﬁned as the following RSM: MRE = ({ q , q },{n,e,s,w},{n′,e′,s′,w′},δRE), where δRE is
+given in Table 1.
+State H
+State V
+✲
+✲
+✛
+✛
+✻
+✻
+❄
+❄
+n n′
+e
+e′
+s′ s
+w′
+w
+✲
+✲
+✛
+✛
+✻
+✻
+❄
+❄
+n n′
+e
+e′
+s′ s
+w′
+w
+Figure 1: Two states of a rotary element (RE).
+t
+✲
+✲
+✛
+✛
+✻
+✻
+❄
+❄
+t + 1
+✲
+✲
+✛
+✛
+✻
+✻
+❄
+❄
+t
+✲
+✲
+✛
+✛
+✻
+✻
+❄
+❄
+t + 1
+✲
+✲
+✛
+✛
+✻
+✻
+❄
+❄
+(a)
+(b)
+Figure 2: Operations of a rotary element (RE): (a) the parallel case, and (b) the orthogonal case.
+
+--- PDF PAGE 3 ---
+K. Morita
+5
+Table 1: The move function δRE of a rotary element (RE).
+Input
+Present state
+n
+e
+s
+w
+State H: q
+q w′
+q w′
+q e′
+q e′
+State V: q
+q s′
+q n′
+q n′
+q s′
+Now, we consider how reversible logic elements can be realized in a reversible physical system.
+In our present technology, it is difﬁcult to implement a reversible logic element in a practical system
+having physical reversibility in nano-scale level. However, some thought experiments in an idealized
+circumstance suggest a possibility of realizing it. The billiard ball model (BBM) is a reversible physical
+model of computing proposed by Fredkin and Toffoli [3]. It is an idealized mechanical model consisting
+of balls and reﬂectors. They showed a Fredkin gate is realizable in BBM. On the other hand, an RE can
+be simulated in BBM as shown in Fig. 3 [8, 10]. It consists of one stationary ball called a state ball, and
+many reﬂectors indicated by small rectangles. A state ball is placed at the position of H or V in Fig. 3
+depending on the state of the simulated RE. A moving ball called a signal ball can be given to any one of
+the input lines n,e,s, and w. Then, the operation of an RE is correctly simulated by collisions of balls and
+reﬂectors (the details of the movements are found in [9]). In [15], it is shown that any m-state k-symbol
+RLEM can be realized in BBM in a systematic way when k ≤4.
+V
+H
+n
+n′
+e
+e′
+s
+s′
+w
+w′
+❄
+✠
+■
+✒
+■
+✒
+❘
+✠
+n1
+✛
+❘
+✒
+■
+✠
+■
+✠
+■
+n0
+❄
+✛
+■
+✒
+❘
+✠
+■
+e1
+✻
+✠
+❘
+✒
+e0
+✛
+✻
+✒
+❘
+✠
+■
+✒
+s1
+✲
+■
+✠
+■
+✒
+❘
+s0
+✻
+✲
+❘
+✠
+❘
+✒
+❘
+w1
+❄
+✒
+❘
+✠
+w0
+✲
+Figure 3: A rotary element (RE) realized in BBM [8, 10].
+3
+Constructing reversible machines by RLEMs
+We deﬁne universality of an RLEM as the property that any RSM can be composed of it, and show an
+RE is universal. We then explain that a reversible Turing machine can also be constructed using REs.
+Deﬁnition 2 An RLEM is called universal if any RSM is realized by a circuit composed only of copies of
+the RLEM.
+
+--- PDF PAGE 4 ---
+6
+Reversible Logic Elements with Memory
+We can see that any RSM can be realized by a circuit composed only of REs [7]. We explain it by
+an example. Consider an RSM M0 = ({q1,q2,q3},{a1,a2},{b1,b2},δ0}, where δ0 is given in Table 2.
+Then, we can construct a circuit composed only of REs that simulate M0 as shown in Fig. 4. Note
+that when constructing a reversible circuit, fan-out of an output is not allowed, and the circuit in Fig. 4
+satisﬁes it. The circuit has three columns of REs, each of which corresponds to a state of M0. If M0’s
+state is qj, then the bottom RE of the j-th column is set to the state H. All other REs are set to V. The REs
+of the i-th row corresponds to the input symbol ai as well as the output symbol bi. In Fig. 4, the circuit is
+in the state q1. If a particle is given to the line e.g. a2, then after setting the bottom RE of the 1st column
+to V, the particle appears on the line q1a2, i.e., the crossing point of the 2nd row and the 1st column is
+found. Since δ(q1,q2) = (q3,b2), this line is connected to the RE of the 2nd row of the 3rd column. By
+this, the bottom RE of the 3rd column is set to H, and ﬁnally the particle appears on the output line b2.
+By generalizing the above construction method, we see that any RSM can be realized by REs, and thus
+we obtain the following theorem (its precise proof is omitted here).
+Theorem 1 [7] A rotary element (RE) is universal.
+Table 2: The move function δ0 of an example of an RSM M0.
+Input
+Present state
+a1
+a2
+q1
+q2b1
+q3b2
+q2
+q2b2
+q1b1
+q3
+q1b2
+q3b1
+❄
+❄
+✻
+✻
+❄
+✛
+✻
+❄
+❄
+✻
+✻
+❄
+✛
+✻
+❄
+❄
+✻
+✻
+❄
+✛
+✻
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✛
+✛
+✛
+✛
+✛
+✛
+q1
+q2
+q3
+a1
+a2
+b1
+b2
+q1a1
+q1a2
+q2a1
+q2a2
+q3a1
+q3a2
+Figure 4: The RSM M0 implemented by REs [7]. Here, M0 is in the state q1 since the bottom RE of the
+leftmost column is in the state H.
+A reversible Turing machine (RTM) is a TM having backward deterministic property (see, e.g., [1, 8]
+for its deﬁnition). It is known that for any irreversible TM, there is an RTM that simulates the former and
+leaves no garbage information when it halts [1], hence RTMs are computationally universal. We can see
+that any RTM can be constructed using only REs relatively easily, since a ﬁnite-state control and a tape
+cell of an RTM can be formalized as RSMs [6, 9].
+Fig. 5 is a circuit that simulates an RTM Tparity that accepts the language {12n|n = 0,1,...}, whose
+move function is speciﬁed by the following set of quintuples:
+{[ q0,0,1,R,q1 ],[ q1,0,1,L,qacc ],[ q1,1,0,R,q2 ],[ q2,0,1,L,qrej ],[ q2,1,0,R,q1 ]}
+
+--- PDF PAGE 5 ---
+K. Morita
+7
+If we give a signal (or a particle) to the input port “Begin,” then it starts to compute. Finally, the particle
+comes out from the output port “Accept” or “Reject” depending on the input. Detailed descriptions of
+this circuit as well as how it works are given in [9, 10].
+✛
+✲
+✛
+✲
+✛
+✛
+✲
+✲
+✛
+✛
+✛
+✲
+✲
+✲
+✛
+✲
+✛
+✲
+✲
+✛
+✲
+✲
+✻
+❄
+✻
+✻
+❄
+✻
+✻
+✻
+❄
+✻
+✻
+✛
+✻
+✛
+❄
+❄
+❄
+❄
+❄
+❄
+❄
+❄
+✻
+✻
+✻
+✻
+✻
+✻
+✻
+✻
+❄
+✛
+✻
+❄
+✻
+❄
+✛
+✻
+✛
+✲
+✛
+✛
+✲
+✲
+✛
+✲
+✛
+✲
+✲
+✲
+✛
+✲
+✛
+✛
+✲
+✛
+✲
+✲
+✛
+✲
+✲
+✲
+❄
+❄
+❄
+❄
+❄
+❄
+❄
+❄
+✻
+✻
+✻
+✻
+✻
+✻
+✻
+✻
+❄
+✛
+✻
+❄
+✻
+❄
+✛
+✻
+✛
+✲
+✛
+✛
+✲
+✲
+✛
+✲
+✛
+✲
+✲
+✲
+✛
+✲
+✛
+✛
+✲
+✛
+✲
+✲
+✛
+✲
+✲
+✲
+❄
+❄
+❄
+❄
+❄
+❄
+❄
+❄
+✻
+✻
+✻
+✻
+✻
+✻
+✻
+✻
+❄
+✛
+✻
+❄
+✻
+❄
+✛
+✻
+✛
+✲
+✛
+✛
+✲
+✲
+✛
+✲
+✛
+✲
+✲
+✲
+✛
+✲
+✛
+✛
+✲
+✛
+✲
+✲
+✛
+✲
+✲
+✲
+❄
+❄
+❄
+❄
+❄
+❄
+❄
+❄
+✻
+✻
+✻
+✻
+✻
+✻
+✻
+✻
+❄
+✛
+✻
+❄
+✻
+❄
+✛
+✻
+✛
+✲
+✛
+✛
+✲
+✲
+✛
+✲
+✛
+✲
+✲
+✲
+✛
+✲
+✛
+✛
+✲
+✛
+✲
+✲
+✛
+✲
+✲
+✲
+Reject
+Accept
+Begin•
+• • •
+head
+0
+1
+1
+0
+Figure 5:
+A circuit made of REs that simulates an RTM Tparity that accepts {12n|n = 0,1,...}. An
+example of its whole computing process is shown in 4406 ﬁgures in [9].
+4
+All non-degenerate 2-state RLEMs but four are universal
+In the previous section we saw that an RE is universal. On the other hand, since there are inﬁnitely many
+RLEMs, there will be many other universal RLEMs. Surprisingly, non-degenerate 2-state RLEMs except
+only four are all universal [11]. In this section, we explain how it is shown.
+First, we classify 2-state RLEMs. We can see the total number of 2-state k-symbol RLEMs is (2k)!,
+and they are numbered from 0 to (2k)! −1 in some lexicographic order [12]. To indicate that it is a k-
+symbol RLEM, the preﬁx “k-” is attached to its serial number like RLEM 4-289. Here, we use a pictorial
+representation of a 2-state RLEM. Consider, as an example, a 2-state 4-symbol RLEM 4-289 with the
+input alphabet {a,b,c,d}, the output alphabet {s,t,u,v}, and the move function given in Table 3. Then, it
+is represented by Fig. 6, where solid and dotted lines in a box describe the input-output relation for each
+state. A solid line shows the state goes to another, and a dotted line shows the state remains unchanged.
+For example, if the RLEM 4-289 receives an input symbol c in the state q0, then it gives the output s
+and enters the state q1. As in the case of an RE, we interpret that each input/output symbol represents an
+occurrence of a signal at the corresponding input/output port.
+Table 3: The move function of the 2-state RLEM 4-289.
+Input
+Present state
+a
+b
+c
+d
+State q0
+q0s
+q0t
+q1s
+q1t
+State q1
+q0 u
+q0v
+q1 v
+q1 u
+
+--- PDF PAGE 6 ---
+8
+Reversible Logic Elements with Memory
+a
+b
+c
+d ✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+State q0
+s
+t
+u
+v
+a
+b
+c
+d ✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+State q1
+s
+t
+u
+v
+Figure 6: A pictorial representation of the 2-state RLEM 4-289, which is equivalent to RE.
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+2-0
+(eq. to wires)
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+2-1
+(eq. to wires)
+✲
+✲
+✲
+✲
+✟✟✟
+✲
+✲
+✲
+✲
+❍❍❍
+2-2
+✲
+✲
+✲
+✲
+✟✟✟
+✲
+✲
+✲
+✲
+2-3
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+❍❍❍
+2-4
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+2-5
+(eq. to wires)
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+2-16
+(eq. to wires)
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+❍❍❍
+✟✟✟
+2-17
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+3-0
+(eq. to wires)
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+3-1
+(eq. to wires)
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+3-3
+(eq. to wires)
+✲
+✲
+✲
+✲
+✲
+✲
+   ✲
+✲
+✲
+✲
+✲
+✲
+❅
+❅
+❅
+3-6
+(eq. to 2-2)
+✲
+✲
+✲
+✲
+✲
+✲
+   ✲
+✲
+✲
+✲
+✲
+✲
+❅
+❅
+❅
+3-7
+✲
+✲
+✲
+✲
+✲
+✲
+   ✲
+✲
+✲
+✲
+✲
+✲
+3-9
+✲
+✲
+✲
+✲
+✲
+✲
+   ✲
+✲
+✲
+✲
+✲
+✲
+❍❍❍
+3-10
+✲
+✲
+✲
+✲
+✲
+✲
+   ✲
+✲
+✲
+✲
+✲
+✲
+3-11
+(eq. to 2-3)
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+❅
+❅
+❅
+3-18
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+❅
+❅
+❅
+3-19
+(eq. to 2-4)
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+3-21
+(eq. to wires)
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+3-23
+✲
+✲
+✲
+✲
+✲
+✲
+✟✟✟
+✟✟✟
+✲
+✲
+✲
+✲
+✲
+✲
+❍❍❍
+❍❍❍
+3-60
+✲
+✲
+✲
+✲
+✲
+✲
+✟✟✟
+✟✟✟
+✲
+✲
+✲
+✲
+✲
+✲
+❍❍❍
+3-61
+✲
+✲
+✲
+✲
+✲
+✲
+✟✟✟
+✟✟✟
+✲
+✲
+✲
+✲
+✲
+✲
+❅
+❅
+❅
+✟✟✟
+3-63
+✲
+✲
+✲
+✲
+✲
+✲
+✟✟✟
+✟✟✟
+✲
+✲
+✲
+✲
+✲
+✲
+3-64
+✲
+✲
+✲
+✲
+✲
+✲
+✟✟✟
+✟✟✟
+✲
+✲
+✲
+✲
+✲
+✲
+❍❍❍
+✟✟✟
+3-65
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+❍❍❍
+❍❍❍
+3-90
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+❍❍❍
+3-91
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+3-94
+(eq. to wires)
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+❍❍❍
+✟✟✟
+3-95
+(eq. to 2-17)
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+3-450
+(eq. to wires)
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+❍❍❍
+✟✟✟
+3-451
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+❍❍❍
+❍❍❍
+   3-453
+Figure 7: Representatives of 8 equivalence classes of 24 2-symbol RLEMs (top), and those of 24 equiv-
+alence classes of 720 3-symbol RLEMs (bottom) [12]. The indications “eq. to wires” and “eq. to 2-n”
+mean it is equivalent to connecting wires, and it is equivalent to RLEM 2-n, respectively. Thus they are
+degenerate ones. The numbers of 2- and 3-symbol non-degenerate RLEMs are 4 and 14, respectively.
+We can regard two RLEMs are equivalent if one can be obtained by renaming the states and/or the
+input/output symbols of the other. It has been shown that the numbers of equivalence classes of 2-state
+2-, 3-, and 4-symbol RLEMs are 8, 24, and 82, respectively [12]. Fig. 7 shows all representative RLEMs
+in the equivalence class of 2- and 3-symbol RLEMs. The representatives are so chosen that it has the
+smallest number in the class.
+Among k-symbol RLEMs, there are degenerate ones, each of which is either equivalent to simple
+connecting wires (e.g., RLEM 3-3), or equivalent to a k′-symbol RLEM such that k′ < k (e.g., RLEM
+3-6). Its precise deﬁnition is found in [11]. In Fig. 7, they are indicated by “eq. to wires” or “eq. to 2-n”.
+Thus, non-degenerate k-symbol RLEMs are the main concern of the study. It is known that the numbers
+of non-degenerate 2- 3- and 4-symbol RLEMs are 4, 14, and 55, respectively.
+
+--- PDF PAGE 7 ---
+K. Morita
+9
+It has been shown that the following three lemmas hold.
+Lemma 1 [5, 11] An RE can be composed of RLEM 3-10.
+Lemma 2 [5] RLEM 3-10 can be composed of RLEMs 2-3 and 2-4.
+Lemma 3 [11] RLEMs 2-3 and 2-4 can be composed of any one of 14 non-degenerate 3-symbol RLEMs.
+By above, we obtain the next lemma that entails universality of all non-degenerate 3-symbol RLEMs.
+Lemma 4 [11] An RE can be constructed by any one of 14 non-degenerate 3-symbol RLEMs.
+Lemmas 1–3 are proved by designing circuits composed of given RLEMs which correctly simulate
+the target RLEMs. These circuits are shown below. Lemma 1 is proved by a circuit made of RLEMs
+3-10 that simulates an RE, which was ﬁrst given in [5]. Later, a simpler circuit was given in [11], which
+is shown in Fig. 8. Next, Lemma 2 is proved by a circuit made of RLEMs 2-3 and 2-4 that simulates
+RLEM 3-10 shown in Fig. 9 [5]. Finally, Lemma 3 is proved by 28 circuits composed of each of 14
+non-degenerate 3-symbol RLEMS that simulate RLEMs 2-3 and 2-4 as in Fig.10.
+            ❍❍❍
+   ❍❍❍
+   ✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+n
+e
+s
+w
+s′
+w′
+n′
+e′
+(a)
+               ❍❍❍
+   ❍❍❍
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+n
+e
+s
+w
+s′
+w′
+n′
+e′
+(b)
+Figure 8: A circuit composed of RLEMs 3-10 that simulates RE [11]. (a) and (b) correspond to the states
+H and V of RE, respectively.
+a
+b
+c
+✲
+✲
+✲
+    3-10
+✲
+✲
+✲
+s
+t
+u
+a
+b
+c
+✲
+✲
+✲
+❍❍❍❍
+3-10
+✲
+✲
+✲
+s
+t
+u
+State 0
+State 1
+2-4
+✟✟✟✟
+2-3
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+a
+b
+c
+s
+t
+u
+❍❍❍❍
+2-4
+2-3
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+a
+b
+c
+s
+t
+u
+Figure 9: A circuit composed of RLEMs 2-3 and 2-4 that simulates RLEM 3-10 [5]. The lower left and
+the lower right ﬁgures correspond to the states 0 and 1 of RLEM 3-10, respectively.
+
+--- PDF PAGE 8 ---
+10
+Reversible Logic Elements with Memory
+2-3
+2-4
+a
+b
+✲
+✲
+✟✟✟✟
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+✲
+s
+t
+a
+b
+✲
+✲❍❍❍❍
+✲
+✲
+s
+t
+3-7
+a
+b
+✲
+✲
+✲
+    ✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+❅
+❅
+❅
+❅
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+    ✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+❅
+❅
+❅
+❅
+✲
+✲
+s
+t
+3-9
+a
+b
+✲
+✲
+✲
+    ✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+✲
+✲
+s
+t
+    ✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+a
+b
+s
+t
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+a
+b
+s
+t
+3-10
+a
+b
+✲
+✲
+✲
+    ✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+❍❍❍❍
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+    ✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+❍❍❍❍
+✲
+✲
+s
+t
+3-18
+❅
+❅
+❅
+❅
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+a
+b
+s
+t
+❅
+❅
+❅
+❅
+❅
+❅
+❅
+❅
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+a
+b
+s
+t
+a
+b
+✲
+✲
+✲
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+❅
+❅
+❅
+❅
+✲
+✲
+s
+t
+3-23
+a
+b
+✲
+✲
+✲
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+✲
+✲
+s
+t
+3-60
+a
+b
+✲
+✲
+✲
+✟✟✟✟
+✟✟✟✟
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲❍❍❍❍
+❍❍❍❍
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+✟✟✟✟
+✟✟✟✟
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲❍❍❍❍
+❍❍❍❍
+✲
+✲
+s
+t
+3-61
+a
+b
+✲
+✲
+✲
+✟✟✟✟
+✟✟✟✟
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲❍❍❍❍
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+✟✟✟✟
+✟✟✟✟
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲❍❍❍❍
+✲
+✲
+s
+t
+3-63
+a
+b
+✲
+✲
+✲
+✟✟✟✟
+✟✟✟✟
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+❅
+❅
+❅
+❅
+✟✟✟✟
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+✟✟✟✟
+✟✟✟✟
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+❅
+❅
+❅
+❅
+✟✟✟✟
+✲
+✲
+s
+t
+3-64
+a
+b
+✲
+✲
+✲
+✟✟✟✟
+✟✟✟✟
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+✟✟✟✟
+✟✟✟✟
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+✲
+✲
+s
+t
+3-65
+a
+b
+✲
+✲
+✲
+✟✟✟✟
+✟✟✟✟
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+❍❍❍❍
+✟✟✟✟
+✲
+✲
+s
+t
+✟✟✟✟
+✟✟✟✟
+❍❍❍❍
+✟✟✟✟
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+a
+b
+s
+t
+❍❍❍❍
+✟✟✟✟
+✟✟✟✟
+✟✟✟✟
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+a
+b
+s
+t
+3-90
+a
+b
+✲
+✲
+✲
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲❍❍❍❍
+❍❍❍❍
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲❍❍❍❍
+❍❍❍❍
+✲
+✲
+s
+t
+3-91
+❍❍❍❍
+❍❍❍❍
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+a
+b
+s
+t
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+a
+b
+s
+t
+a
+b
+✲
+✲
+✲
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲❍❍❍❍
+✲
+✲
+s
+t
+3-451
+a
+b
+✲
+✲
+✲
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+❍❍❍❍
+✟✟✟✟
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+✲
+✲
+s
+t
+a
+b
+✲
+✲
+✲
+❍❍❍❍
+✟✟✟✟
+✲
+✲
+s
+t
+3-453
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+a
+b
+s
+t
+❍❍❍❍
+❍❍❍❍
+    ❍❍❍❍
+❍❍❍❍
+    ❍❍❍❍
+❍❍❍❍
+    ✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+a
+b
+s
+t
+❍❍❍❍
+❍❍❍❍
+    ✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+a
+b
+s
+t
+❍❍❍❍
+❍❍❍❍
+    ❍❍❍❍
+❍❍❍❍
+    ✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+a
+b
+s
+t
+Figure 10: Circuits composed of each of 14 non-degenerate 3-symbol RLEMs that simulate RLEMs 2-3
+and 2-4 [11].
+
+--- PDF PAGE 9 ---
+K. Morita
+11
+The following lemma gives a relation between k-symbol RLEMs and (k −1)-symbol RLEMs.
+Lemma 5 [11] Let Mk be an arbitrary non-degenerate k-symbol RLEM (k > 2). Then, there exists a
+non-degenerate (k −1)-symbol RLEM Mk−1 that can be simulated by Mk.
+Here, we explain only a key idea of the proof of Lemma 5. When a k-symbol RLEM is given, we
+choose one output line and one input line, and connect them to make a feedback loop. By this, we obtain
+a (k −1)-symbol RLEM. Fig. 11 shows the case of 4-symbol RLEM 4-23617. If we give an appropriate
+feedback loop, we can get a non-degenerate 3-symbol RLEM (upper row of Fig. 11). But, if we give an
+inappropriate feedback, then the resulting 3-symbol RLEM is a degenerate one (lower row of Fig. 11). In
+[11], it is proved that for a given non-degenerate k-symbol RLEM (k > 2), we can always ﬁnd a feedback
+loop by which a non-degenerate (k −1)-symbol RLEM can be obtained.
+4-RLEM
+Adding a feedback to 4-RLEM
+Resulting 3-RLEM
+4-23617
+i
+j
+✲
+i
+j
+✲
+0
+1
+0
+1
+Appropriate feedback
+Equivalent to 3-451
+4-23617
+i
+i′
+j
+j′
+✲
+i
+i′
+j
+j′
+✲
+i′
+j
+i′
+j
+0
+1
+0
+1
+Inappropriate feedback
+Equivalent to 3-450
+(degenerate)
+Figure 11: Making a 3-symbol RLEM by adding a feedback loop to 4-symbol RLEM 4-23614. If the
+feedback is appropriate, the resulting 3-symbol RLEM will be a non-degenerate one (upper row). If not,
+it can be a degenerate one (lower row).
+By Theorem 1, and Lemmas 4 and 5 we have the next theorem stating that almost all non-degenerate
+2-state RLEMs are universal. Note that universal RLEMs can simulate each other.
+Theorem 2 [11] Every non-degenerate 2-state k-symbol RLEM is universal if k > 2.
+On the other hand, there are four non-degenerate 2-state 2-symbol RLEMs (Fig. 12). So far, three of
+them have been shown to be non-universal.
+✲
+✲
+✲
+✲
+✟✟✟
+✲
+✲
+✲
+✲
+❍❍❍
+2-2
+q0
+q1
+a
+b
+s
+t
+a
+b
+s
+t
+✲
+✲
+✲
+✲
+✟✟✟
+✲
+✲
+✲
+✲
+2-3
+q0
+q1
+a
+b
+s
+t
+a
+b
+s
+t
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+❍❍❍
+2-4
+q0
+q1
+a
+b
+s
+t
+a
+b
+s
+t
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+✲
+❍❍❍
+✟✟✟
+2-17
+q0
+q1
+a
+b
+s
+t
+a
+b
+s
+t
+Figure 12: Four non-degenerate 2-state 2-symbol RLEMs.
+Lemma 6 [14] RLEM 2-2 can simulate neither RLEM 2-3, 2-4, nor 2-17.
+We give an outline of the proof of Lemma 6. Assume, on the contrary, RLEM 2-3 is simulated
+by a circuit C composed of m copies of RLEM 2-2 (proofs for 2-4 and 2-17 are similar). Let {ai,bi}
+
+--- PDF PAGE 10 ---
+12
+Reversible Logic Elements with Memory
+and {si,ti} be the sets of input and output ports of the i-th RLEM 2-2 (i ∈{1,...,m}) in C. Let {a,b}
+and {s,t} be those of the circuit C (note that we assume C simulates a 2-symbol RLEM), and let U =
+{a,b} ∪{si,ti | i ∈{1,...,m}}, and V = {s,t} ∪{ai,bi | i ∈{1,...,m}} be sets of vertices in C. The
+network structure of C can be described by a bijection f : U →V, which is called a connection function.
+In the example of Fig. 13, f(a) = b1, f(t1) = b3, etc. We now deﬁne a set of vertices W as the smallest set
+that satisﬁes (i) a ∈W, (ii) x ∈U ∩W ⇒f(x) ∈W, (iii) ai ∈V ∩W ⇒si ∈W, and (iv) bi ∈V ∩W ⇒ti ∈W.
+Let W = (U ∪V) −W. In Fig. 13, vertices in W are indicated by •, while those in W are by ◦. Note
+that the set W is determined only by the connection function f, not by the states of the RLEMs. We
+observe that b ∈W, and |{s,t}∩W| = 1 ∧|{s,t}∩W| = 1, since f is a bijection. Next, sets of RLEMs
+EW,EW,EW,W ⊆{1,...,m} are given as follows: EW = {i | ai ∈W ∧bi ∈W}, EW = {i | ai ∈W ∧bi ∈W},
+and EW,W = {1,...,m}−(EW ∪EW). In Fig. 13, EW = {1,2}, EW = {5,6}, and EW,W = {3,4}.
+✟✟✟
+1
+a1
+b1
+s1
+t1
+❍❍❍
+2
+a2
+b2
+s2
+t2
+❍❍❍
+3
+a3
+b3
+s3
+t3
+❍❍❍
+4
+a4
+b4
+s4
+t4
+❍❍❍
+5
+a5
+b5
+s5
+t5
+✟✟✟
+6
+a6
+b6
+s6
+t6
+a
+b
+s
+t
+t
+✲t
+t
+✲t
+t
+✲t
+t
+✲t
+t
+✲t
+t
+✲t
+t
+✲t
+❞
+✲❞
+❞
+✲❞
+❞
+✲❞
+❞
+✲❞
+✲❞
+❞
+✲❞
+❞
+✲❞
+❞
+Figure 13: An example of a circuit C composed of 6 copies of RLEM 2-2.
+Assume an input signal is given to the port a or b in the circuit C. Then, it visits vertices in C one after
+another according to the connection function f and the move function of RLEM 2-2. By the deﬁnitions
+of RLEM 2-2, W, W, EW, EW, and EW,W, we can easily see the following claims hold.
+1. A signal can move from a vertex in W to a vertex in W, or from a vertex in W to a vertex in W only
+at some RLEM in EW,W.
+2. Assume i ∈EW,W, and ai ∈W. If the element i is in q0, then a signal at ai ∈W or at bi ∈W will
+go to si ∈W. Thus it is not possible to go from W to W at the element i in q0. On the other hand,
+if the element i is in q1, then a signal at ai ∈W or at bi ∈W will go to ti ∈W, and thus it is not
+possible to go from W to W. The case bi ∈W is also similar.
+3. Assume i ∈EW,W. If a signal moves from a vertex in W to that in W, or from W to W at the element
+i, then the element i changes its state, and vice versa.
+4. Let o1 ∈{s,t}∩W and o2 ∈{s,t}∩W. Starting from some initial state of the circuit C, if a signal
+travels from a ∈W to o2 ∈W, then the number of times that the signal goes from W to W is equal
+to that from W to W plus 1. The case where a signal travels from b ∈W to o1 ∈W is also similar.
+By above, each time a signal travels from a ∈W to o2 ∈W, the number of elements in EW,W that can
+make a signal move from W to W decreases by 1. Similarly, each time a signal travels from b ∈W to
+o1 ∈W, the number of elements in EW,W that can make a signal move from W to W decreases by 1. Note
+that, if a signal goes from a ∈W to o1 ∈W, or from b ∈W to o2 ∈W, the above numbers do not change.
+Consider RLEM 2-3 (see Fig.12). Starting from q0, we give an input sequence (bb)n (n = 1,2,...) to
+the RLEM 2-3. Then, it produces an output sequence (st)n. By the assumption, the circuit C composed
+
+--- PDF PAGE 11 ---
+K. Morita
+13
+of RLEMs 2-2 performs this behavior. In either case of s ∈W ∧t ∈W or s ∈W ∧t ∈W, the number
+of elements in EW,W that can make a signal move from W to W decreases indeﬁnitely as n grows large,
+since the input is always b ∈W. But, this contradicts the assumption that C is composed of m RLEMs
+2-2, and thus EW,W is ﬁnite. Hence, the circuit C cannot simulate RLEM 2-3.
+For RLEM 2-4, if we give an input sequence (ba)n, it produces (t t)n. For RLEM 2-17, if we give
+(bb)n, it produces (st)n. By a similar argument as above, it is impossible for a circuit composed of
+RLEMs 2-2 to do such behaviors, and thus RLEM 2-2 can simulate neither RLEM 2-4 nor 2-17.
+Non-universality of RLEMs 2-3 and 2-4 is shown in [14].
+Lemma 7 [14] RLEM 2-3 can simulate neither RLEM 2-4, nor 2-17, and RLEM 2-4 can simulate neither
+RLEM 2-3, nor 2-17.
+By Lemmas 6 and 7, we have the following theorem.
+Theorem 3 [14] RLEMs 2-2, 2-3, and 2-4 are non-universal.
+The following lemma says RLEM 2-2 is the weakest one among non-degenerate 2-state RLEMs,
+Lemma 8 [13] RLEM 2-2 can be simulated by any one of RLEMs 2-3, 2-4, and 2-17.
+Fig. 14 summarizes the above results. It is not known whether RLEM 2-17 is universal or not. On the
+other hand, it is shown that any two combination among RLEMs 2-3, 2-4, and 2-17 is universal [5, 13].
+Every 2-state k-symbol
+RLEM k-n (k > 2)
+RLEM
+2-17
+RLEM
+2-3
+RLEM
+2-4
+RLEM
+2-2
+✠
+✒
+❘
+■
+❘
+■
+✠
+✒
+✒
+■
+❄
+❄
+✻
+✲
+✛
+universal
+non-universal
+Figure 14: A hierarchy among 2-state RLEMs. Here, A →B (A̸ →B, respectively) represents that A can
+(cannot) simulate B.
+5
+Concluding remarks
+In this survey, we discussed universality of reversible logic elements with memory (RLEMs), in particular
+2-state RLEMs. It is remarkable that all non-degenerate 2-state RLEMs except only four are universal.
+Hence, the relation among the capability of them is rather simple as shown in Fig. 14. On the other
+hand, in the case of RLEMs with 3 or more states, the situation is very different. Even in the case of 3
+states, relation among them seems very complex according to our partial experimental results [13]. In
+addition, we can construct many-state many-symbol non-degenerate RLEMs from, e.g., 2-state RLEMs
+2-2. By this, we obtain non-universal many-state many-symbol non-degenerate ones, since RLEM 2-2 is
+non-universal. Thus, investigation on many-state RLEMs is left for the future study.
+Acknowledgement. This work was supported, in part, by JSPS KAKENHI Grant No. 24500017.
+
+--- PDF PAGE 12 ---
+14
+Reversible Logic Elements with Memory
+References
+[1] C. H. Bennett (1973): Logical reversibility of computation. IBM J. Res. Dev. 17, pp. 525–532, doi:10.1147/
+rd.176.0525.
+[2] H.K. B¨uning & L. Priese (1980): Universal asynchronous iterative arrays of Mealy automata. Acta Infor-
+matica 13, pp. 269–285, doi:10.1007/BF00288646.
+[3] E. Fredkin & T. Toffoli (1982): Conservative logic. Int. J. Theoret. Phys. 21, pp. 219–253, doi:10.1007/
+BF01857727.
+[4] R.M. Keller (1974): Towards a theory of universal speed-independent modules. IEEE Trans. Computers
+C-23, pp. 21–33, doi:10.1109/T-C.1974.223773.
+[5] J. Lee, F. Peper, S. Adachi & K. Morita (2008): An asynchronous cellular automaton implementing 2-state
+2-input 2-output reversed-twin reversible elements. In: Proc. ACRI 2008, LNCS 5191, Springer-Verlag, pp.
+67–76, doi:10.1007/978-3-540-79992-4_9.
+[6] K. Morita (2001): A simple reversible logic element and cellular automata for reversible computing. In:
+Proc. 3rd Int. Conf. on Machines, Computations, and Universality, LNCS 2055, Springer-Verlag, pp. 102–
+113, doi:10.1007/3-540-45132-3_6.
+[7] K. Morita (2003): A new universal logic element for reversible computing. In: Grammars and Automata for
+String Processing (eds. C. Martin-Vide, and V. Mitrana), Taylor & Francis, London, pp. 285–294, doi:10.
+1201/9780203009642.ch28.
+[8] K. Morita (2008): Reversible computing and cellular automata — A survey. Theoret. Comput. Sci. 395, pp.
+101–131, doi:10.1016/j.tcs.2008.01.041.
+[9] K. Morita (2010): Constructing a reversible Turing machine by a rotary element, a reversible logic ele-
+ment with memory. Hiroshima University Institutional Repository, http://ir.lib.hiroshima-u.ac.
+jp/00029224.
+[10] K. Morita (2012): Reversible Computing (in Japanese). Kindai Kagaku-sha Co., Ltd., Tokyo, ISBN978-4-
+7649-0422-4.
+[11] K. Morita, T. Ogiro, A. Alhazov & T. Tanizawa (2012): Non-degenerate 2-state reversible logic elements
+with three or more symbols are all universal. J. Multiple-Valued Logic and Soft Computing 18, pp. 37–54.
+[12] K. Morita, T. Ogiro, K. Tanaka & H. Kato (2005): Classiﬁcation and universality of reversible logic elements
+with one-bit memory. In: Proc. 4th Int. Conf. on Machines, Computations, and Universality, LNCS 3354,
+Springer-Verlag, pp. 245–256, doi:10.1007/978-3-540-31834-7_20.
+[13] Y. Mukai & K. Morita (2011): Universality of 2-symbol reversible logic elements with memory (in Japanese).
+LA Summer Symposium, Kosai, Sizuoka Prefecture.
+[14] Y. Mukai & K. Morita (2012):
+Hierarchy of reversible logic elements with memory (in Japanese).
+LA Winter Symposium, Kyoto, http://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/
+pdf/1799-28.pdf.
+[15] Y. Mukai & K. Morita (2012): Realizing reversible logic elements with memory in the billiard ball model.
+Int. J. of Unconventional Computing 8(1), pp. 47–59.
+[16] T. Toffoli (1977): Computation and construction universality of reversible cellular automata. J. Comput.
+Syst. Sci. 15, pp. 213–231, doi:10.1016/S0022-0000(77)80007-X.
+[17] T. Toffoli (1980): Reversible computing. In: Automata, Languages and Programming, LNCS 85, Springer-
+Verlag, pp. 632–644, doi:10.1007/3-540-10003-2_104.
+[18] T. Toffoli (1981): Bicontinuous extensions of invertible combinatorial functions. Math. Syst. Theory 14, pp.
+12–23, doi:10.1007/BF01752388.

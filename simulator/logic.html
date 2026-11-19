@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>UMC · Logic circuits</title><link rel="icon" href="data:,"></head>
+<body>
+<header><a href="/simulator/" class="brand">● UMC</a><span class="subtitle">Closed-circuit logic</span><span class="badge">Gates → half-adder</span></header>
+<main>
+<section class="intro"><p class="eyebrow">ONE MARBLE · REPEATED EVALUATION</p><h1>Follow the route. Read the result.</h1><p>Set the inputs, run a closed circuit, and watch the marble select an output track.</p></section>
+<div class="workspace">
+<aside>
+<label for="logic-gate">Example</label><select id="logic-gate"></select>
+<div class="fields"><div><label for="input-a">Input A</label><select id="input-a"><option>0</option><option>1</option></select></div><div id="input-b-field"><label for="input-b">Input B</label><select id="input-b"><option>0</option><option>1</option></select></div></div>
+<label for="logic-mode">Execution</label><select id="logic-mode"><option value="cpu">Physical · CPU</option><option value="gpu">Physical · GPU</option><option value="semantic">Semantic</option></select>
+<label for="logic-scale">Scale</label><select id="logic-scale"><option value="0.5">½ size</option><option value="1" selected>Reference · 1×</option><option value="2">Double · 2×</option></select>
+<p class="hint">Inputs set fixed track switches before a run. They remain unchanged on every lap.</p>
+<button id="logic-run" class="primary">Run</button><div class="buttons"><button id="logic-step">Step</button><button id="logic-reset">Reset</button></div>
+<p id="logic-status" role="status">Loading…</p><p id="logic-error" role="alert" hidden></p>
+</aside>
+<section class="stage" aria-label="Logic simulation"><div class="stage-top"><strong id="logic-title"></strong><span id="logic-formula"></span></div><div id="viewport"></div><div class="stage-bottom"><span id="logic-location">Ready</span><span>Drag to orbit · pinch or scroll to zoom</span></div></section>
+</div>
+<section class="readout" aria-label="Measured outputs"><div><span id="output-label">Output Y</span><strong id="logic-output">—</strong></div><div id="carry-readout" hidden><span>Carry</span><strong id="logic-carry">—</strong></div><div><span>Completed laps</span><strong id="logic-laps">0</strong></div><div><span>Simulation time</span><strong id="logic-time">0 s</strong></div></section>
+<p id="logic-observation" class="note">Waiting for the marble to cross an output track.</p>
+<section class="tracking"><h2>Truth table</h2><p>Expected values below; the readouts above come from observed track crossings. Highlighted row = selected inputs.</p><table><thead id="truth-head"></thead><tbody id="truth-body"></tbody></table></section>
+<section class="tracking" id="adder-sequence" hidden><h2>Half-adder sequence</h2><p>1. XOR routes to Sum. 2. AND routes to Carry. 3. The return circuit brings the same marble back to repeat. Both modules share the same preset A/B inputs.</p><p>The two outputs are sampled sequentially; a complete lap publishes the pair. This is a routing-based half-adder, not a new conditional opcode in the seven-instruction INC/JUMP machine.</p></section>
+<section class="tracking composition-panel"><h2>Component hierarchy</h2><div id="composition-tree"></div></section>
+<section class="tracking"><h2>Completed evaluations</h2><table><thead><tr><th>Lap</th><th>Time</th><th>Observed output tracks</th><th>Result</th></tr></thead><tbody id="logic-history"></tbody></table></section>
+<p class="note">Custom, idealized routing parts: a selected input track, level branches and collectors, and explicit Ferris-wheel/ramp power pairs. No input switches move while running, and no software force directs the marble. Output labels are fixed wiring, not arithmetic performed by the display.</p>
+<p><a href="/simulator/">← Three main assemblies</a> · <a href="/simulator/machine.html">Seven-instruction machine</a></p>
+</main><script type="module" src="/src/simulator/logic-app.js"></script>
+</body></html>

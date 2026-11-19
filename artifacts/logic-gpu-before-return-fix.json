@@ -1,0 +1,781 @@
+{
+  "passed": false,
+  "results": [
+    {
+      "mode": "gpu",
+      "gate": "buffer",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 40.78333333333333,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 13.866666666666667,
+          "outputs": {
+            "buffer": {
+              "value": 0,
+              "rail": "buffer-rail-0",
+              "inputs": [
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 27.866666666666667,
+          "outputs": {
+            "buffer": {
+              "value": 0,
+              "rail": "buffer-rail-0",
+              "inputs": [
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 40.78333333333333,
+          "outputs": {
+            "buffer": {
+              "value": 0,
+              "rail": "buffer-rail-0",
+              "inputs": [
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "buffer",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 40.78333333333333,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 14.716666666666667,
+          "outputs": {
+            "buffer": {
+              "value": 1,
+              "rail": "buffer-rail-1",
+              "inputs": [
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 27.883333333333333,
+          "outputs": {
+            "buffer": {
+              "value": 1,
+              "rail": "buffer-rail-1",
+              "inputs": [
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 40.78333333333333,
+          "outputs": {
+            "buffer": {
+              "value": 1,
+              "rail": "buffer-rail-1",
+              "inputs": [
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "not",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 39.71666666666667,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 13.983333333333333,
+          "outputs": {
+            "not": {
+              "value": 1,
+              "rail": "not-rail-0",
+              "inputs": [
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 26.766666666666666,
+          "outputs": {
+            "not": {
+              "value": 1,
+              "rail": "not-rail-0",
+              "inputs": [
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 39.71666666666667,
+          "outputs": {
+            "not": {
+              "value": 1,
+              "rail": "not-rail-0",
+              "inputs": [
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "not",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 39.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 13.75,
+          "outputs": {
+            "not": {
+              "value": 0,
+              "rail": "not-rail-1",
+              "inputs": [
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 26.7,
+          "outputs": {
+            "not": {
+              "value": 0,
+              "rail": "not-rail-1",
+              "inputs": [
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 39.9,
+          "outputs": {
+            "not": {
+              "value": 0,
+              "rail": "not-rail-1",
+              "inputs": [
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "and",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 46.833333333333336,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 16.716666666666665,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 31.716666666666665,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 46.833333333333336,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "and",
+      "scale": 1,
+      "a": 0,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 50.46666666666667,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 19.4,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 34.8,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 50.46666666666667,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "and",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 48.7,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 16.65,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 32.583333333333336,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 48.7,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "and",
+      "scale": 1,
+      "a": 1,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 49.68333333333333,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 17.666666666666668,
+          "outputs": {
+            "and": {
+              "value": 1,
+              "rail": "and-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 33.65,
+          "outputs": {
+            "and": {
+              "value": 1,
+              "rail": "and-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 49.68333333333333,
+          "outputs": {
+            "and": {
+              "value": 1,
+              "rail": "and-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "or",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 46.733333333333334,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 15.766666666666666,
+          "outputs": {
+            "or": {
+              "value": 0,
+              "rail": "or-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 31.766666666666666,
+          "outputs": {
+            "or": {
+              "value": 0,
+              "rail": "or-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 46.733333333333334,
+          "outputs": {
+            "or": {
+              "value": 0,
+              "rail": "or-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "or",
+      "scale": 1,
+      "a": 0,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 45.85,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 15.666666666666666,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 30.9,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 45.85,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "or",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 48.61666666666667,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 16.666666666666668,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 32.6,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 48.61666666666667,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "or",
+      "scale": 1,
+      "a": 1,
+      "b": 1,
+      "passed": false,
+      "error": "The expression evaluated to a falsy value:\n\n  assert.ok(Math.hypot(...state.current.velocity)<5*Math.sqrt(scale))\n",
+      "current": {
+        "id": "marble",
+        "position": [
+          0.051817893981933594,
+          0.0060476986691355705,
+          -0.005105447489768267
+        ],
+        "rotation": [
+          0.13544563949108124,
+          0.8055265545845032,
+          -0.5713931322097778,
+          -0.07931826263666153
+        ],
+        "velocity": [
+          2.404909610748291,
+          -0.38367506861686707,
+          -5.207522392272949
+        ],
+        "time": 33,
+        "mechanisms": [],
+        "component": "input-wheel",
+        "laps": 2
+      }
+    },
+    {
+      "mode": "gpu",
+      "gate": "nand",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 45.75,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 15.733333333333333,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 30.633333333333333,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 45.75,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "nand",
+      "scale": 1,
+      "a": 0,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 45.63333333333333,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 15.516666666666666,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 30.766666666666666,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 45.63333333333333,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "gpu",
+      "gate": "nand",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 48.65,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 16.866666666666667,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 32.983333333333334,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 48.65,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

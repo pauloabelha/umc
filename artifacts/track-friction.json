@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-11-19T02:44:52.671Z",
+  "results": [
+    {
+      "mode": "cpu",
+      "seconds": 2,
+      "initialSpeed": 0.4,
+      "finalSpeed": 0.3804306089878082,
+      "distance": 0.7804274678230285
+    },
+    {
+      "mode": "gpu",
+      "seconds": 2,
+      "initialSpeed": 0.4,
+      "finalSpeed": 0.38038769364356995,
+      "distance": 0.7803565979003906
+    }
+  ]
+}

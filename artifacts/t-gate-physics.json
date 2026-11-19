@@ -1,0 +1,1029 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "mode": "cpu",
+      "scale": 0.25,
+      "initialState": "left",
+      "pass": 0,
+      "output": "left",
+      "time": 0.37083333333333335
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.25,
+      "initialState": "left",
+      "pass": 1,
+      "output": "right",
+      "time": 0.7463541666666667
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.25,
+      "initialState": "left",
+      "pass": 2,
+      "output": "left",
+      "time": 1.121875
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.25,
+      "initialState": "left",
+      "pass": 3,
+      "output": "right",
+      "time": 1.4984375
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.25,
+      "initialState": "left",
+      "pass": 4,
+      "output": "left",
+      "time": 1.8713541666666667
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.25,
+      "initialState": "left",
+      "pass": 5,
+      "output": "right",
+      "time": 2.2484375
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.25,
+      "initialState": "left",
+      "pass": 6,
+      "output": "left",
+      "time": 2.6213541666666664
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.25,
+      "initialState": "left",
+      "pass": 7,
+      "output": "right",
+      "time": 2.996875
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.25,
+      "initialState": "right",
+      "pass": 0,
+      "output": "right",
+      "time": 0.37083333333333335
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.25,
+      "initialState": "right",
+      "pass": 1,
+      "output": "left",
+      "time": 0.7463541666666667
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.25,
+      "initialState": "right",
+      "pass": 2,
+      "output": "right",
+      "time": 1.1208333333333333
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.25,
+      "initialState": "right",
+      "pass": 3,
+      "output": "left",
+      "time": 1.496875
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.25,
+      "initialState": "right",
+      "pass": 4,
+      "output": "right",
+      "time": 1.8708333333333333
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.25,
+      "initialState": "right",
+      "pass": 5,
+      "output": "left",
+      "time": 2.2463541666666664
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.25,
+      "initialState": "right",
+      "pass": 6,
+      "output": "right",
+      "time": 2.621875
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.25,
+      "initialState": "right",
+      "pass": 7,
+      "output": "left",
+      "time": 2.996875
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.5,
+      "initialState": "left",
+      "pass": 0,
+      "output": "left",
+      "time": 0.5244375293800229
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.5,
+      "initialState": "left",
+      "pass": 1,
+      "output": "right",
+      "time": 1.0555041848336695
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.5,
+      "initialState": "left",
+      "pass": 2,
+      "output": "left",
+      "time": 1.5865708402873162
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.5,
+      "initialState": "left",
+      "pass": 3,
+      "output": "right",
+      "time": 2.1191106348684348
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.5,
+      "initialState": "left",
+      "pass": 4,
+      "output": "left",
+      "time": 2.6464944425034016
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.5,
+      "initialState": "left",
+      "pass": 5,
+      "output": "right",
+      "time": 3.179770806648256
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.5,
+      "initialState": "left",
+      "pass": 6,
+      "output": "left",
+      "time": 3.707154614283223
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.5,
+      "initialState": "left",
+      "pass": 7,
+      "output": "right",
+      "time": 4.2382212697368695
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.5,
+      "initialState": "right",
+      "pass": 0,
+      "output": "right",
+      "time": 0.5244375293800229
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.5,
+      "initialState": "right",
+      "pass": 1,
+      "output": "left",
+      "time": 1.0555041848336695
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.5,
+      "initialState": "right",
+      "pass": 2,
+      "output": "right",
+      "time": 1.5850977011598442
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.5,
+      "initialState": "right",
+      "pass": 3,
+      "output": "left",
+      "time": 2.116900926177227
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.5,
+      "initialState": "right",
+      "pass": 4,
+      "output": "right",
+      "time": 2.6457578729396656
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.5,
+      "initialState": "right",
+      "pass": 5,
+      "output": "left",
+      "time": 3.1768245283933125
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.5,
+      "initialState": "right",
+      "pass": 6,
+      "output": "right",
+      "time": 3.707891183846959
+    },
+    {
+      "mode": "cpu",
+      "scale": 0.5,
+      "initialState": "right",
+      "pass": 7,
+      "output": "left",
+      "time": 4.2382212697368695
+    },
+    {
+      "mode": "cpu",
+      "scale": 1,
+      "initialState": "left",
+      "pass": 0,
+      "output": "left",
+      "time": 0.7416666666666667
+    },
+    {
+      "mode": "cpu",
+      "scale": 1,
+      "initialState": "left",
+      "pass": 1,
+      "output": "right",
+      "time": 1.4927083333333333
+    },
+    {
+      "mode": "cpu",
+      "scale": 1,
+      "initialState": "left",
+      "pass": 2,
+      "output": "left",
+      "time": 2.24375
+    },
+    {
+      "mode": "cpu",
+      "scale": 1,
+      "initialState": "left",
+      "pass": 3,
+      "output": "right",
+      "time": 2.996875
+    },
+    {
+      "mode": "cpu",
+      "scale": 1,
+      "initialState": "left",
+      "pass": 4,
+      "output": "left",
+      "time": 3.7427083333333333
+    },
+    {
+      "mode": "cpu",
+      "scale": 1,
+      "initialState": "left",
+      "pass": 5,
+      "output": "right",
+      "time": 4.496875
+    },
+    {
+      "mode": "cpu",
+      "scale": 1,
+      "initialState": "left",
+      "pass": 6,
+      "output": "left",
+      "time": 5.242708333333333
+    },
+    {
+      "mode": "cpu",
+      "scale": 1,
+      "initialState": "left",
+      "pass": 7,
+      "output": "right",
+      "time": 5.99375
+    },
+    {
+      "mode": "cpu",
+      "scale": 1,
+      "initialState": "right",
+      "pass": 0,
+      "output": "right",
+      "time": 0.7416666666666667
+    },
+    {
+      "mode": "cpu",
+      "scale": 1,
+      "initialState": "right",
+      "pass": 1,
+      "output": "left",
+      "time": 1.4927083333333333
+    },
+    {
+      "mode": "cpu",
+      "scale": 1,
+      "initialState": "right",
+      "pass": 2,
+      "output": "right",
+      "time": 2.2416666666666667
+    },
+    {
+      "mode": "cpu",
+      "scale": 1,
+      "initialState": "right",
+      "pass": 3,
+      "output": "left",
+      "time": 2.99375
+    },
+    {
+      "mode": "cpu",
+      "scale": 1,
+      "initialState": "right",
+      "pass": 4,
+      "output": "right",
+      "time": 3.7416666666666667
+    },
+    {
+      "mode": "cpu",
+      "scale": 1,
+      "initialState": "right",
+      "pass": 5,
+      "output": "left",
+      "time": 4.492708333333333
+    },
+    {
+      "mode": "cpu",
+      "scale": 1,
+      "initialState": "right",
+      "pass": 6,
+      "output": "right",
+      "time": 5.24375
+    },
+    {
+      "mode": "cpu",
+      "scale": 1,
+      "initialState": "right",
+      "pass": 7,
+      "output": "left",
+      "time": 5.99375
+    },
+    {
+      "mode": "cpu",
+      "scale": 2,
+      "initialState": "left",
+      "pass": 0,
+      "output": "left",
+      "time": 1.0488750587600457
+    },
+    {
+      "mode": "cpu",
+      "scale": 2,
+      "initialState": "left",
+      "pass": 1,
+      "output": "right",
+      "time": 2.111008369667339
+    },
+    {
+      "mode": "cpu",
+      "scale": 2,
+      "initialState": "left",
+      "pass": 2,
+      "output": "left",
+      "time": 3.1731416805746324
+    },
+    {
+      "mode": "cpu",
+      "scale": 2,
+      "initialState": "left",
+      "pass": 3,
+      "output": "right",
+      "time": 4.2382212697368695
+    },
+    {
+      "mode": "cpu",
+      "scale": 2,
+      "initialState": "left",
+      "pass": 4,
+      "output": "left",
+      "time": 5.292988885006803
+    },
+    {
+      "mode": "cpu",
+      "scale": 2,
+      "initialState": "left",
+      "pass": 5,
+      "output": "right",
+      "time": 6.359541613296512
+    },
+    {
+      "mode": "cpu",
+      "scale": 2,
+      "initialState": "left",
+      "pass": 6,
+      "output": "left",
+      "time": 7.414309228566446
+    },
+    {
+      "mode": "cpu",
+      "scale": 2,
+      "initialState": "left",
+      "pass": 7,
+      "output": "right",
+      "time": 8.476442539473739
+    },
+    {
+      "mode": "cpu",
+      "scale": 2,
+      "initialState": "right",
+      "pass": 0,
+      "output": "right",
+      "time": 1.0488750587600457
+    },
+    {
+      "mode": "cpu",
+      "scale": 2,
+      "initialState": "right",
+      "pass": 1,
+      "output": "left",
+      "time": 2.111008369667339
+    },
+    {
+      "mode": "cpu",
+      "scale": 2,
+      "initialState": "right",
+      "pass": 2,
+      "output": "right",
+      "time": 3.1701954023196883
+    },
+    {
+      "mode": "cpu",
+      "scale": 2,
+      "initialState": "right",
+      "pass": 3,
+      "output": "left",
+      "time": 4.233801852354454
+    },
+    {
+      "mode": "cpu",
+      "scale": 2,
+      "initialState": "right",
+      "pass": 4,
+      "output": "right",
+      "time": 5.291515745879331
+    },
+    {
+      "mode": "cpu",
+      "scale": 2,
+      "initialState": "right",
+      "pass": 5,
+      "output": "left",
+      "time": 6.353649056786625
+    },
+    {
+      "mode": "cpu",
+      "scale": 2,
+      "initialState": "right",
+      "pass": 6,
+      "output": "right",
+      "time": 7.415782367693918
+    },
+    {
+      "mode": "cpu",
+      "scale": 2,
+      "initialState": "right",
+      "pass": 7,
+      "output": "left",
+      "time": 8.476442539473739
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.25,
+      "initialState": "left",
+      "pass": 0,
+      "output": "left",
+      "time": 0.3625
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.25,
+      "initialState": "left",
+      "pass": 1,
+      "output": "right",
+      "time": 0.73125
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.25,
+      "initialState": "left",
+      "pass": 2,
+      "output": "left",
+      "time": 1.0979166666666667
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.25,
+      "initialState": "left",
+      "pass": 3,
+      "output": "right",
+      "time": 1.4645833333333333
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.25,
+      "initialState": "left",
+      "pass": 4,
+      "output": "left",
+      "time": 1.83125
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.25,
+      "initialState": "left",
+      "pass": 5,
+      "output": "right",
+      "time": 2.1979166666666665
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.25,
+      "initialState": "left",
+      "pass": 6,
+      "output": "left",
+      "time": 2.564583333333333
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.25,
+      "initialState": "left",
+      "pass": 7,
+      "output": "right",
+      "time": 2.93125
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.25,
+      "initialState": "right",
+      "pass": 0,
+      "output": "right",
+      "time": 0.3625
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.25,
+      "initialState": "right",
+      "pass": 1,
+      "output": "left",
+      "time": 0.73125
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.25,
+      "initialState": "right",
+      "pass": 2,
+      "output": "right",
+      "time": 1.0979166666666667
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.25,
+      "initialState": "right",
+      "pass": 3,
+      "output": "left",
+      "time": 1.4645833333333333
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.25,
+      "initialState": "right",
+      "pass": 4,
+      "output": "right",
+      "time": 1.83125
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.25,
+      "initialState": "right",
+      "pass": 5,
+      "output": "left",
+      "time": 2.1979166666666665
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.25,
+      "initialState": "right",
+      "pass": 6,
+      "output": "right",
+      "time": 2.564583333333333
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.25,
+      "initialState": "right",
+      "pass": 7,
+      "output": "left",
+      "time": 2.93125
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.5,
+      "initialState": "left",
+      "pass": 0,
+      "output": "left",
+      "time": 0.5126524163602469
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.5,
+      "initialState": "left",
+      "pass": 1,
+      "output": "right",
+      "time": 1.0341436674853257
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.5,
+      "initialState": "left",
+      "pass": 2,
+      "output": "left",
+      "time": 1.5526886403554607
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.5,
+      "initialState": "left",
+      "pass": 3,
+      "output": "right",
+      "time": 2.0712336132255955
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.5,
+      "initialState": "left",
+      "pass": 4,
+      "output": "left",
+      "time": 2.5897785860957305
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.5,
+      "initialState": "left",
+      "pass": 5,
+      "output": "right",
+      "time": 3.108323558965865
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.5,
+      "initialState": "left",
+      "pass": 6,
+      "output": "left",
+      "time": 3.626868531836
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.5,
+      "initialState": "left",
+      "pass": 7,
+      "output": "right",
+      "time": 4.145413504706135
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.5,
+      "initialState": "right",
+      "pass": 0,
+      "output": "right",
+      "time": 0.5126524163602469
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.5,
+      "initialState": "right",
+      "pass": 1,
+      "output": "left",
+      "time": 1.0341436674853257
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.5,
+      "initialState": "right",
+      "pass": 2,
+      "output": "right",
+      "time": 1.5526886403554607
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.5,
+      "initialState": "right",
+      "pass": 3,
+      "output": "left",
+      "time": 2.0712336132255955
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.5,
+      "initialState": "right",
+      "pass": 4,
+      "output": "right",
+      "time": 2.5897785860957305
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.5,
+      "initialState": "right",
+      "pass": 5,
+      "output": "left",
+      "time": 3.108323558965865
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.5,
+      "initialState": "right",
+      "pass": 6,
+      "output": "right",
+      "time": 3.626868531836
+    },
+    {
+      "mode": "gpu",
+      "scale": 0.5,
+      "initialState": "right",
+      "pass": 7,
+      "output": "left",
+      "time": 4.145413504706135
+    },
+    {
+      "mode": "gpu",
+      "scale": 1,
+      "initialState": "left",
+      "pass": 0,
+      "output": "left",
+      "time": 0.725
+    },
+    {
+      "mode": "gpu",
+      "scale": 1,
+      "initialState": "left",
+      "pass": 1,
+      "output": "right",
+      "time": 1.4625
+    },
+    {
+      "mode": "gpu",
+      "scale": 1,
+      "initialState": "left",
+      "pass": 2,
+      "output": "left",
+      "time": 2.1958333333333333
+    },
+    {
+      "mode": "gpu",
+      "scale": 1,
+      "initialState": "left",
+      "pass": 3,
+      "output": "right",
+      "time": 2.9291666666666667
+    },
+    {
+      "mode": "gpu",
+      "scale": 1,
+      "initialState": "left",
+      "pass": 4,
+      "output": "left",
+      "time": 3.6625
+    },
+    {
+      "mode": "gpu",
+      "scale": 1,
+      "initialState": "left",
+      "pass": 5,
+      "output": "right",
+      "time": 4.395833333333333
+    },
+    {
+      "mode": "gpu",
+      "scale": 1,
+      "initialState": "left",
+      "pass": 6,
+      "output": "left",
+      "time": 5.129166666666666
+    },
+    {
+      "mode": "gpu",
+      "scale": 1,
+      "initialState": "left",
+      "pass": 7,
+      "output": "right",
+      "time": 5.8625
+    },
+    {
+      "mode": "gpu",
+      "scale": 1,
+      "initialState": "right",
+      "pass": 0,
+      "output": "right",
+      "time": 0.725
+    },
+    {
+      "mode": "gpu",
+      "scale": 1,
+      "initialState": "right",
+      "pass": 1,
+      "output": "left",
+      "time": 1.4625
+    },
+    {
+      "mode": "gpu",
+      "scale": 1,
+      "initialState": "right",
+      "pass": 2,
+      "output": "right",
+      "time": 2.1958333333333333
+    },
+    {
+      "mode": "gpu",
+      "scale": 1,
+      "initialState": "right",
+      "pass": 3,
+      "output": "left",
+      "time": 2.9291666666666667
+    },
+    {
+      "mode": "gpu",
+      "scale": 1,
+      "initialState": "right",
+      "pass": 4,
+      "output": "right",
+      "time": 3.6625
+    },
+    {
+      "mode": "gpu",
+      "scale": 1,
+      "initialState": "right",
+      "pass": 5,
+      "output": "left",
+      "time": 4.395833333333333
+    },
+    {
+      "mode": "gpu",
+      "scale": 1,
+      "initialState": "right",
+      "pass": 6,
+      "output": "right",
+      "time": 5.129166666666666
+    },
+    {
+      "mode": "gpu",
+      "scale": 1,
+      "initialState": "right",
+      "pass": 7,
+      "output": "left",
+      "time": 5.8625
+    },
+    {
+      "mode": "gpu",
+      "scale": 2,
+      "initialState": "left",
+      "pass": 0,
+      "output": "left",
+      "time": 1.0253048327204939
+    },
+    {
+      "mode": "gpu",
+      "scale": 2,
+      "initialState": "left",
+      "pass": 1,
+      "output": "right",
+      "time": 2.0682873349706514
+    },
+    {
+      "mode": "gpu",
+      "scale": 2,
+      "initialState": "left",
+      "pass": 2,
+      "output": "left",
+      "time": 3.1053772807109215
+    },
+    {
+      "mode": "gpu",
+      "scale": 2,
+      "initialState": "left",
+      "pass": 3,
+      "output": "right",
+      "time": 4.142467226451191
+    },
+    {
+      "mode": "gpu",
+      "scale": 2,
+      "initialState": "left",
+      "pass": 4,
+      "output": "left",
+      "time": 5.179557172191461
+    },
+    {
+      "mode": "gpu",
+      "scale": 2,
+      "initialState": "left",
+      "pass": 5,
+      "output": "right",
+      "time": 6.21664711793173
+    },
+    {
+      "mode": "gpu",
+      "scale": 2,
+      "initialState": "left",
+      "pass": 6,
+      "output": "left",
+      "time": 7.253737063672
+    },
+    {
+      "mode": "gpu",
+      "scale": 2,
+      "initialState": "left",
+      "pass": 7,
+      "output": "right",
+      "time": 8.29082700941227
+    },
+    {
+      "mode": "gpu",
+      "scale": 2,
+      "initialState": "right",
+      "pass": 0,
+      "output": "right",
+      "time": 1.0253048327204939
+    },
+    {
+      "mode": "gpu",
+      "scale": 2,
+      "initialState": "right",
+      "pass": 1,
+      "output": "left",
+      "time": 2.0682873349706514
+    },
+    {
+      "mode": "gpu",
+      "scale": 2,
+      "initialState": "right",
+      "pass": 2,
+      "output": "right",
+      "time": 3.1053772807109215
+    },
+    {
+      "mode": "gpu",
+      "scale": 2,
+      "initialState": "right",
+      "pass": 3,
+      "output": "left",
+      "time": 4.142467226451191
+    },
+    {
+      "mode": "gpu",
+      "scale": 2,
+      "initialState": "right",
+      "pass": 4,
+      "output": "right",
+      "time": 5.179557172191461
+    },
+    {
+      "mode": "gpu",
+      "scale": 2,
+      "initialState": "right",
+      "pass": 5,
+      "output": "left",
+      "time": 6.21664711793173
+    },
+    {
+      "mode": "gpu",
+      "scale": 2,
+      "initialState": "right",
+      "pass": 6,
+      "output": "right",
+      "time": 7.253737063672
+    },
+    {
+      "mode": "gpu",
+      "scale": 2,
+      "initialState": "right",
+      "pass": 7,
+      "output": "left",
+      "time": 8.29082700941227
+    }
+  ]
+}

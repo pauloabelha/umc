@@ -1,0 +1,10 @@
+node_modules/
+.venv-gpu/
+__pycache__/
+dist/
+artifacts/*
+!artifacts/*.json
+
+.vercel/
+.env*
+.vercel

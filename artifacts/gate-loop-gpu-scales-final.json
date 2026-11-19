@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "component": "toggle-loop",
+      "mode": "gpu",
+      "scale": 0.25,
+      "bits": 4,
+      "passed": true,
+      "time": 17.608333333333334,
+      "laps": 5,
+      "instructions": 0,
+      "checks": []
+    },
+    {
+      "component": "toggle-loop",
+      "mode": "gpu",
+      "scale": 0.5,
+      "bits": 4,
+      "passed": true,
+      "time": 24.878373584746697,
+      "laps": 5,
+      "instructions": 0,
+      "checks": []
+    },
+    {
+      "component": "toggle-loop",
+      "mode": "gpu",
+      "scale": 2,
+      "bits": 4,
+      "passed": true,
+      "time": 49.59175558721653,
+      "laps": 5,
+      "instructions": 0,
+      "checks": []
+    }
+  ]
+}

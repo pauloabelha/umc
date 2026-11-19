@@ -1,0 +1,171 @@
+[
+  {
+    "component": "closed-loop",
+    "mode": "cpu",
+    "scale": 0.25,
+    "passed": true,
+    "time": 12.924999999999999,
+    "laps": 5,
+    "position": [
+      0.0033267694525420666,
+      0.00322849303483963,
+      -0.004676668904721737
+    ],
+    "stage": "elevator"
+  },
+  {
+    "component": "closed-loop",
+    "mode": "cpu",
+    "scale": 0.5,
+    "passed": true,
+    "time": 18.278710293672255,
+    "laps": 5,
+    "position": [
+      0.006653538905084133,
+      0.00645698606967926,
+      -0.009353337809443474
+    ],
+    "stage": "elevator"
+  },
+  {
+    "component": "closed-loop",
+    "mode": "cpu",
+    "scale": 1,
+    "passed": true,
+    "time": 25.849999999999998,
+    "laps": 5,
+    "position": [
+      0.013307077810168266,
+      0.01291397213935852,
+      -0.018706675618886948
+    ],
+    "stage": "elevator"
+  },
+  {
+    "component": "closed-loop",
+    "mode": "cpu",
+    "scale": 2,
+    "passed": true,
+    "time": 36.55742058734451,
+    "laps": 5,
+    "position": [
+      0.026614155620336533,
+      0.02582794427871704,
+      -0.037413351237773895
+    ],
+    "stage": "elevator"
+  },
+  {
+    "component": "toggle-loop",
+    "mode": "cpu",
+    "scale": 0.25,
+    "passed": true,
+    "time": 20.266666666666666,
+    "laps": 5,
+    "position": [
+      0.0003617878828663379,
+      0.00272519513964653,
+      0.00455876812338829
+    ],
+    "stage": "elevator"
+  },
+  {
+    "component": "toggle-loop",
+    "mode": "cpu",
+    "scale": 0.5,
+    "passed": true,
+    "time": 28.66139486409473,
+    "laps": 5,
+    "position": [
+      0.0007235757657326758,
+      0.00545039027929306,
+      0.00911753624677658
+    ],
+    "stage": "elevator"
+  },
+  {
+    "component": "toggle-loop",
+    "mode": "cpu",
+    "scale": 1,
+    "passed": true,
+    "time": 40.53333333333333,
+    "laps": 5,
+    "position": [
+      0.0014471515314653516,
+      0.01090078055858612,
+      0.01823507249355316
+    ],
+    "stage": "elevator"
+  },
+  {
+    "component": "toggle-loop",
+    "mode": "cpu",
+    "scale": 2,
+    "passed": true,
+    "time": 57.32278972818946,
+    "laps": 5,
+    "position": [
+      0.002894303062930703,
+      0.02180156111717224,
+      0.03647014498710632
+    ],
+    "stage": "elevator"
+  },
+  {
+    "component": "closed-loop",
+    "mode": "gpu",
+    "scale": 0.25,
+    "passed": true,
+    "time": 16.008333333333333,
+    "laps": 5,
+    "position": [
+      0.0025289494078606367,
+      0.0025424319319427013,
+      -0.004878503270447254
+    ],
+    "stage": "elevator"
+  },
+  {
+    "component": "closed-loop",
+    "mode": "gpu",
+    "scale": 0.5,
+    "passed": true,
+    "time": 21.260343887675532,
+    "laps": 5,
+    "position": [
+      0.0007505451794713736,
+      0.0054840329103171825,
+      -0.009544803760945797
+    ],
+    "stage": "elevator"
+  },
+  {
+    "component": "closed-loop",
+    "mode": "gpu",
+    "scale": 1,
+    "passed": false,
+    "time": 13.2,
+    "laps": 2,
+    "status": "escaped",
+    "position": [
+      6.544930458068848,
+      -0.26014864444732666,
+      2.135502576828003
+    ],
+    "stage": null
+  },
+  {
+    "component": "closed-loop",
+    "mode": "gpu",
+    "scale": 2,
+    "passed": false,
+    "time": 127.27922061357856,
+    "laps": 0,
+    "position": [
+      -0.027103383094072342,
+      0.022000005468726158,
+      0.6312456130981445
+    ],
+    "stage": "elevator"
+  }
+]

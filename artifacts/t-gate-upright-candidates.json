@@ -1,0 +1,209 @@
+[
+  {
+    "shape": "inverted-t",
+    "height": 0.025,
+    "angle": 0.4,
+    "mass": 0.0005,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.025,
+    "angle": 0.4,
+    "mass": 0.001,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.025,
+    "angle": 0.4,
+    "mass": 0.002,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.025,
+    "angle": 0.4,
+    "mass": 0.004,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.025,
+    "angle": 0.6,
+    "mass": 0.0005,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.025,
+    "angle": 0.6,
+    "mass": 0.001,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.025,
+    "angle": 0.6,
+    "mass": 0.002,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.025,
+    "angle": 0.6,
+    "mass": 0.004,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.035,
+    "angle": 0.4,
+    "mass": 0.001,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.035,
+    "angle": 0.4,
+    "mass": 0.002,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.035,
+    "angle": 0.4,
+    "mass": 0.004,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.035,
+    "angle": 0.6,
+    "mass": 0.0005,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.035,
+    "angle": 0.6,
+    "mass": 0.001,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.035,
+    "angle": 0.6,
+    "mass": 0.002,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.035,
+    "angle": 0.6,
+    "mass": 0.004,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.045,
+    "angle": 0.4,
+    "mass": 0.0005,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.045,
+    "angle": 0.4,
+    "mass": 0.001,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.045,
+    "angle": 0.4,
+    "mass": 0.002,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.045,
+    "angle": 0.4,
+    "mass": 0.004,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.045,
+    "angle": 0.6,
+    "mass": 0.0005,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.045,
+    "angle": 0.6,
+    "mass": 0.001,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.045,
+    "angle": 0.6,
+    "mass": 0.002,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  },
+  {
+    "shape": "inverted-t",
+    "height": 0.045,
+    "angle": 0.6,
+    "mass": 0.004,
+    "drop": 0.071,
+    "lengthUnit": 0.1,
+    "count": 8
+  }
+]
