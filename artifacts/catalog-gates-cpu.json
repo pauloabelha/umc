@@ -1,0 +1,1817 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "mode": "cpu",
+      "gate": "buffer",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 48.03333333333333,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 16.03333333333333,
+          "outputs": {
+            "buffer": {
+              "value": 0,
+              "rail": "buffer-rail-0",
+              "inputs": [
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 32.03333333333333,
+          "outputs": {
+            "buffer": {
+              "value": 0,
+              "rail": "buffer-rail-0",
+              "inputs": [
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 48.03333333333333,
+          "outputs": {
+            "buffer": {
+              "value": 0,
+              "rail": "buffer-rail-0",
+              "inputs": [
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "buffer",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 51.03333333333333,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 17.016666666666666,
+          "outputs": {
+            "buffer": {
+              "value": 1,
+              "rail": "buffer-rail-1",
+              "inputs": [
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 34.03333333333333,
+          "outputs": {
+            "buffer": {
+              "value": 1,
+              "rail": "buffer-rail-1",
+              "inputs": [
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 51.03333333333333,
+          "outputs": {
+            "buffer": {
+              "value": 1,
+              "rail": "buffer-rail-1",
+              "inputs": [
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "not",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 48.03333333333333,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 16.03333333333333,
+          "outputs": {
+            "not": {
+              "value": 1,
+              "rail": "not-rail-0",
+              "inputs": [
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 32.03333333333333,
+          "outputs": {
+            "not": {
+              "value": 1,
+              "rail": "not-rail-0",
+              "inputs": [
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 48.03333333333333,
+          "outputs": {
+            "not": {
+              "value": 1,
+              "rail": "not-rail-0",
+              "inputs": [
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "not",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 51.03333333333333,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 17.016666666666666,
+          "outputs": {
+            "not": {
+              "value": 0,
+              "rail": "not-rail-1",
+              "inputs": [
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 34.03333333333333,
+          "outputs": {
+            "not": {
+              "value": 0,
+              "rail": "not-rail-1",
+              "inputs": [
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 51.03333333333333,
+          "outputs": {
+            "not": {
+              "value": 0,
+              "rail": "not-rail-1",
+              "inputs": [
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "and",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.9,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.9,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "and",
+      "scale": 1,
+      "a": 0,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.933333333333334,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.93333333333333,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "and",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.916666666666668,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.9,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "and": {
+              "value": 0,
+              "rail": "and-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "and",
+      "scale": 1,
+      "a": 1,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.883333333333333,
+          "outputs": {
+            "and": {
+              "value": 1,
+              "rail": "and-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.916666666666664,
+          "outputs": {
+            "and": {
+              "value": 1,
+              "rail": "and-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "and": {
+              "value": 1,
+              "rail": "and-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "or",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.9,
+          "outputs": {
+            "or": {
+              "value": 0,
+              "rail": "or-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.9,
+          "outputs": {
+            "or": {
+              "value": 0,
+              "rail": "or-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "or": {
+              "value": 0,
+              "rail": "or-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "or",
+      "scale": 1,
+      "a": 0,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.933333333333334,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.93333333333333,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "or",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.916666666666668,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.9,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "or",
+      "scale": 1,
+      "a": 1,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.883333333333333,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.916666666666664,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "or": {
+              "value": 1,
+              "rail": "or-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "nand",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.9,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.9,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "nand",
+      "scale": 1,
+      "a": 0,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.933333333333334,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.93333333333333,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "nand",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.916666666666668,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.9,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "nand": {
+              "value": 1,
+              "rail": "nand-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "nand",
+      "scale": 1,
+      "a": 1,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.883333333333333,
+          "outputs": {
+            "nand": {
+              "value": 0,
+              "rail": "nand-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.916666666666664,
+          "outputs": {
+            "nand": {
+              "value": 0,
+              "rail": "nand-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "nand": {
+              "value": 0,
+              "rail": "nand-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "nor",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.9,
+          "outputs": {
+            "nor": {
+              "value": 1,
+              "rail": "nor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.9,
+          "outputs": {
+            "nor": {
+              "value": 1,
+              "rail": "nor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "nor": {
+              "value": 1,
+              "rail": "nor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "nor",
+      "scale": 1,
+      "a": 0,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.933333333333334,
+          "outputs": {
+            "nor": {
+              "value": 0,
+              "rail": "nor-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.93333333333333,
+          "outputs": {
+            "nor": {
+              "value": 0,
+              "rail": "nor-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "nor": {
+              "value": 0,
+              "rail": "nor-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "nor",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.916666666666668,
+          "outputs": {
+            "nor": {
+              "value": 0,
+              "rail": "nor-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.9,
+          "outputs": {
+            "nor": {
+              "value": 0,
+              "rail": "nor-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "nor": {
+              "value": 0,
+              "rail": "nor-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "nor",
+      "scale": 1,
+      "a": 1,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.883333333333333,
+          "outputs": {
+            "nor": {
+              "value": 0,
+              "rail": "nor-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.916666666666664,
+          "outputs": {
+            "nor": {
+              "value": 0,
+              "rail": "nor-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "nor": {
+              "value": 0,
+              "rail": "nor-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "xor",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.9,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.9,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "xor",
+      "scale": 1,
+      "a": 0,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.933333333333334,
+          "outputs": {
+            "xor": {
+              "value": 1,
+              "rail": "xor-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.93333333333333,
+          "outputs": {
+            "xor": {
+              "value": 1,
+              "rail": "xor-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "xor": {
+              "value": 1,
+              "rail": "xor-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "xor",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.916666666666668,
+          "outputs": {
+            "xor": {
+              "value": 1,
+              "rail": "xor-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.9,
+          "outputs": {
+            "xor": {
+              "value": 1,
+              "rail": "xor-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "xor": {
+              "value": 1,
+              "rail": "xor-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "xor",
+      "scale": 1,
+      "a": 1,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.883333333333333,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.916666666666664,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "xnor",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.9,
+          "outputs": {
+            "xnor": {
+              "value": 1,
+              "rail": "xnor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.9,
+          "outputs": {
+            "xnor": {
+              "value": 1,
+              "rail": "xnor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "xnor": {
+              "value": 1,
+              "rail": "xnor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "xnor",
+      "scale": 1,
+      "a": 0,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.933333333333334,
+          "outputs": {
+            "xnor": {
+              "value": 0,
+              "rail": "xnor-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.93333333333333,
+          "outputs": {
+            "xnor": {
+              "value": 0,
+              "rail": "xnor-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "xnor": {
+              "value": 0,
+              "rail": "xnor-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "xnor",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.916666666666668,
+          "outputs": {
+            "xnor": {
+              "value": 0,
+              "rail": "xnor-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.9,
+          "outputs": {
+            "xnor": {
+              "value": 0,
+              "rail": "xnor-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "xnor": {
+              "value": 0,
+              "rail": "xnor-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "xnor",
+      "scale": 1,
+      "a": 1,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 54.9,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 18.883333333333333,
+          "outputs": {
+            "xnor": {
+              "value": 1,
+              "rail": "xnor-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 36.916666666666664,
+          "outputs": {
+            "xnor": {
+              "value": 1,
+              "rail": "xnor-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 54.9,
+          "outputs": {
+            "xnor": {
+              "value": 1,
+              "rail": "xnor-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "half-adder",
+      "scale": 1,
+      "a": 0,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 84.81666666666666,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 28.7,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            },
+            "and": {
+              "value": 0,
+              "rail": "and-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 56.699999999999996,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            },
+            "and": {
+              "value": 0,
+              "rail": "and-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 84.81666666666666,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            },
+            "and": {
+              "value": 0,
+              "rail": "and-rail-00",
+              "inputs": [
+                0,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "half-adder",
+      "scale": 1,
+      "a": 0,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 84.76666666666667,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 28.75,
+          "outputs": {
+            "xor": {
+              "value": 1,
+              "rail": "xor-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            },
+            "and": {
+              "value": 0,
+              "rail": "and-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 56.766666666666666,
+          "outputs": {
+            "xor": {
+              "value": 1,
+              "rail": "xor-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            },
+            "and": {
+              "value": 0,
+              "rail": "and-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 84.76666666666667,
+          "outputs": {
+            "xor": {
+              "value": 1,
+              "rail": "xor-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            },
+            "and": {
+              "value": 0,
+              "rail": "and-rail-01",
+              "inputs": [
+                0,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "half-adder",
+      "scale": 1,
+      "a": 1,
+      "b": 0,
+      "passed": true,
+      "laps": 3,
+      "time": 84.73333333333333,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 28.766666666666666,
+          "outputs": {
+            "xor": {
+              "value": 1,
+              "rail": "xor-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            },
+            "and": {
+              "value": 0,
+              "rail": "and-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 56.766666666666666,
+          "outputs": {
+            "xor": {
+              "value": 1,
+              "rail": "xor-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            },
+            "and": {
+              "value": 0,
+              "rail": "and-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 84.73333333333333,
+          "outputs": {
+            "xor": {
+              "value": 1,
+              "rail": "xor-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            },
+            "and": {
+              "value": 0,
+              "rail": "and-rail-10",
+              "inputs": [
+                1,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mode": "cpu",
+      "gate": "half-adder",
+      "scale": 1,
+      "a": 1,
+      "b": 1,
+      "passed": true,
+      "laps": 3,
+      "time": 84.73333333333333,
+      "trace": [
+        {
+          "lap": 1,
+          "time": 28.716666666666665,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            },
+            "and": {
+              "value": 1,
+              "rail": "and-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 2,
+          "time": 56.733333333333334,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            },
+            "and": {
+              "value": 1,
+              "rail": "and-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "lap": 3,
+          "time": 84.73333333333333,
+          "outputs": {
+            "xor": {
+              "value": 0,
+              "rail": "xor-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            },
+            "and": {
+              "value": 1,
+              "rail": "and-rail-11",
+              "inputs": [
+                1,
+                1
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

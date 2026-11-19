@@ -3,7 +3,7 @@ import {mountComponentBrowser} from './component-browser.js';
 import {renderComposition} from './composition-view.js';
 import {registerValue} from '../machine/increment-register.js';
 import './style.css';
-import {componentCatalog as catalog, makeExperiment, experimentScene} from './catalog.js';
+import {physicalCatalog as catalog, makeExperiment, experimentScene} from './catalog.js';
 import {createSession} from './session.js';
 import {createView} from './view.js';
 import {gpuClient} from '../backends/gpu.js';

@@ -1,15 +1,20 @@
 import assert from 'node:assert/strict';
 import {mkdir,writeFile} from 'node:fs/promises';
-import {catalog as assemblies,componentCatalog,makeExperiment} from '../src/simulator/catalog.js';
+import {physicalCatalog,makeExperiment} from '../src/simulator/catalog.js';
 import {createSession} from '../src/simulator/session.js';
 
-const catalog=[...assemblies,...componentCatalog.filter(entry=>['straight-track','curve-track','ramp','ferry','t-gate','two-tracks'].includes(entry.id))];
+const args=Object.fromEntries(process.argv.slice(2).map(arg=>arg.replace(/^--/,'').split('=')));
+const catalog=physicalCatalog;
+const modes=(args.mode??'semantic,cpu,gpu').split(',');
+assert.ok(modes.every(mode=>['semantic','cpu','gpu'].includes(mode)));
+const scales=(args.scales??'1').split(',').map(Number);
+assert.ok(scales.every(scale=>Number.isFinite(scale)&&scale>0));
 const results=[];
-for(const mode of ['semantic','cpu','gpu'])for(const entry of catalog){
+for(const mode of modes)for(const entry of catalog)for(const scale of scales){
   if(entry.modes&&!entry.modes.includes(mode)){results.push({component:entry.id,mode,skipped:true,reason:'Semantic prototype; physical mechanism not implemented'});continue;}
   let session;
   try{
-    const experiment=makeExperiment({component:entry.id});
+    const experiment=makeExperiment({component:entry.id,scale});
     assert.deepEqual(experiment.circuit.elevationIssues,[]);
     session=await createSession(experiment,mode);
     let snapshot=session.snapshot();
@@ -29,15 +34,20 @@ for(const mode of ['semantic','cpu','gpu'])for(const entry of catalog){
       assert.equal(snapshot.result?.status,'exited',`${mode}/${entry.id}: ${snapshot.result?.status??'stalled'}`);
       assert.ok(['out','left','right'].includes(snapshot.result.output));
     }
-    const result={component:entry.id,mode,passed:true,time:snapshot.current.time,laps:snapshot.current.laps??0};
+    if(entry.id==='inc-register') {
+      assert.equal(snapshot.result.component,'bit-3');
+      assert.equal(snapshot.result.output,'left');
+      assert.deepEqual(['bit-0','bit-1','bit-2','bit-3'].map(id=>snapshot.componentStates[id]),['left','left','left','right']);
+    }
+    const result={component:entry.id,mode,scale,passed:true,time:snapshot.current.time,laps:snapshot.current.laps??0};
     results.push(result);console.log(JSON.stringify(result));
   }catch(error){
-    const result={component:entry.id,mode,passed:false,error:error.message};
+    const result={component:entry.id,mode,scale,passed:false,error:error.message};
     results.push(result);console.error(JSON.stringify(result));
-  }finally{try{await session?.dispose();}catch(error){results.push({component:entry.id,mode,passed:false,error:`Cleanup failed: ${error.message}`});}}
+  }finally{try{await session?.dispose();}catch(error){results.push({component:entry.id,mode,scale,passed:false,error:`Cleanup failed: ${error.message}`});}}
 }
 await mkdir('artifacts',{recursive:true});
 const failed=results.filter(r=>r.passed===false).length;
-await writeFile('artifacts/component-results.json',JSON.stringify({checkedAt:new Date().toISOString(),passed:failed===0,fullyPhysical:!failed&&!results.some(r=>r.skipped),results},null,2));
+await writeFile(args.report??'artifacts/component-results.json',JSON.stringify({checkedAt:new Date().toISOString(),passed:failed===0,fullyPhysical:!failed&&!results.some(r=>r.skipped),results},null,2));
 console.log(`${results.filter(r=>r.passed).length} component/backend checks passed; ${failed} failed; ${results.filter(r=>r.skipped).length} unsupported prototype modes reported separately.`);
 if(failed)process.exitCode=1;

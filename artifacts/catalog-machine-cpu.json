@@ -1,0 +1,476 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "component": "seven-instruction-lattice",
+      "mode": "cpu",
+      "scale": 1,
+      "bits": 4,
+      "passed": true,
+      "time": 773.6572916666667,
+      "laps": 0,
+      "instructions": 51,
+      "checks": [
+        {
+          "instruction": 1,
+          "time": 20.63125,
+          "pc": 2,
+          "registers": {
+            "a": "1",
+            "b": "0"
+          }
+        },
+        {
+          "instruction": 2,
+          "time": 29.18125,
+          "pc": 5,
+          "registers": {
+            "a": "1",
+            "b": "0"
+          }
+        },
+        {
+          "instruction": 3,
+          "time": 49.62291666666667,
+          "pc": 6,
+          "registers": {
+            "a": "2",
+            "b": "0"
+          }
+        },
+        {
+          "instruction": 4,
+          "time": 58.85104166666667,
+          "pc": 3,
+          "registers": {
+            "a": "2",
+            "b": "0"
+          }
+        },
+        {
+          "instruction": 5,
+          "time": 76.484375,
+          "pc": 4,
+          "registers": {
+            "a": "2",
+            "b": "1"
+          }
+        },
+        {
+          "instruction": 6,
+          "time": 78.58958333333334,
+          "pc": 7,
+          "registers": {
+            "a": "2",
+            "b": "1"
+          }
+        },
+        {
+          "instruction": 7,
+          "time": 95.31875,
+          "pc": 1,
+          "registers": {
+            "a": "2",
+            "b": "1"
+          }
+        },
+        {
+          "instruction": 8,
+          "time": 115.63229166666666,
+          "pc": 2,
+          "registers": {
+            "a": "3",
+            "b": "1"
+          }
+        },
+        {
+          "instruction": 9,
+          "time": 124.40520833333333,
+          "pc": 5,
+          "registers": {
+            "a": "3",
+            "b": "1"
+          }
+        },
+        {
+          "instruction": 10,
+          "time": 149.65104166666666,
+          "pc": 6,
+          "registers": {
+            "a": "4",
+            "b": "1"
+          }
+        },
+        {
+          "instruction": 11,
+          "time": 161.18854166666665,
+          "pc": 3,
+          "registers": {
+            "a": "4",
+            "b": "1"
+          }
+        },
+        {
+          "instruction": 12,
+          "time": 183.47916666666666,
+          "pc": 4,
+          "registers": {
+            "a": "4",
+            "b": "2"
+          }
+        },
+        {
+          "instruction": 13,
+          "time": 185.56041666666667,
+          "pc": 7,
+          "registers": {
+            "a": "4",
+            "b": "2"
+          }
+        },
+        {
+          "instruction": 14,
+          "time": 201.60833333333332,
+          "pc": 1,
+          "registers": {
+            "a": "4",
+            "b": "2"
+          }
+        },
+        {
+          "instruction": 15,
+          "time": 223.63645833333334,
+          "pc": 2,
+          "registers": {
+            "a": "5",
+            "b": "2"
+          }
+        },
+        {
+          "instruction": 16,
+          "time": 233.44062499999998,
+          "pc": 5,
+          "registers": {
+            "a": "5",
+            "b": "2"
+          }
+        },
+        {
+          "instruction": 17,
+          "time": 255.65208333333334,
+          "pc": 6,
+          "registers": {
+            "a": "6",
+            "b": "2"
+          }
+        },
+        {
+          "instruction": 18,
+          "time": 267.1197916666667,
+          "pc": 3,
+          "registers": {
+            "a": "6",
+            "b": "2"
+          }
+        },
+        {
+          "instruction": 19,
+          "time": 284.48541666666665,
+          "pc": 4,
+          "registers": {
+            "a": "6",
+            "b": "3"
+          }
+        },
+        {
+          "instruction": 20,
+          "time": 286.4927083333333,
+          "pc": 7,
+          "registers": {
+            "a": "6",
+            "b": "3"
+          }
+        },
+        {
+          "instruction": 21,
+          "time": 307.21458333333334,
+          "pc": 1,
+          "registers": {
+            "a": "6",
+            "b": "3"
+          }
+        },
+        {
+          "instruction": 22,
+          "time": 330.60520833333334,
+          "pc": 2,
+          "registers": {
+            "a": "7",
+            "b": "3"
+          }
+        },
+        {
+          "instruction": 23,
+          "time": 338.0229166666667,
+          "pc": 5,
+          "registers": {
+            "a": "7",
+            "b": "3"
+          }
+        },
+        {
+          "instruction": 24,
+          "time": 365.61041666666665,
+          "pc": 6,
+          "registers": {
+            "a": "8",
+            "b": "3"
+          }
+        },
+        {
+          "instruction": 25,
+          "time": 374.9947916666667,
+          "pc": 3,
+          "registers": {
+            "a": "8",
+            "b": "3"
+          }
+        },
+        {
+          "instruction": 26,
+          "time": 399.46979166666665,
+          "pc": 4,
+          "registers": {
+            "a": "8",
+            "b": "4"
+          }
+        },
+        {
+          "instruction": 27,
+          "time": 401.4083333333333,
+          "pc": 7,
+          "registers": {
+            "a": "8",
+            "b": "4"
+          }
+        },
+        {
+          "instruction": 28,
+          "time": 417.284375,
+          "pc": 1,
+          "registers": {
+            "a": "8",
+            "b": "4"
+          }
+        },
+        {
+          "instruction": 29,
+          "time": 436.6270833333333,
+          "pc": 2,
+          "registers": {
+            "a": "9",
+            "b": "4"
+          }
+        },
+        {
+          "instruction": 30,
+          "time": 445.15729166666665,
+          "pc": 5,
+          "registers": {
+            "a": "9",
+            "b": "4"
+          }
+        },
+        {
+          "instruction": 31,
+          "time": 466.65416666666664,
+          "pc": 6,
+          "registers": {
+            "a": "10",
+            "b": "4"
+          }
+        },
+        {
+          "instruction": 32,
+          "time": 477.8510416666667,
+          "pc": 3,
+          "registers": {
+            "a": "10",
+            "b": "4"
+          }
+        },
+        {
+          "instruction": 33,
+          "time": 495.48125,
+          "pc": 4,
+          "registers": {
+            "a": "10",
+            "b": "5"
+          }
+        },
+        {
+          "instruction": 34,
+          "time": 497.43854166666665,
+          "pc": 7,
+          "registers": {
+            "a": "10",
+            "b": "5"
+          }
+        },
+        {
+          "instruction": 35,
+          "time": 512.2010416666667,
+          "pc": 1,
+          "registers": {
+            "a": "10",
+            "b": "5"
+          }
+        },
+        {
+          "instruction": 36,
+          "time": 531.6072916666667,
+          "pc": 2,
+          "registers": {
+            "a": "11",
+            "b": "5"
+          }
+        },
+        {
+          "instruction": 37,
+          "time": 539.809375,
+          "pc": 5,
+          "registers": {
+            "a": "11",
+            "b": "5"
+          }
+        },
+        {
+          "instruction": 38,
+          "time": 565.6375,
+          "pc": 6,
+          "registers": {
+            "a": "12",
+            "b": "5"
+          }
+        },
+        {
+          "instruction": 39,
+          "time": 575.5875,
+          "pc": 3,
+          "registers": {
+            "a": "12",
+            "b": "5"
+          }
+        },
+        {
+          "instruction": 40,
+          "time": 597.478125,
+          "pc": 4,
+          "registers": {
+            "a": "12",
+            "b": "6"
+          }
+        },
+        {
+          "instruction": 41,
+          "time": 599.3895833333333,
+          "pc": 7,
+          "registers": {
+            "a": "12",
+            "b": "6"
+          }
+        },
+        {
+          "instruction": 42,
+          "time": 615.5677083333334,
+          "pc": 1,
+          "registers": {
+            "a": "12",
+            "b": "6"
+          }
+        },
+        {
+          "instruction": 43,
+          "time": 637.6364583333333,
+          "pc": 2,
+          "registers": {
+            "a": "13",
+            "b": "6"
+          }
+        },
+        {
+          "instruction": 44,
+          "time": 647.6458333333334,
+          "pc": 5,
+          "registers": {
+            "a": "13",
+            "b": "6"
+          }
+        },
+        {
+          "instruction": 45,
+          "time": 668.6604166666666,
+          "pc": 6,
+          "registers": {
+            "a": "14",
+            "b": "6"
+          }
+        },
+        {
+          "instruction": 46,
+          "time": 680.1260416666667,
+          "pc": 3,
+          "registers": {
+            "a": "14",
+            "b": "6"
+          }
+        },
+        {
+          "instruction": 47,
+          "time": 698.484375,
+          "pc": 4,
+          "registers": {
+            "a": "14",
+            "b": "7"
+          }
+        },
+        {
+          "instruction": 48,
+          "time": 700.4645833333333,
+          "pc": 7,
+          "registers": {
+            "a": "14",
+            "b": "7"
+          }
+        },
+        {
+          "instruction": 49,
+          "time": 720.7354166666667,
+          "pc": 1,
+          "registers": {
+            "a": "14",
+            "b": "7"
+          }
+        },
+        {
+          "instruction": 50,
+          "time": 740.6260416666667,
+          "pc": 2,
+          "registers": {
+            "a": "15",
+            "b": "7"
+          }
+        },
+        {
+          "instruction": 51,
+          "time": 750.33125,
+          "pc": 5,
+          "registers": {
+            "a": "15",
+            "b": "7"
+          }
+        }
+      ]
+    }
+  ]
+}

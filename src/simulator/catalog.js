@@ -30,6 +30,8 @@ export const componentCatalog = Object.freeze([
   {id:'closed-loop',label:'Ferris wheel · ramp circuit',kind:'Assembly',count:9,closed:true,description:'An elevator, four bends, three tracks, and a ramp return the marble to the start.'},
 ]);
 
+export const physicalCatalog = Object.freeze(componentCatalog.filter(entry=>!entry.modes));
+
 export const catalog = Object.freeze(['closed-loop', 'toggle-loop', 'seven-instruction-lattice'].map(id => componentCatalog.find(entry => entry.id === id)));
 
 export function makeExperiment({component='straight-track',scale=1,speed=1,expectedDuration=1,initialState='left',bits=4}={}) {

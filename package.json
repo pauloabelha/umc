@@ -17,7 +17,8 @@
     "test:browser:gpu": "node scripts/test-gpu-browser.js",
     "test:logic:physics": "node scripts/test-logic-physics.js",
     "test:logic:browser": "node scripts/test-logic-browser.js",
-    "test:mobile": "node scripts/test-mobile.js"
+    "test:mobile": "node scripts/test-mobile.js",
+    "test:catalog:cpu": "node scripts/test-components.js --mode=cpu --report=artifacts/catalog-cpu.json && node scripts/test-logic-physics.js --mode=cpu --laps=3 --report=artifacts/catalog-gates-cpu.json && node scripts/test-physical-assemblies.js --mode=cpu --component=seven-instruction-lattice --report=artifacts/catalog-machine-cpu.json"
   },
   "dependencies": {
     "@dimforge/rapier3d-compat": "0.20.0",

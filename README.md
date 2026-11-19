@@ -1,6 +1,6 @@
 # Universal Marble Computer
 
-**[Open the live simulator →](https://umc-rust.vercel.app/simulator/)** · [Logic gates and half-adder](https://umc-rust.vercel.app/simulator/logic.html) · [Instruction machine](https://umc-rust.vercel.app/simulator/machine.html)
+**[Open the live simulator →](https://umc-rust.vercel.app/simulator/)** · [Logic gates and half-adder](https://umc-rust.vercel.app/simulator/logic.html) · [Physical machine](https://umc-rust.vercel.app/simulator/?component=seven-instruction-lattice&mode=cpu)
 
 A component simulator with three top-level assemblies:
 
@@ -8,17 +8,93 @@ A component simulator with three top-level assemblies:
 2. **Ferris wheel + T-gate closed circuit** — the wheel raises the marble; the retained seesaw alternates the two descending exits. Both return paths stay level.
 3. **Seven-instruction machine** — shared finite registers implement INC/JUMP using T-gates, Ferris wheels, level tracks, and receiving junctions. A wheel/ramp pair supplies energy for the long return.
 
-Every simulator page has the same horizontal component browser. Swipe on mobile, scroll or use the arrows on desktop, and filter by Simple parts, Gates, Assemblies, Machines, or Research. The selected card is highlighted; selecting another example opens its simulator in Physical · CPU mode (Research concepts remain semantic-only). The expandable **Component hierarchy** shows each assembly’s nested parts.
+Every simulator page has the same horizontal component browser. Swipe on mobile, scroll or use the arrows on desktop, and filter by Simple parts, Gates, Assemblies, or Machines. The selected card is highlighted; selecting another example opens its simulator in Physical · CPU mode. The expandable **Component hierarchy** shows each assembly’s nested parts.
 
 | Category | Available examples |
 | --- | --- |
 | Simple parts | Straight track, 90° curve, ramp, Ferris elevator, T-gate |
 | Gates | Buffer, NOT, AND, OR, NAND, NOR, XOR, XNOR — each in a closed circuit |
 | Assemblies | Two connected tracks, Ferris/ramp loop, Ferris/T-gate loop, four-bit INC register |
-| Machines | Seven-instruction physical assembly, instruction machine views, XOR + AND half-adder |
-| Research | Shared-register routing proposal, five-address routing demo, two-bit counter — semantic-only concepts, not physically qualified |
+| Machines | Seven-instruction physical assembly, XOR + AND half-adder |
+
+The runnable catalog has **19 CPU-physical choices**. The shared-register routing proposal, five-address routing demo, and abstract two-bit counter remain archived in source. The [instruction-reference page](https://umc-rust.vercel.app/simulator/machine.html) is a separate semantic comparison tool, not a physical component.
 
 Current verification and limitations are recorded in [COMPONENT-AUDIT.md](COMPONENT-AUDIT.md). CPU success is not GPU qualification. Geometry and materials are estimates, not measured stock VTech parts.
+
+## How UMC works
+
+UMC models a computer made from tracks and mechanisms. A marble is a moving control
+signal: its route determines what happens next. The motorized Ferris wheels supply
+energy. Gravity, momentum, and collisions carry the marble through the remaining parts.
+
+### From components to circuits
+
+A **primitive component** is an executable part with defined entry/exit ports,
+geometry, and behavior. Straight tracks and curves stay at the same height; ramps
+and T-gates descend; Ferris wheels raise the marble. A standalone flat track test
+starts with an incoming marble because gravity alone cannot move it along a level floor.
+
+A **circuit**, or supercomponent, connects instances of other components at aligned
+ports. It may contain smaller circuits, which themselves contain primitives. Each
+instance has its own state. The simulator runs the underlying primitive mechanisms;
+a box representing a composite does not replace their physics.
+
+A primitive has composition Level 0. Every circuit has Level `1 + max(child levels)`.
+This is nesting depth, not elevation. Expand **Component hierarchy** to inspect the
+actual tree. For example, a Ferris/ramp loop combines a wheel with a return-track
+subassembly, while a machine combines register mechanisms, collectors, and routes.
+
+A **closed circuit** returns the same marble to its entry. It does not respawn or
+teleport it at the end of a lap. A wheel supplies upward motion and a ramp or T-gate
+provides the descent; ordinary tracks provide no hidden drop or propulsion.
+
+### Gates and the half-adder
+
+Choose **Gates** in the component browser for Buffer, NOT, AND, OR, NAND, NOR, XOR,
+and XNOR. Set A/B before starting. These inputs configure fixed routing tracks, and
+the moving marble physically selects an output rail. The displayed measured output
+comes from the observed crossing; the truth table is an independent expected result.
+Repeated laps use the same inputs. These are custom idealized routing mechanisms,
+not an assertion that an unmodified commercial track switch implements Boolean logic.
+
+The **half-adder** composes XOR and AND circuits: `Sum = A XOR B`, `Carry = A AND B`.
+One marble visits the two modules sequentially. The simulator publishes the output
+pair when the complete lap finishes. This circuit demonstrates addition of two bits;
+it does not write the result into the instruction machine’s registers.
+
+### How a circuit becomes a machine
+
+The **seven-instruction machine** gives the marble a program to follow. A register
+stores bits in T-gates: left is 0 and right is 1. A read selects the gate’s old branch
+and toggles its bit. To increment a register, a 0 becomes 1 and completes the INC;
+a 1 becomes 0 and carries to the next bit. Ferris inlets lift the marble between
+successive gate operations. Collectors and return tracks bring it to the next instruction.
+
+JUMP instructions are routes to another instruction’s entry. The program runs
+`1 → 2 → 5 → 6 → 3 → 4 → 7 → 1`, sharing register a between instructions 1 and 5.
+Its return T-gate retains which continuation is needed. This is physical control
+state, not a software teleport to the next instruction.
+
+Below the simulation, the program panel highlights the current instruction and
+shows **all register values and bits**. During carry, those bits can be intermediate.
+The floating triad shows the previous/current instruction and the planned successor;
+overflow stops execution instead of proceeding to that successor. Four-bit registers
+have finite capacity; the last carry exits rather than silently creating a larger register.
+
+### Running and inspecting
+
+1. Select a part, gate, circuit, or machine. **Physical · CPU** is the default.
+2. Use **Run/Pause**, **Step**, and **Reset**. A physical Step advances a simulation
+   frame; a Semantic Step completes a component passage. Semantic mode follows the
+   same topology but does not establish that the geometry works physically.
+3. **Follow marble** zooms in and tracks its motion. **Unfollow** restores the overview.
+   Drag to orbit, pinch/scroll to zoom, and use the cube button to show spatial cells.
+4. Inspect the hierarchy, register panel, truth table, and execution log as appropriate.
+
+The machine is a concrete INC/JUMP demonstration with finite registers and one marble.
+Its name does not establish universality, arbitrary-program support, or commercial-part
+fit. Physical correctness is checked by travel, crossings, gate state, repeated laps,
+and agreement with instruction/logic reference results—not by a successful animation alone.
 
 ## Hosted demo and mobile use
 
@@ -138,6 +214,7 @@ npx playwright install chromium
 npm run test:browser
 npm run test:mobile # touch interaction and overflow at 320, 390, and 768px
 npm run test:browser:gpu # requires the CUDA service; checks a completed lap
+npm run test:catalog:cpu # every runnable component + all logic inputs + machine oracle
 npm run test:components
 npm run test:physical    # repeated physical laps and instruction-by-instruction oracle checks
 ```

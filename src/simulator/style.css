@@ -427,3 +427,6 @@ a.component-card[aria-disabled="true"] { opacity: .6; cursor: default; }
 #register-strip strong { font-size:20px; color:#126d7a; }
 #register-strip code { width:100%; letter-spacing:.18em; }
 .machine-dashboard p { margin:10px 0 0; font-size:11px; line-height:1.5; color:#566976; }
+
+.readme-link { color:#126d7a; font-size:13px; line-height:1.4; padding:8px 0; }
+@media(max-width:720px) { header { gap:4px 12px; } .readme-link { font-size:12px; padding:0; } }

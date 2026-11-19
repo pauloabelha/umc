@@ -9,11 +9,12 @@ try {
     await desktop.goto(base+item.href);
     await desktop.waitForFunction(()=>document.querySelector('#status, #logic-status, #machine-status')?.textContent==='Ready');
     assert.equal(await desktop.locator('.browser-card[aria-current="page"]').getAttribute('data-item'),item.id);
+    assert.equal(await desktop.locator('#mode, #logic-mode').inputValue(),'cpu');
   }
   await desktop.setViewportSize({width:390,height:844});
   await desktop.waitForFunction(()=>{const card=document.querySelector('.browser-card[aria-current="page"]'), row=document.querySelector('.component-row');return card.getBoundingClientRect().left>=row.getBoundingClientRect().left-1&&card.getBoundingClientRect().right<=row.getBoundingClientRect().right+1;});
   await desktop.close();
-  console.log('PASS all 23 destinations and selected card after resize');
+  console.log('PASS all 19 CPU destinations and selected card after resize');
   for (const width of [320, 390, 768]) {
     const page = await browser.newPage({viewport:{width,height:844},isMobile:true,hasTouch:true});
     const errors=[];
@@ -24,6 +25,8 @@ try {
       const step=page.locator(machine?'#machine-step':logic?'#logic-step':'#step');
       if (logic) await page.locator('#logic-mode').selectOption('semantic');
       await step.waitFor();
+      assert.equal(await page.locator('.readme-link').getAttribute('href'),'https://github.com/pauloabelha/umc/blob/main/README.md#how-umc-works');
+      assert.ok(await page.locator('.readme-link').isVisible());
       if(width<=720) {
         await page.evaluate(()=>scrollTo(0,0));
         const run=page.locator(machine?'#machine-run':logic?'#logic-run':'#run');
@@ -42,15 +45,15 @@ try {
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`Page overflow: ${width} ${path}`);
       if(!machine) assert.ok(await page.locator('#viewport canvas').count()>0);
       const shelf=page.locator('.component-row');
-      assert.equal(await shelf.locator('.browser-card').count(),23);
-      assert.equal(await shelf.locator('[aria-current="page"]').count(),1);
+      assert.equal(await shelf.locator('.browser-card').count(),19);
+      assert.equal(await shelf.locator('[aria-current="page"]').count(),machine?0:1);
       assert.ok(await shelf.evaluate(el=>el.scrollWidth>el.clientWidth),'Shelf must scroll horizontally');
       await page.getByRole('button',{name:'Gates',exact:true}).tap();
       assert.equal(await shelf.locator('.browser-card:visible').count(),8);
       await shelf.evaluate(el=>{el.scrollLeft=el.scrollWidth;});
       assert.ok(await shelf.evaluate(el=>el.scrollLeft>0));
       await page.getByRole('button',{name:'Machines',exact:true}).tap();
-      assert.equal(await shelf.locator('.browser-card:visible').count(),3);
+      assert.equal(await shelf.locator('.browser-card:visible').count(),2);
       await page.getByRole('button',{name:'All',exact:true}).tap();
       assert.deepEqual(errors,[]);
       console.log(`PASS ${width}px touch step and layout: ${path}`);

@@ -18,7 +18,7 @@ machine trace are in `artifacts/physical-gpu-final.json`.
 
 ## Additional logic examples
 
-The three qualified main assemblies remain unchanged. A shared horizontal browser now exposes primitives, gates, assemblies, machines, and explicitly labeled research concepts on every page. The [logic examples page](simulator/logic.html) contains closed-circuit Buffer, NOT, AND, OR, NAND, NOR, XOR, XNOR, and a composed half-adder. Its fixed input switches, observed output rails, and backend-specific verification are described in [LOGIC-CIRCUITS.md](LOGIC-CIRCUITS.md). These are additional custom routing examples, not replacements for T-gate memory or new INC/JUMP opcodes. All 32 input cases now pass three CPU and GPU laps at reference scale. Passive centering guides align the marble before each Ferris pickup; the failed XOR case additionally passes an eight-lap GPU regression. See `artifacts/logic-validation.json` for exact coverage and source fingerprints.
+The three qualified main assemblies remain unchanged. A shared horizontal browser now exposes primitives, gates, assemblies, and machines on every page. The [logic examples page](simulator/logic.html) contains closed-circuit Buffer, NOT, AND, OR, NAND, NOR, XOR, XNOR, and a composed half-adder. Its fixed input switches, observed output rails, and backend-specific verification are described in [LOGIC-CIRCUITS.md](LOGIC-CIRCUITS.md). These are additional custom routing examples, not replacements for T-gate memory or new INC/JUMP opcodes. All 32 input cases now pass three CPU and GPU laps at reference scale. Passive centering guides align the marble before each Ferris pickup; the failed XOR case additionally passes an eight-lap GPU regression. See `artifacts/logic-validation.json` for exact coverage and source fingerprints.
 
 ## Rules enforced
 
@@ -62,7 +62,7 @@ GPU; there is no fallback to CPU or semantic movement.
 
 ## Verification
 
-- All 94 Node tests pass, covering primitives, composition, port connections, state, re-entry,
+- All 96 Node tests pass, covering primitives, composition, port connections, state, re-entry,
   exhaustive finite INC cases, and reference-equivalent instruction execution.
 - `npm run test:physical` checks physical lap targets and complete instruction
   traces through overflow, writing `artifacts/physical-assemblies.json`.
@@ -88,3 +88,22 @@ custom geometry. The production seesaw implements the user's observed alternatin
 rule; it is not an identified, measured stock VTech part. Historical failed gate
 candidates remain in `experiments/` and older reports. Simulation success does not
 establish stock-part compatibility or universality.
+
+## Runnable CPU catalog audit — 2026-11-19
+
+The browser and component selector now expose only physical models: 10 parts/assemblies
+plus eight gates and the half-adder (19 choices). The three archived abstract designs
+remain in source, and the instruction reference remains a separately labeled comparison.
+No new physical mechanism or physics workaround was required by this audit.
+
+At reference scale, all 10 component checks pass, including three continuous laps of
+each closed loop and the INC register’s 7 → 8 carry. All 32 gate/half-adder input cases
+pass three CPU laps each. The default four-bit physical machine completes 51 instructions,
+with both registers and each instruction boundary matching the reference, then exits
+on the expected overflow at 773.6573 simulated seconds. These are finite test targets,
+not a proof of arbitrary-cycle reliability or qualification of every scale.
+
+Reproduce with `npm run test:catalog:cpu`. Evidence: `artifacts/catalog-cpu.json`,
+`artifacts/catalog-gates-cpu.json`, `artifacts/catalog-machine-cpu.json`. The 96 Node
+tests, mobile/browser checks, and production build also pass. Each simulator page links
+to the README’s explanation of primitives, circuits, logic, registers, and machines.

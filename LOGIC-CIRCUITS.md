@@ -2,7 +2,7 @@
 
 Open `/simulator/logic.html`. The examples are Buffer, NOT, AND, OR, NAND, NOR,
 XOR, XNOR, then a half-adder composed of XOR and AND. The shared horizontal component browser appears on every simulator page,
-with filters for simple parts, gates, assemblies, machines, and research concepts.
+with filters for simple parts, gates, assemblies, and machines.
 
 Choose A/B while stopped, select Semantic, Physical CPU, or Physical GPU, then
 Run. The same marble circulates until paused. Reset rebuilds the selected input

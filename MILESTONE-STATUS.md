@@ -14,12 +14,12 @@ CPU and GPU laps at all offered scales (¼, ½, 1, 2).
 
 The three requested assemblies remain the main physical assemblies. A shared,
 mobile-friendly horizontal browser also exposes simple parts, gates, machines,
-and labeled research concepts. Intermediate components remain inspectable in the hierarchy. Browser tests exercise the current
+with CPU-physical execution. Intermediate components remain inspectable in the hierarchy. Browser tests exercise the current
 UI, machine stepping, controls, actual CPU/GPU laps, and GPU-offline behavior without fallback.
 
 The contact-solver correction passed the complete GPU run, repeated loop tests,
 and all 128 repeated T-gate passages across both backends, both initial states,
-and four scales. All 94 Node tests, four GPU schema tests, browser checks, and
+and four scales. All 96 Node tests, four GPU schema tests, browser checks, and
 the production build pass. See [COMPONENT-AUDIT.md](COMPONENT-AUDIT.md) for traces
 and precise qualification limits. The machine run covers the default four-bit
 assembly at reference scale. Estimated geometry and idealized low-loss materials

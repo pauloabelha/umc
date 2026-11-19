@@ -1,6 +1,6 @@
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
-import {componentCatalog} from '../src/simulator/catalog.js';
+import {physicalCatalog} from '../src/simulator/catalog.js';
 import {mkdir,writeFile} from 'node:fs/promises';
 const browser=await chromium.launch({headless:true,args:['--enable-unsafe-swiftshader']});
 const errors=[],checks=[];
@@ -10,8 +10,8 @@ try {
   page.on('pageerror',e=>errors.push(e.message));
   await page.goto('http://127.0.0.1:5173/simulator/?component=closed-loop&mode=semantic');
   await page.waitForFunction(()=>document.querySelector('#status')?.textContent==='Ready');
-  assert.deepEqual(await page.locator('#component option').evaluateAll(options=>options.map(o=>o.value)),componentCatalog.map(item=>item.id));
-  assert.equal(await page.locator('.browser-card').count(),23);
+  assert.deepEqual(await page.locator('#component option').evaluateAll(options=>options.map(o=>o.value)),physicalCatalog.map(item=>item.id));
+  assert.equal(await page.locator('.browser-card').count(),19);
   assert.match(await page.locator('#composition-tree').textContent(),/Level 2/);
   assert.match(await page.locator('#composition-tree').textContent(),/Level 0/);
   for(let i=0;i<9;i++){await page.locator('#step').click();await page.waitForFunction(()=>!document.querySelector('#step').disabled);}

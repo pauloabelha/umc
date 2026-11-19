@@ -1,14 +1,13 @@
-import {componentCatalog} from './catalog.js';
+import {physicalCatalog} from './catalog.js';
 import {logicGates} from '../logic/gates.js';
 
 const primitives = new Set(['straight-track', 'curve-track', 'ramp', 'ferry', 't-gate']);
 export const browserItems = [
-  ...componentCatalog.map(item => ({id:item.id, label:item.label, description:item.description,
-    category:item.modes ? 'Research' : primitives.has(item.id) ? 'Simple parts' : 'Assemblies',
-    href:`/simulator/?component=${item.id}&mode=${item.modes?'semantic':'cpu'}`})),
+  ...physicalCatalog.map(item => ({id:item.id, label:item.label, description:item.description,
+    category:primitives.has(item.id) ? 'Simple parts' : 'Assemblies',
+    href:`/simulator/?component=${item.id}&mode=cpu`})),
   ...logicGates.map(item => ({id:item.id, label:item.name, description:`${item.expression} · Closed circuit with fixed inputs`, category:'Gates', href:`/simulator/logic.html?gate=${item.id}&mode=cpu`})),
   {id:'half-adder', label:'Half-adder', description:'XOR + AND · Sum and Carry from one marble', category:'Machines', href:'/simulator/logic.html?gate=half-adder&mode=cpu'},
-  {id:'instruction-reference', label:'Instruction machine views', description:'Seven instructions · reference, T-gate wiring and primitive circuit', category:'Machines', href:'/simulator/machine.html'},
 ];
 browserItems.find(item=>item.id==='seven-instruction-lattice').category='Machines';
 
@@ -25,7 +24,7 @@ export function mountComponentBrowser() {
     row.append(link);
   }
   const cards=[...row.children];
-  for(const category of ['All','Simple parts','Gates','Assemblies','Machines','Research']) {
+  for(const category of ['All','Simple parts','Gates','Assemblies','Machines']) {
     const button=document.createElement('button');button.type='button';button.textContent=category;
     button.setAttribute('aria-pressed',String(category==='All'));
     button.onclick=()=>{

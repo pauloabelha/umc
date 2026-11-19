@@ -1,0 +1,87 @@
+{
+  "checkedAt": "2026-11-19T17:00:58.845Z",
+  "passed": true,
+  "fullyPhysical": true,
+  "results": [
+    {
+      "component": "seven-instruction-lattice",
+      "mode": "cpu",
+      "scale": 1,
+      "passed": true,
+      "time": 773.6572916666667,
+      "laps": 0
+    },
+    {
+      "component": "inc-register",
+      "mode": "cpu",
+      "scale": 1,
+      "passed": true,
+      "time": 3.2572916666666667,
+      "laps": 0
+    },
+    {
+      "component": "t-gate",
+      "mode": "cpu",
+      "scale": 1,
+      "passed": true,
+      "time": 0.7416666666666667,
+      "laps": 0
+    },
+    {
+      "component": "toggle-loop",
+      "mode": "cpu",
+      "scale": 1,
+      "passed": true,
+      "time": 21.766666666666666,
+      "laps": 3
+    },
+    {
+      "component": "straight-track",
+      "mode": "cpu",
+      "scale": 1,
+      "passed": true,
+      "time": 0.7083333333333334,
+      "laps": 0
+    },
+    {
+      "component": "curve-track",
+      "mode": "cpu",
+      "scale": 1,
+      "passed": true,
+      "time": 0.6,
+      "laps": 0
+    },
+    {
+      "component": "ferry",
+      "mode": "cpu",
+      "scale": 1,
+      "passed": true,
+      "time": 4.20625,
+      "laps": 0
+    },
+    {
+      "component": "ramp",
+      "mode": "cpu",
+      "scale": 1,
+      "passed": true,
+      "time": 0.6666666666666666,
+      "laps": 0
+    },
+    {
+      "component": "two-tracks",
+      "mode": "cpu",
+      "scale": 1,
+      "passed": true,
+      "time": 1.7166666666666666,
+      "laps": 0
+    },
+    {
+      "component": "closed-loop",
+      "mode": "cpu",
+      "scale": 1,
+      "passed": true,
+      "time": 15.866666666666667,
+      "laps": 3
+    }
+  ]
+}

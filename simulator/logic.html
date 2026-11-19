@@ -2,7 +2,7 @@
 <html lang="en">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>UMC · Logic circuits</title><link rel="icon" href="data:,"></head>
 <body>
-<header><a href="/simulator/" class="brand">● UMC</a><span class="subtitle">Closed-circuit logic</span><span class="badge">Gates → half-adder</span></header>
+<header><a href="/simulator/" class="brand">● UMC</a><span class="subtitle">Closed-circuit logic</span><span class="badge">Gates → half-adder</span><a class="readme-link" href="https://github.com/pauloabelha/umc/blob/main/README.md#how-umc-works">README · How UMC works</a></header>
 <main>
 <section id="component-browser" aria-label="Browse all components"></section>
 <section class="intro"><p class="eyebrow">ONE MARBLE · REPEATED EVALUATION</p><h1>Follow the route. Read the result.</h1><p>Set the inputs, run a closed circuit, and watch the marble select an output track.</p></section>
@@ -26,6 +26,6 @@
 <section class="tracking composition-panel"><h2>Component hierarchy</h2><div id="composition-tree"></div></section>
 <section class="tracking"><h2>Completed evaluations</h2><table><thead><tr><th>Lap</th><th>Time</th><th>Observed output tracks</th><th>Result</th></tr></thead><tbody id="logic-history"></tbody></table></section>
 <p class="note">Custom, idealized routing parts: a selected input track, level branches and collectors, and explicit Ferris-wheel/ramp power pairs. No input switches move while running, and no software force directs the marble. Output labels are fixed wiring, not arithmetic performed by the display.</p>
-<p><a href="/simulator/">← Three main assemblies</a> · <a href="/simulator/machine.html">Seven-instruction machine</a></p>
+<p><a href="/simulator/">← Three main assemblies</a> · <a href="/simulator/?component=seven-instruction-lattice&mode=cpu">Seven-instruction machine</a></p>
 </main><script type="module" src="/src/simulator/logic-app.js"></script>
 </body></html>
