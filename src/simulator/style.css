@@ -385,3 +385,18 @@ a.component-card[aria-disabled="true"] { opacity: .6; cursor: default; }
  .browser-filters { gap:6px; }
  .browser-filters button { padding:10px 12px; }
 }
+
+/* Keep execution controls and the live view together. */
+.simulation-actions { display:flex; gap:10px; padding:12px 16px; border-bottom:1px solid #d4dfe5; }
+.simulation-actions .primary { width:auto; flex:1; }
+.simulation-actions .buttons { margin:0; flex:1; }
+.machine-actions { flex-wrap:wrap; border:0; padding:0; }
+@media(max-width:720px) {
+ main { display:flex; flex-direction:column; padding-top:12px; }
+ main > .workspace { order:-2; margin-bottom:24px; flex-shrink:0; }
+ .simulation-actions { padding:10px; gap:8px; }
+ .simulation-actions button { padding:10px 12px; }
+ .simulation-actions .buttons { gap:8px; }
+ .machine-actions { order:-3; }
+ .machine-actions + .readout { order:-2; margin-bottom:24px; }
+}

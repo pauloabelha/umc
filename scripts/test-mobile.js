@@ -24,6 +24,18 @@ try {
       const step=page.locator(machine?'#machine-step':logic?'#logic-step':'#step');
       if (logic) await page.locator('#logic-mode').selectOption('semantic');
       await step.waitFor();
+      if(width<=720) {
+        await page.evaluate(()=>scrollTo(0,0));
+        const run=page.locator(machine?'#machine-run':logic?'#logic-run':'#run');
+        const runBox=await run.boundingBox();
+        const viewBox=await page.locator(machine?'.readout':'#viewport').boundingBox();
+        assert.ok(runBox.y<150, 'Run must appear at the top on mobile');
+        assert.ok(viewBox.y>runBox.y && viewBox.y+viewBox.height<=844, 'Run and live view must fit together');
+        await run.tap();
+        await page.waitForFunction(()=>[...document.querySelectorAll('.simulation-actions button')].some(b=>b.textContent==='Pause'));
+        await run.tap();
+        await page.locator(machine?'#machine-reset':logic?'#logic-reset':'#reset').tap();
+      }
       await step.tap();
       await page.waitForFunction(()=>![...document.querySelectorAll('button')].find(b=>b.id==='step'||b.id==='logic-step'||b.id==='machine-step')?.disabled);
       if(machine) assert.equal(await page.locator('#register-a').textContent(),'1');

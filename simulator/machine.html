@@ -11,6 +11,7 @@
 <p><a href="/simulator/?component=inc-register&mode=semantic">Inspect the INC register assembly: step through carry from 7 to 8 →</a></p>
 
 <p><a href="/simulator/?component=seven-instruction-lattice&mode=semantic">View the seven-instruction component assembly →</a></p>
+<div class="simulation-actions machine-actions" aria-label="Machine controls"><button id="machine-run" class="primary">Run</button><button id="machine-step">Step instruction</button><button id="machine-microstep">Step gate / route</button><button id="machine-reset">Reset</button></div>
 <section class="readout" aria-label="Machine state">
 <div><span>Register a</span><strong id="register-a">0</strong></div><div><span>Register b</span><strong id="register-b">0</strong></div>
 <div><span>Instruction pointer · active instruction</span><strong id="pc">1</strong></div><div><span>Virtual time</span><strong id="machine-time">0 s</strong></div>
@@ -18,7 +19,7 @@
 <div class="machine-controls">
 <label for="machine-backend">Model</label><select id="machine-backend"><option value="reference">Instruction reference</option><option value="gates">T-gate wiring · semantic</option><option value="lattice">Primitive component circuit · semantic</option></select>
 <label for="machine-width">Bits per register</label><select id="machine-width"><option value="4">4</option><option value="8">8</option><option value="16">16</option></select>
-<button id="machine-run" class="primary">Run</button><button id="machine-step">Step instruction</button><button id="machine-microstep">Step gate / route</button><button id="machine-reset">Reset</button>
+
 <label for="machine-speed">Execution speed</label><select id="machine-speed"><option value="1">1×</option><option value="4">4×</option><option value="10">10×</option></select>
 <label for="machine-playback">Playback</label><select id="machine-playback"><option value="100">10 passages/s</option><option value="16">60 passages/s</option><option value="1000">1 passage/s</option></select>
 <span id="machine-status" role="status">Ready</span>
