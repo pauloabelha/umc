@@ -1,3 +1,4 @@
+import {createInstructionTriad} from './instruction-triad.js';
 import {mountComponentBrowser} from './component-browser.js';
 import {renderComposition} from './composition-view.js';
 import {registerValue} from '../machine/increment-register.js';
@@ -12,6 +13,7 @@ const defaultMode = localGPU ? 'gpu' : 'semantic';
 const $ = id => document.getElementById(id);
 for (const item of catalog) $('component').add(new Option(item.label,item.id));
 const selectBrowser = mountComponentBrowser();
+const updateTriad = createInstructionTriad($('viewport'));
 function readLocation() {
   const params=new URLSearchParams(location.search);
   const component=params.get('component');
@@ -66,7 +68,8 @@ function showTracking(time, inspecting = false) {
   const instruction=experiment.registerBanks
     ?session.marbleHistory(marble.id).findLast(visit=>visit.enteredAt<=time&&/^i[1-7]$/.test(visit.component))?.component
     :marble.component;
-  renderProgram(instruction,inspecting);
+  const instructions=session.marbleHistory(marble.id).filter(visit=>visit.enteredAt<=time&&/^i[1-7]$/.test(visit.component));
+  renderProgram(instruction,inspecting,instructions.at(-2)?.component,marble.status==='exited');
   $('tracking-clock').textContent = `${inspecting ? 'Inspecting' : 'Live'} · ${time.toFixed(3)} s`;
   const row = document.createElement('tr');
   for (const value of [marble.id, marble.component ? `${experiment.circuit.componentName(marble.component)}.${marble.component}` : `Exited ${experiment.circuit.componentName(marble.lastComponent)}.${marble.lastComponent}`, marble.status, `${marble.elapsed.toFixed(3)} s`]) {
@@ -115,13 +118,15 @@ $('inspect-time').oninput = () => showTracking(Number($('inspect-time').value), 
 function show(snapshot) {
   view.update({...snapshot.current,componentStates:snapshot.componentStates});
   $('gate-state').textContent=gateReadout(snapshot.componentStates);
+  renderRegisters(snapshot.componentStates);
   if ($('mode').value === 'semantic') {
     $('inspect-time').max = String(snapshot.current.time);
     $('inspect-time').value = String(snapshot.current.time);
     showTracking(snapshot.current.time);
   } else {
     view.highlight(snapshot.current.component);
-    renderProgram(snapshot.current.instruction??experiment.instance.id);
+    const instructions=[experiment.instance.id,...(experiment.transitions??[]).map(t=>t.to).filter(id=>/^i[1-7]$/.test(id))];
+    renderProgram(snapshot.current.instruction??experiment.instance.id,false,instructions.at(-2),!!snapshot.result);
   }
   $('elapsed').textContent = `${snapshot.current.time.toFixed(3)} s`;
   $('output').textContent = experiment.entry.closed ? `${snapshot.current.laps ?? 0} ${(snapshot.current.laps ?? 0) === 1 ? 'lap' : 'laps'}` : snapshot.result?.output ?? '—';
@@ -154,6 +159,7 @@ async function reset({historyMode='replace'}={}) {
       view.update({...snapshot.current,componentStates:snapshot.componentStates});
     }
     $('gate-state').textContent=gateReadout(session?.snapshot().componentStates);
+    renderRegisters(session?.snapshot().componentStates);
     $('prototype-note').hidden=experiment.circuit.physicalSupported;
     $('physics-availability').hidden=experiment.circuit.physicalSupported;
     $('physics-availability').textContent='CPU/GPU are unavailable for this model because its physical mechanisms are unfinished. GPU service status is shown below.';
@@ -264,8 +270,20 @@ function gateReadout(states) {
   return states?.i1!==undefined?`Instruction 1 bit = ${Number(states.i1==='right')} (${states.i1})`:states?.gate??'—';
 }
 
-function renderProgram(component,inspecting=false) {
+function renderProgram(component,inspecting=false,previous,halted=false) {
+  updateTriad(experiment.program,component,previous,halted,inspecting);
   $('program').hidden=!experiment.program;
+  $('machine-dashboard').hidden=!(experiment.program||experiment.registerBanks||experiment.registerBits);
+  const signature=`${experiment.entry.id}:${component}:${inspecting}`;
+  if($('instruction-strip').dataset.signature!==signature) {
+    $('instruction-strip').dataset.signature=signature;
+    $('instruction-strip').replaceChildren(...(experiment.program??[]).map(instruction=>{
+      const item=document.createElement('span');item.textContent=`${instruction.address} · ${instruction.operation}`;
+      if(instruction.id===component)item.setAttribute('aria-current','step');
+      return item;
+    }));
+    $('instruction-strip').setAttribute('aria-label',inspecting?'Recorded instruction program':'Live instruction program');
+  }
   if(!experiment.program)return;
   $('program').querySelector('h2').textContent=`${experiment.program.length}-instruction program`;
   const active=experiment.program.find(instruction=>instruction.id===component);
@@ -278,5 +296,16 @@ function renderProgram(component,inspecting=false) {
       const cell=document.createElement('td');cell.textContent=value;row.append(cell);
     }
     return row;
+  }));
+}
+
+function renderRegisters(states) {
+  const banks=experiment.registerBanks??(experiment.registerBits?{register:experiment.registerBits}:{});
+  $('register-strip').replaceChildren(...Object.entries(banks).map(([name,ids])=>{
+    const item=document.createElement('div'),label=document.createElement('span'),value=document.createElement('strong'),bits=document.createElement('code');
+    const known=ids.every(id=>['left','right'].includes(states?.[id]));
+    label.textContent=`Register ${name}`;value.textContent=known?String(registerValue(ids,states)):'—';
+    bits.textContent=known?ids.map(id=>Number(states[id]==='right')).reverse().join(''):'Awaiting state';
+    item.append(label,value,bits);return item;
   }));
 }

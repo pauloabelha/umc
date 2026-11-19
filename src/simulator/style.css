@@ -400,3 +400,30 @@ a.component-card[aria-disabled="true"] { opacity: .6; cursor: default; }
  .machine-actions { order:-3; }
  .machine-actions + .readout { order:-2; margin-bottom:24px; }
 }
+
+#follow-marble[aria-pressed="true"] { background:#e0f3f0; border-color:#147c89; color:#0a5864; }
+.instruction-triad { position:absolute; z-index:2; top:12px; right:64px; width:min(330px,calc(100% - 76px)); display:grid; grid-template-columns:1fr 1.2fr 1fr; gap:3px; padding:5px; border:1px solid #bfd4dc; border-radius:12px; background:#ffffffed; box-shadow:0 3px 12px #18384a18; pointer-events:none; }
+.instruction-triad[hidden] { display:none; }
+.instruction-triad > div { min-width:0; padding:6px 3px; text-align:center; border-radius:8px; }
+.instruction-triad span { display:block; font-size:10px; text-transform:uppercase; letter-spacing:.04em; color:#566976; }
+.instruction-triad strong { display:block; margin-top:4px; font-size:12px; line-height:1.4; overflow-wrap:anywhere; }
+.triad-current { background:#126d7a; color:white; }
+.triad-current span { color:#dcf4f5; }
+@media(max-width:720px) {
+ .simulation-actions:not(.machine-actions) { display:grid; grid-template-columns:1fr 1fr; }
+ .simulation-actions .buttons { grid-column:1 / -1; }
+ .instruction-triad strong { font-size:11px; }
+ #viewport { min-height:260px; height:38svh; }
+}
+
+.machine-dashboard { padding:12px 16px; border-top:1px solid #d4dfe5; background:#f6fafb; }
+.machine-dashboard[hidden] { display:none; }
+#instruction-strip { display:flex; flex-wrap:wrap; gap:6px; }
+#instruction-strip span { padding:7px 9px; border:1px solid #cedce5; border-radius:7px; font:12px ui-monospace,monospace; background:white; }
+#instruction-strip [aria-current="step"] { background:#126d7a; color:white; border-color:#126d7a; }
+#register-strip { display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
+#register-strip > div { flex:1; min-width:100px; display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 12px; padding:10px; background:white; border:1px solid #d4dfe5; border-radius:8px; }
+#register-strip span { font-size:12px; color:#566976; }
+#register-strip strong { font-size:20px; color:#126d7a; }
+#register-strip code { width:100%; letter-spacing:.18em; }
+.machine-dashboard p { margin:10px 0 0; font-size:11px; line-height:1.5; color:#566976; }

@@ -23,9 +23,10 @@
       <button id="connect" class="link-button">Check GPU connection</button>
     </aside>
     <section class="stage" aria-label="Simulation">
-      <div class="simulation-actions" aria-label="Simulation controls"><button id="run" class="primary">Run</button><div class="buttons"><button id="step">Step</button><button id="reset">Reset</button></div></div>
+      <div class="simulation-actions" aria-label="Simulation controls"><button id="run" class="primary">Run</button><button id="follow-marble" type="button" aria-pressed="false" title="Track the marble with the camera">Follow marble</button><div class="buttons"><button id="step">Step</button><button id="reset">Reset</button></div></div>
 <div class="stage-top"><strong id="stage-title">Seven-instruction machine</strong><span id="mode-label">Physical · GPU</span></div>
       <div id="viewport"></div>
+      <section id="machine-dashboard" class="machine-dashboard" aria-label="Live machine state" hidden><div id="instruction-strip" aria-label="Instruction program"></div><div id="register-strip" aria-label="Live registers"></div><p>Live bit values · may be intermediate during carry. Bits read most significant first.</p></section>
       <div class="stage-bottom"><span id="path-label">in → out · no stored state</span><span>Drag to orbit · pinch or scroll to zoom</span></div>
     </section>
   </div>

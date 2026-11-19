@@ -34,7 +34,12 @@ below and is not hosted on Vercel.
 All three simulator pages adapt to phones and tablets: single-column layouts,
 44px touch controls, readable form inputs, and horizontally scrollable data tables.
 On phones, Run/Pause, Step, and Reset appear first, directly above the live
-simulation; component browsing and settings follow below.
+simulation; component browsing and settings follow below. **Follow marble** beside
+Run toggles camera tracking while preserving the viewing angle and zoom. The
+seven-instruction simulation has a fixed Previous / Current / Next overlay next
+to the wireframe toggle; Next is the programmed successor, conditional on no overflow.
+Directly below the view, the machine panel highlights the instruction and shows
+all register values and bits, including intermediate carry states.
 Drag the 3D view to orbit and pinch to zoom. Start with Semantic mode on phones;
 physical simulation performance depends on the device.
 

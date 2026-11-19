@@ -37,7 +37,19 @@ export function createView(host) {
   updateCellToggle();
   cellToggle.onclick=()=>{cells.visible=!cells.visible;updateCellToggle();render();};
   host.append(cellToggle);
-  let marble;
+  let marble, following=false;
+  const followButton=document.getElementById('follow-marble');
+  function trackMarble() {
+    if(!following||!marble)return;
+    const delta=marble.position.clone().sub(controls.target);
+    camera.position.add(delta);controls.target.copy(marble.position);controls.update();
+  }
+  if(followButton)followButton.onclick=()=>{
+    following=!following;
+    followButton.setAttribute('aria-pressed',String(following));
+    followButton.textContent=following?'Unfollow marble':'Follow marble';
+    trackMarble();render();
+  };
   let driven=[];
   let stateIndicators=[];
   const mechanismMeshes=new Map();
@@ -169,7 +181,7 @@ export function createView(host) {
       controls.target.copy(center);
       fitWideScene=Boolean(description.cameraOffset);aspectFit=fitWideScene?Math.max(1,1.6/camera.aspect):1;
       camera.position.copy(center).add(new THREE.Vector3(...(description.cameraOffset??[-0.9,0.8,1.1])).multiplyScalar(size*aspectFit));
-      controls.update(); render();
+      controls.update(); trackMarble(); render();
     },
     highlight(component) {
       if ((component ?? null) !== activeComponent) {setHighlight(component); render();}
@@ -185,6 +197,7 @@ export function createView(host) {
         if(mesh){mesh.position.fromArray(pose.position);mesh.quaternion.fromArray(pose.rotation);}
       }
       marble.position.fromArray(snapshot.position);
+      trackMarble();
       if (snapshot.rotation) marble.quaternion.fromArray(snapshot.rotation);
       if ('component' in snapshot) setHighlight(snapshot.component);
       render();
