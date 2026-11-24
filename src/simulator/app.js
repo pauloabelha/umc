@@ -1,5 +1,5 @@
 import {createInstructionTriad} from './instruction-triad.js';
-import {mountComponentBrowser} from './component-browser.js';
+import {mountComponentBrowser, experimentLevel} from './component-browser.js';
 import {renderComposition} from './composition-view.js';
 import {registerValue} from '../machine/increment-register.js';
 import './style.css';
@@ -166,7 +166,7 @@ async function reset({historyMode='replace'}={}) {
     $('status').textContent = !experiment.circuit.physicalSupported&&$('mode').value!=='semantic'?'Physical model unavailable':'Ready'; $('elapsed').textContent = '0.000 s'; $('output').textContent = '—';
     $('target').previousElementSibling.textContent=experiment.targetLabel??'Semantic target';
     $('target').textContent = `${experiment.expectedDuration.toFixed(3)} s`;
-    $('stage-title').textContent = `${experiment.entry.label} · Level ${experiment.circuit.level}`;
+    $('stage-title').textContent = `${experiment.entry.label} · Level ${experimentLevel(experiment)}`;
     $('path-label').textContent = experiment.pathLabel ?? (experiment.circuit.instances.map(i=>i.id).join(' → ') + (experiment.entry.closed ? ' → elevator' : ' → out'));
     selectBrowser(experiment.entry.id);
     $('mode-label').textContent = $('mode').selectedOptions[0].text;
