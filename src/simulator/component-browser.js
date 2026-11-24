@@ -1,6 +1,4 @@
-import {physicalCatalog, makeExperiment} from './catalog.js';
-import {makeLogicExperiment} from '../logic/circuit.js';
-import {logicGates} from '../logic/gates.js';
+import {benchCatalog, makeExperiment} from './catalog.js';
 
 const primitives = new Set(['straight-track', 'curve-track', 'ramp', 'ferry', 't-gate']);
 // Use the model's composition depth, not category names or physical height.
@@ -10,14 +8,11 @@ export function experimentLevel({circuit}) {
 }
 
 export const browserItems = [
-  ...physicalCatalog.map(item => ({id:item.id, label:item.label, description:item.description,
+  ...benchCatalog.map(item => ({id:item.id, label:item.label, description:item.description,
     level:experimentLevel(makeExperiment({component:item.id})),
     category:primitives.has(item.id) ? 'Simple parts' : 'Assemblies',
     href:`/simulator/?component=${item.id}&mode=cpu`})),
-  ...logicGates.map(item => ({id:item.id, level:experimentLevel(makeLogicExperiment({gate:item.id})), label:item.name, description:`${item.expression} · Closed circuit with fixed inputs`, category:'Gates', href:`/simulator/logic.html?gate=${item.id}&mode=cpu`})),
-  {id:'half-adder', level:experimentLevel(makeLogicExperiment({gate:'half-adder'})), label:'Half-adder', description:'XOR + AND · Sum and Carry from one marble', category:'Machines', href:'/simulator/logic.html?gate=half-adder&mode=cpu'},
 ].sort((a,b)=>b.level-a.level); // Stable: equal-depth components remain peers.
-browserItems.find(item=>item.id==='seven-instruction-lattice').category='Machines';
 
 export function mountComponentBrowser() {
   const host=document.getElementById('component-browser');
@@ -32,7 +27,7 @@ export function mountComponentBrowser() {
     row.append(link);
   }
   const cards=[...row.children];
-  for(const category of ['All','Simple parts','Gates','Assemblies','Machines']) {
+  for(const category of ['All','Simple parts','Assemblies']) {
     const button=document.createElement('button');button.type='button';button.textContent=category;
     button.setAttribute('aria-pressed',String(category==='All'));
     button.onclick=()=>{

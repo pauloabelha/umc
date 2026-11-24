@@ -32,6 +32,13 @@ export const componentCatalog = Object.freeze([
 
 export const physicalCatalog = Object.freeze(componentCatalog.filter(entry=>!entry.modes));
 
+// Public bench scope: parts and the basic loop. Experimental computing models
+// remain in source, but are not claims about established machine capabilities.
+export const benchCatalog = Object.freeze(physicalCatalog.filter(entry=>[
+  'closed-loop','two-tracks','t-gate','straight-track','curve-track','ferry','ramp',
+].includes(entry.id)));
+
+
 export const catalog = Object.freeze(['closed-loop', 'toggle-loop', 'seven-instruction-lattice'].map(id => componentCatalog.find(entry => entry.id === id)));
 
 export function makeExperiment({component='straight-track',scale=1,speed=1,expectedDuration=1,initialState='left',bits=4}={}) {

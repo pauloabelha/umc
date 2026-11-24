@@ -2,20 +2,19 @@
 <html lang="en">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>UMC · Component simulator</title><link rel="icon" href="data:,"></head>
 <body>
-<header><a href="/simulator/" class="brand"><span class="mark">●</span> UMC</a><span class="subtitle">Universal Marble Computer</span><span class="badge">Component lab</span><a class="readme-link" href="https://github.com/pauloabelha/umc/blob/main/README.md#how-umc-works">README · How UMC works</a></header>
+<header><a href="/simulator/" class="brand"><span class="mark">●</span> UMC</a><span class="subtitle">Universal Marble Computer</span><span class="badge">Component lab</span></header>
 <main>
 <section id="component-browser" aria-label="Browse all components"></section>
-<p><a href="/simulator/logic.html">Explore closed-circuit logic gates and the half-adder →</a></p>
-  <section class="intro"><div><p class="eyebrow">COMPOSE FROM PRIMITIVES</p><h1>Component simulator</h1><p>Explore simple parts, closed circuits, and machines under rules and physics.</p></div></section>
-  <a class="machine-card" href="/simulator/machine.html"><strong>Instruction reference · semantic comparison →</strong><span>Compare the physical machine against the INC/JUMP instruction model.</span></a>
+  <section class="intro"><div><p class="eyebrow">COMPOSE FROM PRIMITIVES</p><h1>Component simulator</h1><p>Explore track parts and the basic return loop.</p></div></section>
 
+  <section class="note" aria-label="Current build scope"><strong>Current baseline: a working loop.</strong><p>Instructions, JUMP, register read/write, and computing assemblies are unresolved and have been removed from this lab. The T-gate view shows passage and toggling only; it is not a solved read or instruction.</p><p>These are approximate models of parts and motion, not proof that every simulated assembly has been built. The return loop is the starting point.</p></section>
   <div class="workspace">
     <aside>
       <label for="component">Component</label><select id="component"></select>
-      <label for="mode">Execution</label><select id="mode"><option value="gpu">Physical · GPU</option><option value="semantic">Semantic</option><option value="cpu" selected>Physical · CPU</option></select>
+      <label for="mode">Execution</label><select id="mode"><option value="gpu">Physical · GPU</option><option value="semantic">Route model · no physics</option><option value="cpu" selected>Physical · CPU</option></select>
       <p id="physics-availability" class="hint" hidden></p>
-      <div class="fields"><div><label for="scale">Circuit scale</label><select id="scale"><option value="0.25">¼ size</option><option value="0.5">½ size</option><option value="1" selected>Reference size · 1×</option><option value="2">Double · 2×</option></select></div><div><label for="speed">Semantic speed</label><select id="speed"><option value="1">1×</option><option value="2">2×</option><option value="4">4×</option><option value="10">10×</option></select></div></div>
-      <label for="playback">Semantic playback</label><select id="playback"><option value="follow">Follow marble · 10 passages/s</option><option value="fast">Fast · every frame</option><option value="realtime">Match virtual time</option></select>
+      <div class="fields"><div><label for="scale">Circuit scale</label><select id="scale"><option value="0.25">¼ size</option><option value="0.5">½ size</option><option value="1" selected>Reference size · 1×</option><option value="2">Double · 2×</option></select></div><div><label for="speed">Route-model speed</label><select id="speed"><option value="1">1×</option><option value="2">2×</option><option value="4">4×</option><option value="10">10×</option></select></div></div>
+      <label for="playback">Route-model playback</label><select id="playback"><option value="follow">Follow marble · 10 passages/s</option><option value="fast">Fast · every frame</option><option value="realtime">Match virtual time</option></select>
       <label for="duration">Base duration <span>(seconds)</span></label><input id="duration" type="number" min="0.1" max="30" step="0.1" value="1">
       <p class="hint">Duration and speed apply to semantic execution. Playback changes viewing speed only. Physics determines its own travel time.</p>
 
@@ -24,7 +23,7 @@
     </aside>
     <section class="stage" aria-label="Simulation">
       <div class="simulation-actions" aria-label="Simulation controls"><button id="run" class="primary">Run</button><button id="follow-marble" type="button" aria-pressed="false" title="Track the marble with the camera">Follow marble</button><div class="buttons"><button id="step">Step</button><button id="reset">Reset</button></div></div>
-<div class="stage-top"><strong id="stage-title">Seven-instruction machine</strong><span id="mode-label">Physical · CPU</span></div>
+<div class="stage-top"><strong id="stage-title">Ferris wheel · ramp circuit</strong><span id="mode-label">Physical · CPU</span></div>
       <div id="viewport"></div>
       <section id="machine-dashboard" class="machine-dashboard" aria-label="Live machine state" hidden><div id="instruction-strip" aria-label="Instruction program"></div><div id="register-strip" aria-label="Live registers"></div><p>Live bit values · may be intermediate during carry. Bits read most significant first.</p></section>
       <div class="stage-bottom"><span id="path-label">in → out · no stored state</span><span>Drag to orbit · pinch or scroll to zoom</span></div>
@@ -32,8 +31,8 @@
   </div>
   <section class="tracking composition-panel" aria-label="Component hierarchy"><h2>Component hierarchy</h2><p>Primitives are Level 0. Each composite is one level above its deepest child. This is composition depth, separate from physical height.</p><div id="composition-tree"></div></section>
   <p id="prototype-note" class="note" hidden>Semantic lattice prototype · The grid and channels show the proposed layout. Physical switching and elevator handoffs are not implemented. One cell is provisionally 60 mm at 1×.</p>
-  <section class="readout" aria-label="Execution result"><div><span>Status</span><strong id="status" role="status">Ready</strong></div><div><span>Elapsed simulation time</span><strong id="elapsed">0.000 s</strong></div><div><span>Output port</span><strong id="output">—</strong></div><div><span>Semantic target</span><strong id="target">1.000 s</strong></div></section>
-  <p class="gate-readout">Gate memory (live): <strong id="gate-state">—</strong></p>
+  <section class="readout" aria-label="Execution result"><div><span>Status</span><strong id="status" role="status">Ready</strong></div><div><span>Elapsed simulation time</span><strong id="elapsed">0.000 s</strong></div><div><span>Output port</span><strong id="output">—</strong></div><div><span>Route-model duration</span><strong id="target">1.000 s</strong></div></section>
+  <p class="gate-readout">Gate position (observed): <strong id="gate-state">—</strong></p>
   <section id="program" class="tracking" aria-label="Jump program" hidden>
     <div class="tracking-heading"><h2>Instruction program</h2><strong id="instruction-pointer" aria-live="polite"></strong></div>
     <p>The marble's route determines the active instruction. A semantic Step completes one component passage; an INC can take several passages. Physical Step advances one frame. Bit 0 = left; bit 1 = right.</p>
@@ -44,7 +43,7 @@
     <table><thead><tr><th>Marble</th><th>Component</th><th>State</th><th>Virtual residence</th></tr></thead><tbody id="marble-rows"></tbody></table>
     <label for="inspect-time">Inspect recorded time <span>· pause or finish to scrub</span></label>
     <input id="inspect-time" type="range" min="0" max="0" step="0.001" value="0" disabled>
-    <details open><summary>Computation log</summary><label class="verbose-toggle"><input id="verbose-log" type="checkbox" checked> Verbose transfers</label><div id="execution-log" role="log" aria-label="Computation flow" tabindex="0"></div><button id="download-log">Download log</button></details>
+    <details open><summary>Passage log</summary><label class="verbose-toggle"><input id="verbose-log" type="checkbox" checked> Verbose transfers</label><div id="execution-log" role="log" aria-label="Marble passages" tabindex="0"></div><button id="download-log">Download log</button></details>
     <details><summary>Component entry / exit history</summary><table><thead><tr><th>Component</th><th>Entered</th><th>Exited</th></tr></thead><tbody id="visit-rows"></tbody></table></details>
   </section>
   <p id="error" role="alert" hidden></p>

@@ -3,7 +3,7 @@ import {mountComponentBrowser, experimentLevel} from './component-browser.js';
 import {renderComposition} from './composition-view.js';
 import {registerValue} from '../machine/increment-register.js';
 import './style.css';
-import {physicalCatalog as catalog, makeExperiment, experimentScene} from './catalog.js';
+import {benchCatalog as catalog, makeExperiment, experimentScene} from './catalog.js';
 import {createSession} from './session.js';
 import {createView} from './view.js';
 import {gpuClient} from '../backends/gpu.js';
@@ -17,7 +17,7 @@ const updateTriad = createInstructionTriad($('viewport'));
 function readLocation() {
   const params=new URLSearchParams(location.search);
   const component=params.get('component');
-  $('component').value=catalog.some(item=>item.id===component)?component:'seven-instruction-lattice';
+  $('component').value=catalog.some(item=>item.id===component)?component:'closed-loop';
   const entry=catalog.find(item=>item.id===$('component').value);
   const defaults={mode:entry?.modes?'semantic':defaultMode,scale:'1',speed:'1',playback:'follow'};
   for(const [id,fallback] of Object.entries(defaults)) {
